@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="哈工大讯飞联合实验室(HFL)阅读理解研究组">
+    <meta name="keywords"  content="哈工大讯飞联合实验室, HFL, 阅读理解">
+    <meta name="theme-color" content="#000000">
+    
+    <title>一年四次夺冠，凭什么？ - RC Group | HFL</title>
+
+    <!-- Web App Manifest -->
+    <link rel="manifest" href="/pwa/manifest.json">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/img/favicon.ico">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="http://hfl-rc.com//2018/04/18/interview-on-rc-team/">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/hux-blog.min.css">
+
+    <!-- Pygments Github CSS -->
+    <link rel="stylesheet" href="/css/syntax.css">
+
+    <!-- Custom Fonts -->
+    <!-- <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+    <!-- Hux change font-awesome CDN to qiniu -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+    <!-- Hux Delete, sad but pending in China
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/
+    css'>
+    -->
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- ga & ba script hoook -->
+    <script></script>
+</head>
+
+
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="">
+
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">阅读理解研究组</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/about/">About Us</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/demo/">Demonstrations</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/publications/">Publications</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/resources/">Resources</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/tags/">Tags</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+<script>
+    // Drop Bootstarp low-performance Navbar
+    // Use customize navbar with high-quality material design animation
+    // in high-perf jank-free CSS3 implementation
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    var __HuxNav__ = {
+        close: function(){
+            $navbar.className = " ";
+            // wait until animation end.
+            setTimeout(function(){
+                // prevent frequently toggle
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        },
+        open: function(){
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+
+    // Bind Event
+    $toggle.addEventListener('click', function(e){
+        if ($navbar.className.indexOf('in') > 0) {
+            __HuxNav__.close()
+        }else{
+            __HuxNav__.open()
+        }
+    })
+
+    /**
+     * Since Fastclick is used to delegate 'touchstart' globally
+     * to hack 300ms delay in iOS by performing a fake 'click',
+     * Using 'e.stopPropagation' to stop 'touchstart' event from 
+     * $toggle/$collapse will break global delegation.
+     * 
+     * Instead, we use a 'e.target' filter to prevent handler
+     * added to document close HuxNav.  
+     *
+     * Also, we use 'click' instead of 'touchstart' as compromise
+     */
+    document.addEventListener('click', function(e){
+        if(e.target == $toggle) return;
+        if(e.target.className == 'icon-bar') return;
+        __HuxNav__.close();
+    })
+</script>
+
+
+    <!-- Image to hack wechat -->
+<!-- <img src="/img/icon_wechat.png" width="0" height="0"> -->
+<!-- <img src="/img/banner/rc-xiaofeifei.jpeg" width="0" height="0"> -->
+
+<!-- Post Header -->
+<style type="text/css">
+    header.intro-header{
+        position: relative;
+        background-image: url('/img/banner/rc-xiaofeifei.jpeg')
+    }
+
+    
+    header.intro-header .header-mask{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background: rgba(0,0,0, 0.5);
+    }
+    
+</style>
+<header class="intro-header" >
+    <div class="header-mask"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                        <a class="tag" href="/tags/#SQuAD" title="SQuAD">SQuAD</a>
+                        
+                        <a class="tag" href="/tags/#SemEval 2018" title="SemEval 2018">SemEval 2018</a>
+                        
+                        <a class="tag" href="/tags/#阅读理解评测" title="阅读理解评测">阅读理解评测</a>
+                        
+                    </div>
+                    <h1>一年四次夺冠，凭什么？</h1>
+                    
+                    
+                    <h2 class="subheading"></h2>
+                    
+                    <span class="meta">Posted by HFL-RC on April 18, 2018</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+    <!-- Post Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                <!-- Multi-Lingual -->
+                
+                <!-- Language Selector -->
+                <select class="sel-lang" onchange= "onLanChange(this.options[this.options.selectedIndex].value)">
+                    <option value="0" selected> 中文 Chinese </option>
+                    <option value="1"> 英文 English </option>
+                </select>
+                
+
+				<!-- Chinese Version -->
+<div class="zh post-container">
+    
+    <blockquote>
+  <p>本文转自哈工大讯飞联合实验室微信公众号</p>
+</blockquote>
+
+<p>在那些寒窗苦读的学生时代，在无数个奋笔疾书的考场上，你一定碰见过一种作业题型——“阅读理解”。</p>
+
+<p><img src="/img/news/20180418/640.jpeg" alt="" /></p>
+
+<p><img src="/img/news/20180418/640-1.jpeg" alt="" /></p>
+
+<p>它需要融会贯通进行主观陈述和作答，是难度系数比较高的题型之一。其实“阅读理解”并不是人类才有的“苦恼”，机器也同样需要过这一关。</p>
+
+<p>就着阅读理解这事，科大讯飞AI研究院副院长王士进和研究主管崔一鸣今天将和大家聊聊背后的故事——他们的团队已连续在机器阅读理解的比赛上摘得全球桂冠。</p>
+
+<p><img src="/img/news/20180418/640-2.jpeg" alt="" /></p>
+
+<p><img src="/img/news/20180418/640.png" alt="" /></p>
+
+<p>今年2月10日，科大讯飞又拿奖了。</p>
+
+<p>在SemEval 2018国际语义测评大赛的机器阅读理解评测任务中，哈工大讯飞联合实验室(HFL)荣获桂冠。在此之前，从去年7月开始，实验室已在机器阅读理解领域权威评测大赛SQuAD连续3次刷新世界纪录。</p>
+
+<p><img src="/img/news/20180418/640-3.jpeg" alt="" /></p>
+
+<p>“给定一个日常生活场景的描述文本及相关问题，我们需要利用常识和知识让机器从候选答案中挑选出正确答案。”这其中利用了机器阅读理解的相关技术，“我们把从融合式层叠注意力系统分拆的技术，应用到其他自然语言处理任务中。”</p>
+
+<p><img src="/img/news/20180418/640-4.jpeg" alt="" /></p>
+
+<p>阅读理解先审题后答题，这其中蕴含了一整套逻辑理解的关系，人处理起来都不太容易、机器如何拥有这项能力？“其实人和机器的解题过程有区别。”</p>
+
+<p>崔一鸣介绍，人在审题和做题的时候通常要结合自身已掌握的常识和知识，并且综合全文的信息做进一步归纳、推理，这个过程相对较为多元化。</p>
+
+<p>而对于目前的机器来说，首先需要“阅读”大量的篇章和问题，并且计算出篇章、问题之间语义级别的匹配程度，从而更好地抽取出与解题相关的内容。“所以对于机器来说，更能够答好之前见过的问题，而缺乏一些多元化、综合解题的能力。”</p>
+
+<p><img src="/img/news/20180418/640-5.jpeg" alt="" /></p>
+
+<p>说得坦率些，虽然目前机器在某些阅读理解数据集上的水平超过了人类，但这并不能表明“机器打败了人类”。“现在的技术距离通用型人工智能其实还很远，机器还无法能够模拟很多人类的智能。”王士进解释，通用性不够强、需依赖大量有标注的数据，都是目前机器阅读理解的局限性。</p>
+
+<p>让机器能理解会思考，让机器具备真正的推理能力，其实还有很长一段路要走。“理论框架上必须进行突破，而不是简单的升级。”王士进这样认为：首先机器要能从海量数据学会推理、掌握知识和常识，然后还需要机器从小样本数据上学会同样的事情。</p>
+
+<p><img src="/img/news/20180418/640-6.jpeg" alt="" /></p>
+
+<p>因为有这样的研究目标，拿奖对于科大讯飞AI研究院而言，似乎是水到渠成。“SemEval2018上夺冠从时间上是意料之外，但从技术角度来说也是情理之中。”</p>
+
+<p>事实上，准备这项大赛，团队只用了1个半月左右。“因为当时在工程项目上需要进行技术攻关，偶然了解到今年这项比赛中有机器阅读理解的任务，便抽出部分时间来参与。模型设计花费了1-2周，后续还做了参数调整和效果优化。”崔一鸣坦言，对于新任务团队本也没有十足的夺冠把握，只是从技术积累看有希望。</p>
+
+<p>“冠军不是目标，只是我们技术的试金石，体现的是核心技术的领先优势。”坐拥机器阅读理解领域的多项世界纪录和世界冠军，团队显得既霸气又谦虚。</p>
+
+<p>而今，在被誉为“人工智能领域皇冠上的明珠”的机器阅读理解大赛中，除了几家常驻的研究机构之外，还有来越多的科技公司、甚至互联网公司、创业公司加入，“这样有助于促进该领域技术的进步。”</p>
+
+<p><img src="/img/news/20180418/640-7.jpeg" alt="" /></p>
+
+<p>对于科大讯飞而言，如果参赛却没有拿到冠军，是不是意味着失败？“胜败乃兵家常事，技术的发展是螺旋式、曲折式的上升发展，讯飞有耐心去包容这样的‘失败’。”</p>
+
+<p>也许正如那个道理：任何领域都没有常青树。技术上亦如此，为了获得持续发展的源动力，科大讯飞不仅自己拿冠军，还在帮助别人拿第一。</p>
+
+<p>崔一鸣透露，2016年科大讯飞发布了首个中文填空型阅读理解数据集PD&amp;CFT。2017年，科大讯飞携手中国中文信息学会计算语言学专委会（CIPS-CL）共同举办了首届“讯飞杯”中文机器阅读理解评测（CMRC 2017），并与全国计算语言学会议（CCL）共同召开，为相关学者提供了一个良好的沟通平台。</p>
+
+<p><img src="/img/news/20180418/640-8.jpeg" alt="" /></p>
+
+<p>今年，讯飞还会继续举办第二届“讯飞杯”中文机器阅读理解评测（CMRC 2018），和更多研究人员共同推动中文机器阅读理解的研究发展。</p>
+
+<p><img src="/img/news/20180418/640-9.jpeg" alt="" /></p>
+
+<p><img src="/img/news/20180418/640-1.png" alt="" /></p>
+
+<p><img src="/img/news/20180418/640-10.jpeg" alt="" /></p>
+
+<p>从某种意义而言，让机器能“阅读理解”是人工智能向着高阶发展的尝试。机器能理解、会思考，就是我们常常所说的认知智能。它主要体现在人机交互和行业应用上，“认知智能的发展和逐步成熟，会使得人机交互逐渐便捷有效，会学习和固化行业专家和行业大数据的经验，对各个行业产生颠覆式的创新。”</p>
+
+<p>相关的应用已经开始。王士进说，目前讯飞在多个应用领域使用自然语言处理等技术促进产品帮助人类。比如讯飞的“智医助理”在去年全球首次参加并通过国家执业医师资格考试笔试评测；比如通过人工智能的知识图谱和习得顺序分析可以精准分析每个孩子的学习情况，从而有针对性的布置个性化作业，大幅降低无效重复学习时间……</p>
+
+<p><img src="/img/news/20180418/640-11.jpeg" alt="" /></p>
+
+<p><img src="/img/news/20180418/640.gif" alt="" /></p>
+
+<p>对语言本身的处理和应用也有更广的尝试。“讯飞听见会议系统可实时将语音转写成文字，不仅有中文还有英语；讯飞翻译机也已具备了7种语言的互译功能，未来还将开发更多国家语言翻译功能，布局相关语种的语音识别技术、语音合成技术、机器翻译技术。”</p>
+
+<p><img src="/img/news/20180418/640-12.jpeg" alt="" /></p>
+
+<p>有没有不太满意的地方呢？瑕疵肯定存在，王士进以智能阅卷技术的应用举例，坦言计算机评分也存在错误的情况，但这并不妨碍研发、应用的大势，“未来，随着人工智能技术的发展，机器可以自动学习教师的评卷方法，除了开放式作文，在其他科目、甚至政史地问答题等试题的批阅中，机器都可以自动阅卷。”如此将大大解放教师们时间和精力，“他们将投入到对教学方法、教学手段等创造性工作的研究中，相学生们也会因此获得更好、更全面的教育。”</p>
+
+<p>所以，“阅读理解”只是开始，包括讯飞AI研究院在内，攻克它只是核心技术研究上的一点突破，更大的意义在于构建研究生态和让研究应用真正发挥价值。</p>
+
+
+</div>
+
+<!-- English Version -->
+<div class="en post-container">
+    
+    <blockquote>
+  <p>Nothing special</p>
+</blockquote>
+
+</div>
+
+
+                <hr style="visibility: hidden;">
+
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/2018/04/16/participate-in-cmrc2018/" data-toggle="tooltip" data-placement="top" title="CMRC 2018 | 中文机器阅读理解评测报名">
+                        Previous<br>
+                        <span>CMRC 2018 | 中文机器阅读理解评测报名</span>
+                        </a>
+                    </li>
+                    
+                    
+                </ul>
+
+
+                
+
+                
+            </div>  
+
+    <!-- Side Catalog Container -->
+        
+            <div class="
+                col-lg-2 col-lg-offset-0
+                visible-lg-block
+                sidebar-container
+                catalog-container">
+                <div class="side-catalog">
+                    <hr class="hidden-sm hidden-xs">
+                    <h5>
+                        <a class="catalog-toggle" href="#">CATALOG</a>
+                    </h5>
+                    <ul class="catalog-body"></ul>
+                </div>
+            </div>
+        
+
+    <!-- Sidebar Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                <!-- Featured Tags -->
+                
+                <section>
+                    <hr class="hidden-sm hidden-xs">
+                    <h5><a href="/tags/">FEATURED TAGS</a></h5>
+                    <div class="tags">
+        				
+                            
+                				<a href="/tags/#阅读理解" title="阅读理解" rel="11">
+                                    阅读理解
+                                </a>
+                            
+        				
+                            
+                				<a href="/tags/#Reading Comprehension" title="Reading Comprehension" rel="15">
+                                    Reading Comprehension
+                                </a>
+                            
+        				
+                            
+                				<a href="/tags/#CBT" title="CBT" rel="3">
+                                    CBT
+                                </a>
+                            
+        				
+                            
+                				<a href="/tags/#CNN" title="CNN" rel="3">
+                                    CNN
+                                </a>
+                            
+        				
+                            
+                				<a href="/tags/#AoA Reader" title="AoA Reader" rel="3">
+                                    AoA Reader
+                                </a>
+                            
+        				
+                            
+                				<a href="/tags/#SQuAD" title="SQuAD" rel="7">
+                                    SQuAD
+                                </a>
+                            
+        				
+                            
+                				<a href="/tags/#Interactive AoA Reader" title="Interactive AoA Reader" rel="3">
+                                    Interactive AoA Reader
+                                </a>
+                            
+        				
+                            
+                				<a href="/tags/#HFL" title="HFL" rel="4">
+                                    HFL
+                                </a>
+                            
+        				
+                            
+                				<a href="/tags/#哈工大讯飞联合实验室" title="哈工大讯飞联合实验室" rel="5">
+                                    哈工大讯飞联合实验室
+                                </a>
+                            
+        				
+                            
+                				<a href="/tags/#招聘" title="招聘" rel="2">
+                                    招聘
+                                </a>
+                            
+        				
+                            
+        				
+                            
+                				<a href="/tags/#CMRC" title="CMRC" rel="2">
+                                    CMRC
+                                </a>
+                            
+        				
+                            
+        				
+                            
+        				
+                            
+        				
+                            
+        				
+                            
+        				
+                            
+        				
+                            
+        				
+                            
+                				<a href="/tags/#阅读理解评测" title="阅读理解评测" rel="7">
+                                    阅读理解评测
+                                </a>
+                            
+        				
+                            
+        				
+                            
+                				<a href="/tags/#SemEval 2018" title="SemEval 2018" rel="3">
+                                    SemEval 2018
+                                </a>
+                            
+        				
+                            
+        				
+                            
+        				
+        			</div>
+                </section>
+                
+
+                <!-- Friends Blog -->
+                
+                <hr>
+                <h5>FRIENDS</h5>
+                <ul class="list-inline">
+                    
+                        <li><a href="http://www.iflytek.com">科大讯飞</a></li>
+                    
+                        <li><a href="http://www.hfl-tek.com">哈工大讯飞联合实验室</a></li>
+                    
+                        <li><a href="http://ir.hit.edu.cn">社会计算与信息检索实验室</a></li>
+                    
+                </ul>
+                
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
+
+
+
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+<!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
+<script>
+    async("//cdnjs.cloudflare.com/ajax/libs/anchor-js/1.1.1/anchor.min.js",function(){
+        anchors.options = {
+          visible: 'always',
+          placement: 'right',
+          icon: '#'
+        };
+        anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+    })
+</script>
+<style>
+    /* place left on bigger screen */
+    @media all and (min-width: 800px) {
+        .anchorjs-link{
+            position: absolute;
+            left: -0.75em;
+            font-size: 1.1em;
+            margin-top : -0.1em;
+        }
+    }
+</style>
+
+
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                    
+                    
+
+                    <!-- add Weibo, Zhihu by Hux, add target = "_blank" to <a> by Hux -->
+                    
+                    
+
+
+                    
+                    
+                    
+                </ul>
+                <p class="copyright text-muted">
+                    Copyright &copy; 阅读理解研究组 2018
+                    <br>
+                    Theme by <a href="http://huangxuan.me">Hux</a> |
+                    <iframe
+                        style="margin-left: 2px; margin-bottom:-5px;"
+                        frameborder="0" scrolling="0" width="100px" height="20px"
+                        src="https://ghbtns.com/github-btn.html?user=huxpro&repo=huxpro.github.io&type=star&count=true" >
+                    </iframe>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/js/jquery.min.js "></script>
+
+<!-- Bootstrap Core JavaScript -->
+<!-- Currently, only navbar scroll-down effect at desktop still depends on this -->
+<script src="/js/bootstrap.min.js "></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/hux-blog.min.js "></script>
+
+<!-- Service Worker -->
+
+<script src="/js/snackbar.js "></script>
+<script src="/js/sw-registration.js "></script>
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+<!--
+     Because of the native support for backtick-style fenced code blocks
+     right within the Markdown is landed in Github Pages,
+     From V1.6, There is no need for Highlight.js,
+     so Huxblog drops it officially.
+
+     - https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0
+     - https://help.github.com/articles/creating-and-highlighting-code-blocks/
+     - https://github.com/jneen/rouge/wiki/list-of-supported-languages-and-lexers
+-->
+<!--
+    <script>
+        async("http://cdn.bootcss.com/highlight.js/8.6/highlight.min.js", function(){
+            hljs.initHighlightingOnLoad();
+        })
+    </script>
+    <link href="http://cdn.bootcss.com/highlight.js/8.6/styles/github.min.css" rel="stylesheet">
+-->
+
+
+<!-- jquery.tagcloud.js -->
+<script>
+    // only load tagcloud.js in tag.html
+    if($('#tag_cloud').length !== 0){
+        async('/js/jquery.tagcloud.js',function(){
+            $.fn.tagcloud.defaults = {
+                //size: {start: 1, end: 1, unit: 'em'},
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+<!--fastClick.js -->
+<script>
+    async("//cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+<!-- Google Analytics -->
+
+<script>
+    // dynamic User by Hux
+    var _gaId = '';
+    var _gaDomain = '';
+
+    // Originial
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', _gaId, _gaDomain);
+    ga('send', 'pageview');
+</script>
+
+
+
+<!-- Baidu Tongji -->
+
+
+
+<!-- Side Catalog -->
+
+<script type="text/javascript">
+    function generateCatalog (selector) {
+
+        // interop with multilangual 
+        if (true) {
+            _containerSelector = 'div.post-container.active'
+        } else {
+            _containerSelector = 'div.post-container'
+        }
+
+        // init
+        var P = $(_containerSelector),a,n,t,l,i,c;
+        a = P.find('h1,h2,h3,h4,h5,h6');
+
+        // clean
+        $(selector).html('')
+
+        // appending
+        a.each(function () {
+            n = $(this).prop('tagName').toLowerCase();
+            i = "#"+$(this).prop('id');
+            t = $(this).text();
+            c = $('<a href="'+i+'" rel="nofollow">'+t+'</a>');
+            l = $('<li class="'+n+'_nav"></li>').append(c);
+            $(selector).append(l);
+        });
+        return true;
+    }
+
+    generateCatalog(".catalog-body");
+
+    // toggle side catalog
+    $(".catalog-toggle").click((function(e){
+        e.preventDefault();
+        $('.side-catalog').toggleClass("fold")
+    }))
+
+    /*
+     * Doc: https://github.com/davist11/jQuery-One-Page-Nav
+     * Fork by Hux to support padding
+     */
+    async("/js/jquery.nav.js", function () {
+        $('.catalog-body').onePageNav({
+            currentClass: "active",
+            changeHash: !1,
+            easing: "swing",
+            filter: "",
+            scrollSpeed: 700,
+            scrollOffset: 0,
+            scrollThreshold: .2,
+            begin: null,
+            end: null,
+            scrollChange: null,
+            padding: 80
+        });
+    });
+</script>
+
+
+
+<!-- Multi-Lingual -->
+
+<!-- Handle Language Change -->
+<script type="text/javascript">
+    // get nodes
+    var $zh = document.querySelector(".zh");
+    var $en = document.querySelector(".en");
+    var $select = document.querySelector("select");
+
+    // bind hashchange event
+    // Changes at v1.7.2: change the language flag from hash-basing to in-memory basing
+    // due to its confliction with catalog anchors.
+    // window.addEventListener('hashchange', _render);
+
+    // handle render
+    function _render(_hash){
+        var _hash = _hash || window.location.hash;
+        // en
+        if(_hash == "#en"){
+            $select.selectedIndex = 1;
+            $en.style.display = "block";
+            $en.classList.add("active");
+            $zh.style.display = "none";
+            $zh.classList.remove("active");
+        // zh by default
+        }else{
+            // not trigger onChange, otherwise cause a loop call.
+            $select.selectedIndex = 0;
+            $zh.style.display = "block";
+            $zh.classList.add("active");
+            $en.style.display = "none";
+            $en.classList.remove("active");
+        }
+        // interop with catalog 
+        if ("true") generateCatalog(".catalog-body");
+    }
+
+    // handle select change
+    function onLanChange(index){
+        if(index == 0){
+            _hash = "#zh"
+        }else{
+            _hash = "#en"
+        }
+        _render(_hash)
+    }
+
+    // init
+    _render();
+</script>
+
+
+
+
+<!-- Image to hack wechat -->
+<img src="/img/icon_wechat.png" width="0" height="0" />
+<!-- Migrate from head to bottom, no longer block render and still work -->
+
+</body>
+
+</html>

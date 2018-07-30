@@ -1,0 +1,2060 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="哈工大讯飞联合实验室(HFL)阅读理解研究组">
+    <meta name="keywords"  content="哈工大讯飞联合实验室, HFL, 阅读理解">
+    <meta name="theme-color" content="#000000">
+    
+    <title>Tags - RC Group | HFL</title>
+
+    <!-- Web App Manifest -->
+    <link rel="manifest" href="/pwa/manifest.json">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/img/favicon.ico">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="http://hfl-rc.com//tags/">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/hux-blog.min.css">
+
+    <!-- Pygments Github CSS -->
+    <link rel="stylesheet" href="/css/syntax.css">
+
+    <!-- Custom Fonts -->
+    <!-- <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+    <!-- Hux change font-awesome CDN to qiniu -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+    <!-- Hux Delete, sad but pending in China
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/
+    css'>
+    -->
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- ga & ba script hoook -->
+    <script></script>
+</head>
+
+
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="">
+
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">阅读理解研究组</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/about/">About Us</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/demo/">Demonstrations</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/publications/">Publications</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/resources/">Resources</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/tags/">Tags</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+<script>
+    // Drop Bootstarp low-performance Navbar
+    // Use customize navbar with high-quality material design animation
+    // in high-perf jank-free CSS3 implementation
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    var __HuxNav__ = {
+        close: function(){
+            $navbar.className = " ";
+            // wait until animation end.
+            setTimeout(function(){
+                // prevent frequently toggle
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        },
+        open: function(){
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+
+    // Bind Event
+    $toggle.addEventListener('click', function(e){
+        if ($navbar.className.indexOf('in') > 0) {
+            __HuxNav__.close()
+        }else{
+            __HuxNav__.open()
+        }
+    })
+
+    /**
+     * Since Fastclick is used to delegate 'touchstart' globally
+     * to hack 300ms delay in iOS by performing a fake 'click',
+     * Using 'e.stopPropagation' to stop 'touchstart' event from 
+     * $toggle/$collapse will break global delegation.
+     * 
+     * Instead, we use a 'e.target' filter to prevent handler
+     * added to document close HuxNav.  
+     *
+     * Also, we use 'click' instead of 'touchstart' as compromise
+     */
+    document.addEventListener('click', function(e){
+        if(e.target == $toggle) return;
+        if(e.target.className == 'icon-bar') return;
+        __HuxNav__.close();
+    })
+</script>
+
+
+    <!-- Page Header -->
+<header class="intro-header" style="background-image: url('/img/tag-bg.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="site-heading" id="tag-heading">
+                    <h1>Tags</h1>
+                    <span class="subheading"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Main Content -->
+<div class="container">
+	<div class="row">
+		<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <!-- 标签云 -->
+			<div id='tag_cloud' class="tags">
+				
+				<a href="#阅读理解" title="阅读理解" rel="11">阅读理解</a>
+				
+				<a href="#Reading Comprehension" title="Reading Comprehension" rel="15">Reading Comprehension</a>
+				
+				<a href="#CBT" title="CBT" rel="3">CBT</a>
+				
+				<a href="#CNN" title="CNN" rel="3">CNN</a>
+				
+				<a href="#AoA Reader" title="AoA Reader" rel="3">AoA Reader</a>
+				
+				<a href="#SQuAD" title="SQuAD" rel="7">SQuAD</a>
+				
+				<a href="#Interactive AoA Reader" title="Interactive AoA Reader" rel="3">Interactive AoA Reader</a>
+				
+				<a href="#HFL" title="HFL" rel="4">HFL</a>
+				
+				<a href="#哈工大讯飞联合实验室" title="哈工大讯飞联合实验室" rel="5">哈工大讯飞联合实验室</a>
+				
+				<a href="#招聘" title="招聘" rel="2">招聘</a>
+				
+				<a href="#实习生" title="实习生" rel="1">实习生</a>
+				
+				<a href="#CMRC" title="CMRC" rel="2">CMRC</a>
+				
+				<a href="#CCL-CMRC" title="CCL-CMRC" rel="1">CCL-CMRC</a>
+				
+				<a href="#智能车载系统" title="智能车载系统" rel="1">智能车载系统</a>
+				
+				<a href="#Technical Report" title="Technical Report" rel="1">Technical Report</a>
+				
+				<a href="#HKUST" title="HKUST" rel="1">HKUST</a>
+				
+				<a href="#LREC2018" title="LREC2018" rel="1">LREC2018</a>
+				
+				<a href="#认知智能" title="认知智能" rel="1">认知智能</a>
+				
+				<a href="#国家重点实验室" title="国家重点实验室" rel="1">国家重点实验室</a>
+				
+				<a href="#阅读理解评测" title="阅读理解评测" rel="7">阅读理解评测</a>
+				
+				<a href="#CCL" title="CCL" rel="1">CCL</a>
+				
+				<a href="#SemEval 2018" title="SemEval 2018" rel="3">SemEval 2018</a>
+				
+				<a href="#CMRC 2018" title="CMRC 2018" rel="1">CMRC 2018</a>
+				
+				<a href="#CCL 2018" title="CCL 2018" rel="1">CCL 2018</a>
+				
+			</div>
+
+            <!--<blockquote class="tag-comments">
+                标签命名规范：
+                    <li>行业观察、职位、公司优先使用中文</li>
+                    <li>外国产品、术语优先使用英文</li>
+            </blockquote>-->
+
+            <!-- 标签列表 -->
+			
+			<div class="one-tag-list">
+			  	<span class="fa fa-tag listing-seperator" id="阅读理解">
+                    <span class="tag-text">阅读理解</span>
+                </span>
+				
+				  <!-- <li class="listing-item">
+				  <time datetime="2017-12-21">2017-12-21</time>
+				  <a href="/2017/12/21/the-first-cognitive-intelligence-lab-established/" title="科大讯飞获批建设我国首个认知智能国家重点实验室！">科大讯飞获批建设我国首个认知智能国家重点实验室！</a>
+				  </li> -->
+				 <div class="post-preview">
+				    <a href="/2017/12/21/the-first-cognitive-intelligence-lab-established/">
+				        <h2 class="post-title">
+                            科大讯飞获批建设我国首个认知智能国家重点实验室！
+				        </h2>
+				        
+				        <h3 class="post-subtitle">
+				            
+				        </h3>
+				        
+				    </a>
+				    <!-- <p class="post-meta">2017-12-21</p> -->
+				</div>
+				<hr>
+				
+				  <!-- <li class="listing-item">
+				  <time datetime="2017-12-14">2017-12-14</time>
+				  <a href="/2017/12/14/resource-paper-accepted-by-lrec2018/" title="CMRC2017中文阅读理解评测数据集被LREC2018录用">CMRC2017中文阅读理解评测数据集被LREC2018录用</a>
+				  </li> -->
+				 <div class="post-preview">
+				    <a href="/2017/12/14/resource-paper-accepted-by-lrec2018/">
+				        <h2 class="post-title">
+                            CMRC2017中文阅读理解评测数据集被LREC2018录用
+				        </h2>
+				        
+				        <h3 class="post-subtitle">
+				            Chinese Machine Reading Comprehension Dataset is Accepted by LREC2018
+				        </h3>
+				        
+				    </a>
+				    <!-- <p class="post-meta">2017-12-14</p> -->
+				</div>
+				<hr>
+				
+				  <!-- <li class="listing-item">
+				  <time datetime="2017-11-11">2017-11-11</time>
+				  <a href="/2017/11/11/visiting-hkust/" title="科技报告：阅读理解技术近况及未来展望 at 香港科技大学">科技报告：阅读理解技术近况及未来展望 at 香港科技大学</a>
+				  </li> -->
+				 <div class="post-preview">
+				    <a href="/2017/11/11/visiting-hkust/">
+				        <h2 class="post-title">
+                            科技报告：阅读理解技术近况及未来展望 at 香港科技大学
+				        </h2>
+				        
+				        <h3 class="post-subtitle">
+				            Technical Report: Recent Progress and Future Prospects on Reading Comprehension (at HKUST)
+				        </h3>
+				        
+				    </a>
+				    <!-- <p class="post-meta">2017-11-11</p> -->
+				</div>
+				<hr>
+				
+				  <!-- <li class="listing-item">
+				  <time datetime="2017-11-09">2017-11-09</time>
+				  <a href="/2017/11/09/rc-helps-intelligent-car-system/" title="阅读理解技术正改变智能车载系统的交互方式">阅读理解技术正改变智能车载系统的交互方式</a>
+				  </li> -->
+				 <div class="post-preview">
+				    <a href="/2017/11/09/rc-helps-intelligent-car-system/">
+				        <h2 class="post-title">
+                            阅读理解技术正改变智能车载系统的交互方式
+				        </h2>
+				        
+				        <h3 class="post-subtitle">
+				            Reading Comprehension Technologies are Changing Interaction Style in Car Intelligence
+				        </h3>
+				        
+				    </a>
+				    <!-- <p class="post-meta">2017-11-09</p> -->
+				</div>
+				<hr>
+				
+				  <!-- <li class="listing-item">
+				  <time datetime="2017-11-06">2017-11-06</time>
+				  <a href="/2017/11/06/squad-top-again/" title="Interactive AoA Reader<sup>+</sup>再次荣登斯坦福SQuAD榜首">Interactive AoA Reader<sup>+</sup>再次荣登斯坦福SQuAD榜首</a>
+				  </li> -->
+				 <div class="post-preview">
+				    <a href="/2017/11/06/squad-top-again/">
+				        <h2 class="post-title">
+                            Interactive AoA Reader<sup>+</sup>再次荣登斯坦福SQuAD榜首
+				        </h2>
+				        
+				        <h3 class="post-subtitle">
+				            Interactive AoA Reader<sup>+</sup> Got on Top of the SQuAD Leaderboard Once Again
+				        </h3>
+				        
+				    </a>
+				    <!-- <p class="post-meta">2017-11-06</p> -->
+				</div>
+				<hr>
+				
+				  <!-- <li class="listing-item">
+				  <time datetime="2017-10-18">2017-10-18</time>
+				  <a href="/2017/10/18/cmrc2017-evaluation/" title="首届“讯飞杯”中文阅读理解评测圆满落幕">首届“讯飞杯”中文阅读理解评测圆满落幕</a>
+				  </li> -->
+				 <div class="post-preview">
+				    <a href="/2017/10/18/cmrc2017-evaluation/">
+				        <h2 class="post-title">
+                            首届“讯飞杯”中文阅读理解评测圆满落幕
+				        </h2>
+				        
+				        <h3 class="post-subtitle">
+				            The 1st Evaluation Workshop on Chinese Machine Reading Comprehension (CCL-CMRC2017)
+				        </h3>
+				        
+				    </a>
+				    <!-- <p class="post-meta">2017-10-18</p> -->
+				</div>
+				<hr>
+				
+				  <!-- <li class="listing-item">
+				  <time datetime="2017-09-14">2017-09-14</time>
+				  <a href="/2017/09/14/brilliant-achievements-in-squad/" title="斯坦福SQuAD挑战赛的中国亮丽榜单">斯坦福SQuAD挑战赛的中国亮丽榜单</a>
+				  </li> -->
+				 <div class="post-preview">
+				    <a href="/2017/09/14/brilliant-achievements-in-squad/">
+				        <h2 class="post-title">
+                            斯坦福SQuAD挑战赛的中国亮丽榜单
+				        </h2>
+				        
+				        <h3 class="post-subtitle">
+				            The Brilliant Chinese Achievements in SQuAD Challenge
+				        </h3>
+				        
+				    </a>
+				    <!-- <p class="post-meta">2017-09-14</p> -->
+				</div>
+				<hr>
+				
+				  <!-- <li class="listing-item">
+				  <time datetime="2017-08-01">2017-08-01</time>
+				  <a href="/2017/08/01/attending-acl/" title="参加ACL-2017">参加ACL-2017</a>
+				  </li> -->
+				 <div class="post-preview">
+				    <a href="/2017/08/01/attending-acl/">
+				        <h2 class="post-title">
+                            参加ACL-2017
+				        </h2>
+				        
+				        <h3 class="post-subtitle">
+				            Attending ACL 2017
+				        </h3>
+				        
+				    </a>
+				    <!-- <p class="post-meta">2017-08-01</p> -->
+				</div>
+				<hr>
+				
+				  <!-- <li class="listing-item">
+				  <time datetime="2017-07-31">2017-07-31</time>
+				  <a href="/2017/07/31/squad-on-top/" title="科大讯飞认知智能持续突破，阅读理解SQuAD测试勇夺第一">科大讯飞认知智能持续突破，阅读理解SQuAD测试勇夺第一</a>
+				  </li> -->
+				 <div class="post-preview">
+				    <a href="/2017/07/31/squad-on-top/">
+				        <h2 class="post-title">
+                            科大讯飞认知智能持续突破，阅读理解SQuAD测试勇夺第一
+				        </h2>
+				        
+				        <h3 class="post-subtitle">
+				            iFLYTEK Get Continuous Progress on Cognitive Computing, Won First Place in SQuAD Task
+				        </h3>
+				        
+				    </a>
+				    <!-- <p class="post-meta">2017-07-31</p> -->
+				</div>
+				<hr>
+				
+				  <!-- <li class="listing-item">
+				  <time datetime="2017-07-31">2017-07-31</time>
+				  <a href="/2017/07/31/attention-over-attention-pw/" title="层叠注意力模型 - 实现机器阅读的正确姿势">层叠注意力模型 - 实现机器阅读的正确姿势</a>
+				  </li> -->
+				 <div class="post-preview">
+				    <a href="/2017/07/31/attention-over-attention-pw/">
+				        <h2 class="post-title">
+                            层叠注意力模型 - 实现机器阅读的正确姿势
+				        </h2>
+				        
+				        <h3 class="post-subtitle">
+				            Attention-over-Attention Reader: the state-of-the-art Cloze-style Reading Comprehension Model
+				        </h3>
+				        
+				    </a>
+				    <!-- <p class="post-meta">2017-07-31</p> -->
+				</div>
+				<hr>
+				
+				  <!-- <li class="listing-item">
+				  <time datetime="2016-12-01">2016-12-01</time>
+				  <a href="/2016/12/01/attending-coling/" title="参加COLING-2016">参加COLING-2016</a>
+				  </li> -->
+				 <div class="post-preview">
+				    <a href="/2016/12/01/attending-coling/">
+				        <h2 class="post-title">
+                            参加COLING-2016
+				        </h2>
+				        
+				        <h3 class="post-subtitle">
+				            Attending COLING 2016
+				        </h3>
+				        
+				    </a>
+				    <!-- <p class="post-meta">2016-12-01</p> -->
+				</div>
+				<hr>
+				
+			</div>
+			
+			<div class="one-tag-list">
+			  	<span class="fa fa-tag listing-seperator" id="Reading Comprehension">
+                    <span class="tag-text">Reading Comprehension</span>
+                </span>
+				
+				  <!-- <li class="listing-item">
+				  <time datetime="2018-02-10">2018-02-10</time>
+				  <a href="/2018/02/10/got-on-top-in-semeval2018-task11/" title="哈工大讯飞联合实验室摘取SemEval2018评测大赛桂冠">哈工大讯飞联合实验室摘取SemEval2018评测大赛桂冠</a>
+				  </li> -->
+				 <div class="post-preview">
+				    <a href="/2018/02/10/got-on-top-in-semeval2018-task11/">
+				        <h2 class="post-title">
+                            哈工大讯飞联合实验室摘取SemEval2018评测大赛桂冠
+				        </h2>
+				        
+				        <h3 class="post-subtitle">
+				            HFL-RC Got the First Place on SemEval 2018 Evaluation (Task 11)
+				        </h3>
+				        
+				    </a>
+				    <!-- <p class="post-meta">2018-02-10</p> -->
+				</div>
+				<hr>
+				
+				  <!-- <li class="listing-item">
+				  <time datetime="2018-01-25">2018-01-25</time>
+				  <a href="/2018/01/25/squad-new-sota/" title="科大讯飞机器阅读理解技术再次登顶SQuAD挑战赛">科大讯飞机器阅读理解技术再次登顶SQuAD挑战赛</a>
+				  </li> -->
+				 <div class="post-preview">
+				    <a href="/2018/01/25/squad-new-sota/">
+				        <h2 class="post-title">
+                            科大讯飞机器阅读理解技术再次登顶SQuAD挑战赛
+				        </h2>
+				        
+				        <h3 class="post-subtitle">
+				            iFLYTEK Got the First Place on SQuAD Evaluation
+				        </h3>
+				        
+				    </a>
+				    <!-- <p class="post-meta">2018-01-25</p> -->
+				</div>
+				<hr>
+				
+				  <!-- <li class="listing-item">
+				  <time datetime="2018-01-24">2018-01-24</time>
+				  <a href="/2018/01/24/squad-f1-exceed-89/" title="快讯：HFL-RC再次登顶斯坦福SQuAD">快讯：HFL-RC再次登顶斯坦福SQuAD</a>
+				  </li> -->
+				 <div class="post-preview">
+				    <a href="/2018/01/24/squad-f1-exceed-89/">
+				        <h2 class="post-title">
+                            快讯：HFL-RC再次登顶斯坦福SQuAD
+				        </h2>
+				        
+				        <h3 class="post-subtitle">
+				            News：HFL-RC Got First Place Again at SQuAD Evaluation
+				        </h3>
+				        
+				    </a>
+				    <!-- <p class="post-meta">2018-01-24</p> -->
+				</div>
+				<hr>
+				
+				  <!-- <li class="listing-item">
+				  <time datetime="2018-01-22">2018-01-22</time>
+				  <a href="/2018/01/22/cmrc2018-evaluation/" title="第二届“讯飞杯”中文机器阅读理解评测CMRC2018">第二届“讯飞杯”中文机器阅读理解评测CMRC2018</a>
+				  </li> -->
+				 <div class="post-preview">
+				    <a href="/2018/01/22/cmrc2018-evaluation/">
+				        <h2 class="post-title">
+                            第二届“讯飞杯”中文机器阅读理解评测CMRC2018
+				        </h2>
+				        
+				        <h3 class="post-subtitle">
+				            The Second Evaluation Workshop on Chinese Machine Reading Comprehension (CMRC2018)
+				        </h3>
+				        
+				    </a>
+				    <!-- <p class="post-meta">2018-01-22</p> -->
+				</div>
+				<hr>
+				
+				  <!-- <li class="listing-item">
+				  <time datetime="2017-12-21">2017-12-21</time>
+				  <a href="/2017/12/21/the-first-cognitive-intelligence-lab-established/" title="科大讯飞获批建设我国首个认知智能国家重点实验室！">科大讯飞获批建设我国首个认知智能国家重点实验室！</a>
+				  </li> -->
+				 <div class="post-preview">
+				    <a href="/2017/12/21/the-first-cognitive-intelligence-lab-established/">
+				        <h2 class="post-title">
+                            科大讯飞获批建设我国首个认知智能国家重点实验室！
+				        </h2>
+				        
+				        <h3 class="post-subtitle">
+				            
+				        </h3>
+				        
+				    </a>
+				    <!-- <p class="post-meta">2017-12-21</p> -->
+				</div>
+				<hr>
+				
+				  <!-- <li class="listing-item">
+				  <time datetime="2017-12-14">2017-12-14</time>
+				  <a href="/2017/12/14/resource-paper-accepted-by-lrec2018/" title="CMRC2017中文阅读理解评测数据集被LREC2018录用">CMRC2017中文阅读理解评测数据集被LREC2018录用</a>
+				  </li> -->
+				 <div class="post-preview">
+				    <a href="/2017/12/14/resource-paper-accepted-by-lrec2018/">
+				        <h2 class="post-title">
+                            CMRC2017中文阅读理解评测数据集被LREC2018录用
+				        </h2>
+				        
+				        <h3 class="post-subtitle">
+				            Chinese Machine Reading Comprehension Dataset is Accepted by LREC2018
+				        </h3>
+				        
+				    </a>
+				    <!-- <p class="post-meta">2017-12-14</p> -->
+				</div>
+				<hr>
+				
+				  <!-- <li class="listing-item">
+				  <time datetime="2017-11-11">2017-11-11</time>
+				  <a href="/2017/11/11/visiting-hkust/" title="科技报告：阅读理解技术近况及未来展望 at 香港科技大学">科技报告：阅读理解技术近况及未来展望 at 香港科技大学</a>
+				  </li> -->
+				 <div class="post-preview">
+				    <a href="/2017/11/11/visiting-hkust/">
+				        <h2 class="post-title">
+                            科技报告：阅读理解技术近况及未来展望 at 香港科技大学
+				        </h2>
+				        
+				        <h3 class="post-subtitle">
+				            Technical Report: Recent Progress and Future Prospects on Reading Comprehension (at HKUST)
+				        </h3>
+				        
+				    </a>
+				    <!-- <p class="post-meta">2017-11-11</p> -->
+				</div>
+				<hr>
+				
+				  <!-- <li class="listing-item">
+				  <time datetime="2017-11-09">2017-11-09</time>
+				  <a href="/2017/11/09/rc-helps-intelligent-car-system/" title="阅读理解技术正改变智能车载系统的交互方式">阅读理解技术正改变智能车载系统的交互方式</a>
+				  </li> -->
+				 <div class="post-preview">
+				    <a href="/2017/11/09/rc-helps-intelligent-car-system/">
+				        <h2 class="post-title">
+                            阅读理解技术正改变智能车载系统的交互方式
+				        </h2>
+				        
+				        <h3 class="post-subtitle">
+				            Reading Comprehension Technologies are Changing Interaction Style in Car Intelligence
+				        </h3>
+				        
+				    </a>
+				    <!-- <p class="post-meta">2017-11-09</p> -->
+				</div>
+				<hr>
+				
+				  <!-- <li class="listing-item">
+				  <time datetime="2017-11-06">2017-11-06</time>
+				  <a href="/2017/11/06/squad-top-again/" title="Interactive AoA Reader<sup>+</sup>再次荣登斯坦福SQuAD榜首">Interactive AoA Reader<sup>+</sup>再次荣登斯坦福SQuAD榜首</a>
+				  </li> -->
+				 <div class="post-preview">
+				    <a href="/2017/11/06/squad-top-again/">
+				        <h2 class="post-title">
+                            Interactive AoA Reader<sup>+</sup>再次荣登斯坦福SQuAD榜首
+				        </h2>
+				        
+				        <h3 class="post-subtitle">
+				            Interactive AoA Reader<sup>+</sup> Got on Top of the SQuAD Leaderboard Once Again
+				        </h3>
+				        
+				    </a>
+				    <!-- <p class="post-meta">2017-11-06</p> -->
+				</div>
+				<hr>
+				
+				  <!-- <li class="listing-item">
+				  <time datetime="2017-10-18">2017-10-18</time>
+				  <a href="/2017/10/18/cmrc2017-evaluation/" title="首届“讯飞杯”中文阅读理解评测圆满落幕">首届“讯飞杯”中文阅读理解评测圆满落幕</a>
+				  </li> -->
+				 <div class="post-preview">
+				    <a href="/2017/10/18/cmrc2017-evaluation/">
+				        <h2 class="post-title">
+                            首届“讯飞杯”中文阅读理解评测圆满落幕
+				        </h2>
+				        
+				        <h3 class="post-subtitle">
+				            The 1st Evaluation Workshop on Chinese Machine Reading Comprehension (CCL-CMRC2017)
+				        </h3>
+				        
+				    </a>
+				    <!-- <p class="post-meta">2017-10-18</p> -->
+				</div>
+				<hr>
+				
+				  <!-- <li class="listing-item">
+				  <time datetime="2017-09-14">2017-09-14</time>
+				  <a href="/2017/09/14/brilliant-achievements-in-squad/" title="斯坦福SQuAD挑战赛的中国亮丽榜单">斯坦福SQuAD挑战赛的中国亮丽榜单</a>
+				  </li> -->
+				 <div class="post-preview">
+				    <a href="/2017/09/14/brilliant-achievements-in-squad/">
+				        <h2 class="post-title">
+                            斯坦福SQuAD挑战赛的中国亮丽榜单
+				        </h2>
+				        
+				        <h3 class="post-subtitle">
+				            The Brilliant Chinese Achievements in SQuAD Challenge
+				        </h3>
+				        
+				    </a>
+				    <!-- <p class="post-meta">2017-09-14</p> -->
+				</div>
+				<hr>
+				
+				  <!-- <li class="listing-item">
+				  <time datetime="2017-08-01">2017-08-01</time>
+				  <a href="/2017/08/01/attending-acl/" title="参加ACL-2017">参加ACL-2017</a>
+				  </li> -->
+				 <div class="post-preview">
+				    <a href="/2017/08/01/attending-acl/">
+				        <h2 class="post-title">
+                            参加ACL-2017
+				        </h2>
+				        
+				        <h3 class="post-subtitle">
+				            Attending ACL 2017
+				        </h3>
+				        
+				    </a>
+				    <!-- <p class="post-meta">2017-08-01</p> -->
+				</div>
+				<hr>
+				
+				  <!-- <li class="listing-item">
+				  <time datetime="2017-07-31">2017-07-31</time>
+				  <a href="/2017/07/31/squad-on-top/" title="科大讯飞认知智能持续突破，阅读理解SQuAD测试勇夺第一">科大讯飞认知智能持续突破，阅读理解SQuAD测试勇夺第一</a>
+				  </li> -->
+				 <div class="post-preview">
+				    <a href="/2017/07/31/squad-on-top/">
+				        <h2 class="post-title">
+                            科大讯飞认知智能持续突破，阅读理解SQuAD测试勇夺第一
+				        </h2>
+				        
+				        <h3 class="post-subtitle">
+				            iFLYTEK Get Continuous Progress on Cognitive Computing, Won First Place in SQuAD Task
+				        </h3>
+				        
+				    </a>
+				    <!-- <p class="post-meta">2017-07-31</p> -->
+				</div>
+				<hr>
+				
+				  <!-- <li class="listing-item">
+				  <time datetime="2017-07-31">2017-07-31</time>
+				  <a href="/2017/07/31/attention-over-attention-pw/" title="层叠注意力模型 - 实现机器阅读的正确姿势">层叠注意力模型 - 实现机器阅读的正确姿势</a>
+				  </li> -->
+				 <div class="post-preview">
+				    <a href="/2017/07/31/attention-over-attention-pw/">
+				        <h2 class="post-title">
+                            层叠注意力模型 - 实现机器阅读的正确姿势
+				        </h2>
+				        
+				        <h3 class="post-subtitle">
+				            Attention-over-Attention Reader: the state-of-the-art Cloze-style Reading Comprehension Model
+				        </h3>
+				        
+				    </a>
+				    <!-- <p class="post-meta">2017-07-31</p> -->
+				</div>
+				<hr>
+				
+				  <!-- <li class="listing-item">
+				  <time datetime="2016-12-01">2016-12-01</time>
+				  <a href="/2016/12/01/attending-coling/" title="参加COLING-2016">参加COLING-2016</a>
+				  </li> -->
+				 <div class="post-preview">
+				    <a href="/2016/12/01/attending-coling/">
+				        <h2 class="post-title">
+                            参加COLING-2016
+				        </h2>
+				        
+				        <h3 class="post-subtitle">
+				            Attending COLING 2016
+				        </h3>
+				        
+				    </a>
+				    <!-- <p class="post-meta">2016-12-01</p> -->
+				</div>
+				<hr>
+				
+			</div>
+			
+			<div class="one-tag-list">
+			  	<span class="fa fa-tag listing-seperator" id="CBT">
+                    <span class="tag-text">CBT</span>
+                </span>
+				
+				  <!-- <li class="listing-item">
+				  <time datetime="2017-08-01">2017-08-01</time>
+				  <a href="/2017/08/01/attending-acl/" title="参加ACL-2017">参加ACL-2017</a>
+				  </li> -->
+				 <div class="post-preview">
+				    <a href="/2017/08/01/attending-acl/">
+				        <h2 class="post-title">
+                            参加ACL-2017
+				        </h2>
+				        
+				        <h3 class="post-subtitle">
+				            Attending ACL 2017
+				        </h3>
+				        
+				    </a>
+				    <!-- <p class="post-meta">2017-08-01</p> -->
+				</div>
+				<hr>
+				
+				  <!-- <li class="listing-item">
+				  <time datetime="2017-07-31">2017-07-31</time>
+				  <a href="/2017/07/31/attention-over-attention-pw/" title="层叠注意力模型 - 实现机器阅读的正确姿势">层叠注意力模型 - 实现机器阅读的正确姿势</a>
+				  </li> -->
+				 <div class="post-preview">
+				    <a href="/2017/07/31/attention-over-attention-pw/">
+				        <h2 class="post-title">
+                            层叠注意力模型 - 实现机器阅读的正确姿势
+				        </h2>
+				        
+				        <h3 class="post-subtitle">
+				            Attention-over-Attention Reader: the state-of-the-art Cloze-style Reading Comprehension Model
+				        </h3>
+				        
+				    </a>
+				    <!-- <p class="post-meta">2017-07-31</p> -->
+				</div>
+				<hr>
+				
+				  <!-- <li class="listing-item">
+				  <time datetime="2016-12-01">2016-12-01</time>
+				  <a href="/2016/12/01/attending-coling/" title="参加COLING-2016">参加COLING-2016</a>
+				  </li> -->
+				 <div class="post-preview">
+				    <a href="/2016/12/01/attending-coling/">
+				        <h2 class="post-title">
+                            参加COLING-2016
+				        </h2>
+				        
+				        <h3 class="post-subtitle">
+				            Attending COLING 2016
+				        </h3>
+				        
+				    </a>
+				    <!-- <p class="post-meta">2016-12-01</p> -->
+				</div>
+				<hr>
+				
+			</div>
+			
+			<div class="one-tag-list">
+			  	<span class="fa fa-tag listing-seperator" id="CNN">
+                    <span class="tag-text">CNN</span>
+                </span>
+				
+				  <!-- <li class="listing-item">
+				  <time datetime="2017-08-01">2017-08-01</time>
+				  <a href="/2017/08/01/attending-acl/" title="参加ACL-2017">参加ACL-2017</a>
+				  </li> -->
+				 <div class="post-preview">
+				    <a href="/2017/08/01/attending-acl/">
+				        <h2 class="post-title">
+                            参加ACL-2017
+				        </h2>
+				        
+				        <h3 class="post-subtitle">
+				            Attending ACL 2017
+				        </h3>
+				        
+				    </a>
+				    <!-- <p class="post-meta">2017-08-01</p> -->
+				</div>
+				<hr>
+				
+				  <!-- <li class="listing-item">
+				  <time datetime="2017-07-31">2017-07-31</time>
+				  <a href="/2017/07/31/attention-over-attention-pw/" title="层叠注意力模型 - 实现机器阅读的正确姿势">层叠注意力模型 - 实现机器阅读的正确姿势</a>
+				  </li> -->
+				 <div class="post-preview">
+				    <a href="/2017/07/31/attention-over-attention-pw/">
+				        <h2 class="post-title">
+                            层叠注意力模型 - 实现机器阅读的正确姿势
+				        </h2>
+				        
+				        <h3 class="post-subtitle">
+				            Attention-over-Attention Reader: the state-of-the-art Cloze-style Reading Comprehension Model
+				        </h3>
+				        
+				    </a>
+				    <!-- <p class="post-meta">2017-07-31</p> -->
+				</div>
+				<hr>
+				
+				  <!-- <li class="listing-item">
+				  <time datetime="2016-12-01">2016-12-01</time>
+				  <a href="/2016/12/01/attending-coling/" title="参加COLING-2016">参加COLING-2016</a>
+				  </li> -->
+				 <div class="post-preview">
+				    <a href="/2016/12/01/attending-coling/">
+				        <h2 class="post-title">
+                            参加COLING-2016
+				        </h2>
+				        
+				        <h3 class="post-subtitle">
+				            Attending COLING 2016
+				        </h3>
+				        
+				    </a>
+				    <!-- <p class="post-meta">2016-12-01</p> -->
+				</div>
+				<hr>
+				
+			</div>
+			
+			<div class="one-tag-list">
+			  	<span class="fa fa-tag listing-seperator" id="AoA Reader">
+                    <span class="tag-text">AoA Reader</span>
+                </span>
+				
+				  <!-- <li class="listing-item">
+				  <time datetime="2017-08-01">2017-08-01</time>
+				  <a href="/2017/08/01/attending-acl/" title="参加ACL-2017">参加ACL-2017</a>
+				  </li> -->
+				 <div class="post-preview">
+				    <a href="/2017/08/01/attending-acl/">
+				        <h2 class="post-title">
+                            参加ACL-2017
+				        </h2>
+				        
+				        <h3 class="post-subtitle">
+				            Attending ACL 2017
+				        </h3>
+				        
+				    </a>
+				    <!-- <p class="post-meta">2017-08-01</p> -->
+				</div>
+				<hr>
+				
+				  <!-- <li class="listing-item">
+				  <time datetime="2017-07-31">2017-07-31</time>
+				  <a href="/2017/07/31/attention-over-attention-pw/" title="层叠注意力模型 - 实现机器阅读的正确姿势">层叠注意力模型 - 实现机器阅读的正确姿势</a>
+				  </li> -->
+				 <div class="post-preview">
+				    <a href="/2017/07/31/attention-over-attention-pw/">
+				        <h2 class="post-title">
+                            层叠注意力模型 - 实现机器阅读的正确姿势
+				        </h2>
+				        
+				        <h3 class="post-subtitle">
+				            Attention-over-Attention Reader: the state-of-the-art Cloze-style Reading Comprehension Model
+				        </h3>
+				        
+				    </a>
+				    <!-- <p class="post-meta">2017-07-31</p> -->
+				</div>
+				<hr>
+				
+				  <!-- <li class="listing-item">
+				  <time datetime="2016-12-01">2016-12-01</time>
+				  <a href="/2016/12/01/attending-coling/" title="参加COLING-2016">参加COLING-2016</a>
+				  </li> -->
+				 <div class="post-preview">
+				    <a href="/2016/12/01/attending-coling/">
+				        <h2 class="post-title">
+                            参加COLING-2016
+				        </h2>
+				        
+				        <h3 class="post-subtitle">
+				            Attending COLING 2016
+				        </h3>
+				        
+				    </a>
+				    <!-- <p class="post-meta">2016-12-01</p> -->
+				</div>
+				<hr>
+				
+			</div>
+			
+			<div class="one-tag-list">
+			  	<span class="fa fa-tag listing-seperator" id="SQuAD">
+                    <span class="tag-text">SQuAD</span>
+                </span>
+				
+				  <!-- <li class="listing-item">
+				  <time datetime="2018-04-18">2018-04-18</time>
+				  <a href="/2018/04/18/interview-on-rc-team/" title="一年四次夺冠，凭什么？">一年四次夺冠，凭什么？</a>
+				  </li> -->
+				 <div class="post-preview">
+				    <a href="/2018/04/18/interview-on-rc-team/">
+				        <h2 class="post-title">
+                            一年四次夺冠，凭什么？
+				        </h2>
+				        
+				        <h3 class="post-subtitle">
+				            
+				        </h3>
+				        
+				    </a>
+				    <!-- <p class="post-meta">2018-04-18</p> -->
+				</div>
+				<hr>
+				
+				  <!-- <li class="listing-item">
+				  <time datetime="2018-01-25">2018-01-25</time>
+				  <a href="/2018/01/25/squad-new-sota/" title="科大讯飞机器阅读理解技术再次登顶SQuAD挑战赛">科大讯飞机器阅读理解技术再次登顶SQuAD挑战赛</a>
+				  </li> -->
+				 <div class="post-preview">
+				    <a href="/2018/01/25/squad-new-sota/">
+				        <h2 class="post-title">
+                            科大讯飞机器阅读理解技术再次登顶SQuAD挑战赛
+				        </h2>
+				        
+				        <h3 class="post-subtitle">
+				            iFLYTEK Got the First Place on SQuAD Evaluation
+				        </h3>
+				        
+				    </a>
+				    <!-- <p class="post-meta">2018-01-25</p> -->
+				</div>
+				<hr>
+				
+				  <!-- <li class="listing-item">
+				  <time datetime="2018-01-24">2018-01-24</time>
+				  <a href="/2018/01/24/squad-f1-exceed-89/" title="快讯：HFL-RC再次登顶斯坦福SQuAD">快讯：HFL-RC再次登顶斯坦福SQuAD</a>
+				  </li> -->
+				 <div class="post-preview">
+				    <a href="/2018/01/24/squad-f1-exceed-89/">
+				        <h2 class="post-title">
+                            快讯：HFL-RC再次登顶斯坦福SQuAD
+				        </h2>
+				        
+				        <h3 class="post-subtitle">
+				            News：HFL-RC Got First Place Again at SQuAD Evaluation
+				        </h3>
+				        
+				    </a>
+				    <!-- <p class="post-meta">2018-01-24</p> -->
+				</div>
+				<hr>
+				
+				  <!-- <li class="listing-item">
+				  <time datetime="2017-11-09">2017-11-09</time>
+				  <a href="/2017/11/09/rc-helps-intelligent-car-system/" title="阅读理解技术正改变智能车载系统的交互方式">阅读理解技术正改变智能车载系统的交互方式</a>
+				  </li> -->
+				 <div class="post-preview">
+				    <a href="/2017/11/09/rc-helps-intelligent-car-system/">
+				        <h2 class="post-title">
+                            阅读理解技术正改变智能车载系统的交互方式
+				        </h2>
+				        
+				        <h3 class="post-subtitle">
+				            Reading Comprehension Technologies are Changing Interaction Style in Car Intelligence
+				        </h3>
+				        
+				    </a>
+				    <!-- <p class="post-meta">2017-11-09</p> -->
+				</div>
+				<hr>
+				
+				  <!-- <li class="listing-item">
+				  <time datetime="2017-11-06">2017-11-06</time>
+				  <a href="/2017/11/06/squad-top-again/" title="Interactive AoA Reader<sup>+</sup>再次荣登斯坦福SQuAD榜首">Interactive AoA Reader<sup>+</sup>再次荣登斯坦福SQuAD榜首</a>
+				  </li> -->
+				 <div class="post-preview">
+				    <a href="/2017/11/06/squad-top-again/">
+				        <h2 class="post-title">
+                            Interactive AoA Reader<sup>+</sup>再次荣登斯坦福SQuAD榜首
+				        </h2>
+				        
+				        <h3 class="post-subtitle">
+				            Interactive AoA Reader<sup>+</sup> Got on Top of the SQuAD Leaderboard Once Again
+				        </h3>
+				        
+				    </a>
+				    <!-- <p class="post-meta">2017-11-06</p> -->
+				</div>
+				<hr>
+				
+				  <!-- <li class="listing-item">
+				  <time datetime="2017-09-14">2017-09-14</time>
+				  <a href="/2017/09/14/brilliant-achievements-in-squad/" title="斯坦福SQuAD挑战赛的中国亮丽榜单">斯坦福SQuAD挑战赛的中国亮丽榜单</a>
+				  </li> -->
+				 <div class="post-preview">
+				    <a href="/2017/09/14/brilliant-achievements-in-squad/">
+				        <h2 class="post-title">
+                            斯坦福SQuAD挑战赛的中国亮丽榜单
+				        </h2>
+				        
+				        <h3 class="post-subtitle">
+				            The Brilliant Chinese Achievements in SQuAD Challenge
+				        </h3>
+				        
+				    </a>
+				    <!-- <p class="post-meta">2017-09-14</p> -->
+				</div>
+				<hr>
+				
+				  <!-- <li class="listing-item">
+				  <time datetime="2017-07-31">2017-07-31</time>
+				  <a href="/2017/07/31/squad-on-top/" title="科大讯飞认知智能持续突破，阅读理解SQuAD测试勇夺第一">科大讯飞认知智能持续突破，阅读理解SQuAD测试勇夺第一</a>
+				  </li> -->
+				 <div class="post-preview">
+				    <a href="/2017/07/31/squad-on-top/">
+				        <h2 class="post-title">
+                            科大讯飞认知智能持续突破，阅读理解SQuAD测试勇夺第一
+				        </h2>
+				        
+				        <h3 class="post-subtitle">
+				            iFLYTEK Get Continuous Progress on Cognitive Computing, Won First Place in SQuAD Task
+				        </h3>
+				        
+				    </a>
+				    <!-- <p class="post-meta">2017-07-31</p> -->
+				</div>
+				<hr>
+				
+			</div>
+			
+			<div class="one-tag-list">
+			  	<span class="fa fa-tag listing-seperator" id="Interactive AoA Reader">
+                    <span class="tag-text">Interactive AoA Reader</span>
+                </span>
+				
+				  <!-- <li class="listing-item">
+				  <time datetime="2017-11-06">2017-11-06</time>
+				  <a href="/2017/11/06/squad-top-again/" title="Interactive AoA Reader<sup>+</sup>再次荣登斯坦福SQuAD榜首">Interactive AoA Reader<sup>+</sup>再次荣登斯坦福SQuAD榜首</a>
+				  </li> -->
+				 <div class="post-preview">
+				    <a href="/2017/11/06/squad-top-again/">
+				        <h2 class="post-title">
+                            Interactive AoA Reader<sup>+</sup>再次荣登斯坦福SQuAD榜首
+				        </h2>
+				        
+				        <h3 class="post-subtitle">
+				            Interactive AoA Reader<sup>+</sup> Got on Top of the SQuAD Leaderboard Once Again
+				        </h3>
+				        
+				    </a>
+				    <!-- <p class="post-meta">2017-11-06</p> -->
+				</div>
+				<hr>
+				
+				  <!-- <li class="listing-item">
+				  <time datetime="2017-09-14">2017-09-14</time>
+				  <a href="/2017/09/14/brilliant-achievements-in-squad/" title="斯坦福SQuAD挑战赛的中国亮丽榜单">斯坦福SQuAD挑战赛的中国亮丽榜单</a>
+				  </li> -->
+				 <div class="post-preview">
+				    <a href="/2017/09/14/brilliant-achievements-in-squad/">
+				        <h2 class="post-title">
+                            斯坦福SQuAD挑战赛的中国亮丽榜单
+				        </h2>
+				        
+				        <h3 class="post-subtitle">
+				            The Brilliant Chinese Achievements in SQuAD Challenge
+				        </h3>
+				        
+				    </a>
+				    <!-- <p class="post-meta">2017-09-14</p> -->
+				</div>
+				<hr>
+				
+				  <!-- <li class="listing-item">
+				  <time datetime="2017-07-31">2017-07-31</time>
+				  <a href="/2017/07/31/squad-on-top/" title="科大讯飞认知智能持续突破，阅读理解SQuAD测试勇夺第一">科大讯飞认知智能持续突破，阅读理解SQuAD测试勇夺第一</a>
+				  </li> -->
+				 <div class="post-preview">
+				    <a href="/2017/07/31/squad-on-top/">
+				        <h2 class="post-title">
+                            科大讯飞认知智能持续突破，阅读理解SQuAD测试勇夺第一
+				        </h2>
+				        
+				        <h3 class="post-subtitle">
+				            iFLYTEK Get Continuous Progress on Cognitive Computing, Won First Place in SQuAD Task
+				        </h3>
+				        
+				    </a>
+				    <!-- <p class="post-meta">2017-07-31</p> -->
+				</div>
+				<hr>
+				
+			</div>
+			
+			<div class="one-tag-list">
+			  	<span class="fa fa-tag listing-seperator" id="HFL">
+                    <span class="tag-text">HFL</span>
+                </span>
+				
+				  <!-- <li class="listing-item">
+				  <time datetime="2018-03-13">2018-03-13</time>
+				  <a href="/2018/03/13/hfl-2018-intern/" title="2018年春季HFL实习生招聘">2018年春季HFL实习生招聘</a>
+				  </li> -->
+				 <div class="post-preview">
+				    <a href="/2018/03/13/hfl-2018-intern/">
+				        <h2 class="post-title">
+                            2018年春季HFL实习生招聘
+				        </h2>
+				        
+				        <h3 class="post-subtitle">
+				            
+				        </h3>
+				        
+				    </a>
+				    <!-- <p class="post-meta">2018-03-13</p> -->
+				</div>
+				<hr>
+				
+				  <!-- <li class="listing-item">
+				  <time datetime="2018-03-12">2018-03-12</time>
+				  <a href="/2018/03/12/hfl-at-NPC-CPPCC/" title="科大讯飞董事长两会发言，HFL四项关键技术备受瞩目">科大讯飞董事长两会发言，HFL四项关键技术备受瞩目</a>
+				  </li> -->
+				 <div class="post-preview">
+				    <a href="/2018/03/12/hfl-at-NPC-CPPCC/">
+				        <h2 class="post-title">
+                            科大讯飞董事长两会发言，HFL四项关键技术备受瞩目
+				        </h2>
+				        
+				        <h3 class="post-subtitle">
+				            HFL technologies show at NPC & CPPCC
+				        </h3>
+				        
+				    </a>
+				    <!-- <p class="post-meta">2018-03-12</p> -->
+				</div>
+				<hr>
+				
+				  <!-- <li class="listing-item">
+				  <time datetime="2018-02-26">2018-02-26</time>
+				  <a href="/2018/02/26/hfl-wechat-account/" title="哈工大讯飞联合实验室开通微信公众号">哈工大讯飞联合实验室开通微信公众号</a>
+				  </li> -->
+				 <div class="post-preview">
+				    <a href="/2018/02/26/hfl-wechat-account/">
+				        <h2 class="post-title">
+                            哈工大讯飞联合实验室开通微信公众号
+				        </h2>
+				        
+				        <h3 class="post-subtitle">
+				            HFL sets up wechat account
+				        </h3>
+				        
+				    </a>
+				    <!-- <p class="post-meta">2018-02-26</p> -->
+				</div>
+				<hr>
+				
+				  <!-- <li class="listing-item">
+				  <time datetime="2017-10-18">2017-10-18</time>
+				  <a href="/2017/10/18/hfl-employment/" title="哈工大讯飞联合实验室招聘自然语言处理实习生">哈工大讯飞联合实验室招聘自然语言处理实习生</a>
+				  </li> -->
+				 <div class="post-preview">
+				    <a href="/2017/10/18/hfl-employment/">
+				        <h2 class="post-title">
+                            哈工大讯飞联合实验室招聘自然语言处理实习生
+				        </h2>
+				        
+				        <h3 class="post-subtitle">
+				            HFL is Recruiting Interns on Natural Language Processing
+				        </h3>
+				        
+				    </a>
+				    <!-- <p class="post-meta">2017-10-18</p> -->
+				</div>
+				<hr>
+				
+			</div>
+			
+			<div class="one-tag-list">
+			  	<span class="fa fa-tag listing-seperator" id="哈工大讯飞联合实验室">
+                    <span class="tag-text">哈工大讯飞联合实验室</span>
+                </span>
+				
+				  <!-- <li class="listing-item">
+				  <time datetime="2018-03-22">2018-03-22</time>
+				  <a href="/2018/03/22/semeval2018-top-system/" title="探秘SemEval 2018阅读理解评测HFL夺冠系统">探秘SemEval 2018阅读理解评测HFL夺冠系统</a>
+				  </li> -->
+				 <div class="post-preview">
+				    <a href="/2018/03/22/semeval2018-top-system/">
+				        <h2 class="post-title">
+                            探秘SemEval 2018阅读理解评测HFL夺冠系统
+				        </h2>
+				        
+				        <h3 class="post-subtitle">
+				            HFL-RC System at SemEval 2018 Task 11
+				        </h3>
+				        
+				    </a>
+				    <!-- <p class="post-meta">2018-03-22</p> -->
+				</div>
+				<hr>
+				
+				  <!-- <li class="listing-item">
+				  <time datetime="2018-03-13">2018-03-13</time>
+				  <a href="/2018/03/13/hfl-2018-intern/" title="2018年春季HFL实习生招聘">2018年春季HFL实习生招聘</a>
+				  </li> -->
+				 <div class="post-preview">
+				    <a href="/2018/03/13/hfl-2018-intern/">
+				        <h2 class="post-title">
+                            2018年春季HFL实习生招聘
+				        </h2>
+				        
+				        <h3 class="post-subtitle">
+				            
+				        </h3>
+				        
+				    </a>
+				    <!-- <p class="post-meta">2018-03-13</p> -->
+				</div>
+				<hr>
+				
+				  <!-- <li class="listing-item">
+				  <time datetime="2018-03-12">2018-03-12</time>
+				  <a href="/2018/03/12/hfl-at-NPC-CPPCC/" title="科大讯飞董事长两会发言，HFL四项关键技术备受瞩目">科大讯飞董事长两会发言，HFL四项关键技术备受瞩目</a>
+				  </li> -->
+				 <div class="post-preview">
+				    <a href="/2018/03/12/hfl-at-NPC-CPPCC/">
+				        <h2 class="post-title">
+                            科大讯飞董事长两会发言，HFL四项关键技术备受瞩目
+				        </h2>
+				        
+				        <h3 class="post-subtitle">
+				            HFL technologies show at NPC & CPPCC
+				        </h3>
+				        
+				    </a>
+				    <!-- <p class="post-meta">2018-03-12</p> -->
+				</div>
+				<hr>
+				
+				  <!-- <li class="listing-item">
+				  <time datetime="2018-02-26">2018-02-26</time>
+				  <a href="/2018/02/26/hfl-wechat-account/" title="哈工大讯飞联合实验室开通微信公众号">哈工大讯飞联合实验室开通微信公众号</a>
+				  </li> -->
+				 <div class="post-preview">
+				    <a href="/2018/02/26/hfl-wechat-account/">
+				        <h2 class="post-title">
+                            哈工大讯飞联合实验室开通微信公众号
+				        </h2>
+				        
+				        <h3 class="post-subtitle">
+				            HFL sets up wechat account
+				        </h3>
+				        
+				    </a>
+				    <!-- <p class="post-meta">2018-02-26</p> -->
+				</div>
+				<hr>
+				
+				  <!-- <li class="listing-item">
+				  <time datetime="2017-10-18">2017-10-18</time>
+				  <a href="/2017/10/18/hfl-employment/" title="哈工大讯飞联合实验室招聘自然语言处理实习生">哈工大讯飞联合实验室招聘自然语言处理实习生</a>
+				  </li> -->
+				 <div class="post-preview">
+				    <a href="/2017/10/18/hfl-employment/">
+				        <h2 class="post-title">
+                            哈工大讯飞联合实验室招聘自然语言处理实习生
+				        </h2>
+				        
+				        <h3 class="post-subtitle">
+				            HFL is Recruiting Interns on Natural Language Processing
+				        </h3>
+				        
+				    </a>
+				    <!-- <p class="post-meta">2017-10-18</p> -->
+				</div>
+				<hr>
+				
+			</div>
+			
+			<div class="one-tag-list">
+			  	<span class="fa fa-tag listing-seperator" id="招聘">
+                    <span class="tag-text">招聘</span>
+                </span>
+				
+				  <!-- <li class="listing-item">
+				  <time datetime="2018-03-13">2018-03-13</time>
+				  <a href="/2018/03/13/hfl-2018-intern/" title="2018年春季HFL实习生招聘">2018年春季HFL实习生招聘</a>
+				  </li> -->
+				 <div class="post-preview">
+				    <a href="/2018/03/13/hfl-2018-intern/">
+				        <h2 class="post-title">
+                            2018年春季HFL实习生招聘
+				        </h2>
+				        
+				        <h3 class="post-subtitle">
+				            
+				        </h3>
+				        
+				    </a>
+				    <!-- <p class="post-meta">2018-03-13</p> -->
+				</div>
+				<hr>
+				
+				  <!-- <li class="listing-item">
+				  <time datetime="2017-10-18">2017-10-18</time>
+				  <a href="/2017/10/18/hfl-employment/" title="哈工大讯飞联合实验室招聘自然语言处理实习生">哈工大讯飞联合实验室招聘自然语言处理实习生</a>
+				  </li> -->
+				 <div class="post-preview">
+				    <a href="/2017/10/18/hfl-employment/">
+				        <h2 class="post-title">
+                            哈工大讯飞联合实验室招聘自然语言处理实习生
+				        </h2>
+				        
+				        <h3 class="post-subtitle">
+				            HFL is Recruiting Interns on Natural Language Processing
+				        </h3>
+				        
+				    </a>
+				    <!-- <p class="post-meta">2017-10-18</p> -->
+				</div>
+				<hr>
+				
+			</div>
+			
+			<div class="one-tag-list">
+			  	<span class="fa fa-tag listing-seperator" id="实习生">
+                    <span class="tag-text">实习生</span>
+                </span>
+				
+				  <!-- <li class="listing-item">
+				  <time datetime="2017-10-18">2017-10-18</time>
+				  <a href="/2017/10/18/hfl-employment/" title="哈工大讯飞联合实验室招聘自然语言处理实习生">哈工大讯飞联合实验室招聘自然语言处理实习生</a>
+				  </li> -->
+				 <div class="post-preview">
+				    <a href="/2017/10/18/hfl-employment/">
+				        <h2 class="post-title">
+                            哈工大讯飞联合实验室招聘自然语言处理实习生
+				        </h2>
+				        
+				        <h3 class="post-subtitle">
+				            HFL is Recruiting Interns on Natural Language Processing
+				        </h3>
+				        
+				    </a>
+				    <!-- <p class="post-meta">2017-10-18</p> -->
+				</div>
+				<hr>
+				
+			</div>
+			
+			<div class="one-tag-list">
+			  	<span class="fa fa-tag listing-seperator" id="CMRC">
+                    <span class="tag-text">CMRC</span>
+                </span>
+				
+				  <!-- <li class="listing-item">
+				  <time datetime="2018-01-22">2018-01-22</time>
+				  <a href="/2018/01/22/cmrc2018-evaluation/" title="第二届“讯飞杯”中文机器阅读理解评测CMRC2018">第二届“讯飞杯”中文机器阅读理解评测CMRC2018</a>
+				  </li> -->
+				 <div class="post-preview">
+				    <a href="/2018/01/22/cmrc2018-evaluation/">
+				        <h2 class="post-title">
+                            第二届“讯飞杯”中文机器阅读理解评测CMRC2018
+				        </h2>
+				        
+				        <h3 class="post-subtitle">
+				            The Second Evaluation Workshop on Chinese Machine Reading Comprehension (CMRC2018)
+				        </h3>
+				        
+				    </a>
+				    <!-- <p class="post-meta">2018-01-22</p> -->
+				</div>
+				<hr>
+				
+				  <!-- <li class="listing-item">
+				  <time datetime="2017-10-18">2017-10-18</time>
+				  <a href="/2017/10/18/cmrc2017-evaluation/" title="首届“讯飞杯”中文阅读理解评测圆满落幕">首届“讯飞杯”中文阅读理解评测圆满落幕</a>
+				  </li> -->
+				 <div class="post-preview">
+				    <a href="/2017/10/18/cmrc2017-evaluation/">
+				        <h2 class="post-title">
+                            首届“讯飞杯”中文阅读理解评测圆满落幕
+				        </h2>
+				        
+				        <h3 class="post-subtitle">
+				            The 1st Evaluation Workshop on Chinese Machine Reading Comprehension (CCL-CMRC2017)
+				        </h3>
+				        
+				    </a>
+				    <!-- <p class="post-meta">2017-10-18</p> -->
+				</div>
+				<hr>
+				
+			</div>
+			
+			<div class="one-tag-list">
+			  	<span class="fa fa-tag listing-seperator" id="CCL-CMRC">
+                    <span class="tag-text">CCL-CMRC</span>
+                </span>
+				
+				  <!-- <li class="listing-item">
+				  <time datetime="2017-10-18">2017-10-18</time>
+				  <a href="/2017/10/18/cmrc2017-evaluation/" title="首届“讯飞杯”中文阅读理解评测圆满落幕">首届“讯飞杯”中文阅读理解评测圆满落幕</a>
+				  </li> -->
+				 <div class="post-preview">
+				    <a href="/2017/10/18/cmrc2017-evaluation/">
+				        <h2 class="post-title">
+                            首届“讯飞杯”中文阅读理解评测圆满落幕
+				        </h2>
+				        
+				        <h3 class="post-subtitle">
+				            The 1st Evaluation Workshop on Chinese Machine Reading Comprehension (CCL-CMRC2017)
+				        </h3>
+				        
+				    </a>
+				    <!-- <p class="post-meta">2017-10-18</p> -->
+				</div>
+				<hr>
+				
+			</div>
+			
+			<div class="one-tag-list">
+			  	<span class="fa fa-tag listing-seperator" id="智能车载系统">
+                    <span class="tag-text">智能车载系统</span>
+                </span>
+				
+				  <!-- <li class="listing-item">
+				  <time datetime="2017-11-09">2017-11-09</time>
+				  <a href="/2017/11/09/rc-helps-intelligent-car-system/" title="阅读理解技术正改变智能车载系统的交互方式">阅读理解技术正改变智能车载系统的交互方式</a>
+				  </li> -->
+				 <div class="post-preview">
+				    <a href="/2017/11/09/rc-helps-intelligent-car-system/">
+				        <h2 class="post-title">
+                            阅读理解技术正改变智能车载系统的交互方式
+				        </h2>
+				        
+				        <h3 class="post-subtitle">
+				            Reading Comprehension Technologies are Changing Interaction Style in Car Intelligence
+				        </h3>
+				        
+				    </a>
+				    <!-- <p class="post-meta">2017-11-09</p> -->
+				</div>
+				<hr>
+				
+			</div>
+			
+			<div class="one-tag-list">
+			  	<span class="fa fa-tag listing-seperator" id="Technical Report">
+                    <span class="tag-text">Technical Report</span>
+                </span>
+				
+				  <!-- <li class="listing-item">
+				  <time datetime="2017-11-11">2017-11-11</time>
+				  <a href="/2017/11/11/visiting-hkust/" title="科技报告：阅读理解技术近况及未来展望 at 香港科技大学">科技报告：阅读理解技术近况及未来展望 at 香港科技大学</a>
+				  </li> -->
+				 <div class="post-preview">
+				    <a href="/2017/11/11/visiting-hkust/">
+				        <h2 class="post-title">
+                            科技报告：阅读理解技术近况及未来展望 at 香港科技大学
+				        </h2>
+				        
+				        <h3 class="post-subtitle">
+				            Technical Report: Recent Progress and Future Prospects on Reading Comprehension (at HKUST)
+				        </h3>
+				        
+				    </a>
+				    <!-- <p class="post-meta">2017-11-11</p> -->
+				</div>
+				<hr>
+				
+			</div>
+			
+			<div class="one-tag-list">
+			  	<span class="fa fa-tag listing-seperator" id="HKUST">
+                    <span class="tag-text">HKUST</span>
+                </span>
+				
+				  <!-- <li class="listing-item">
+				  <time datetime="2017-11-11">2017-11-11</time>
+				  <a href="/2017/11/11/visiting-hkust/" title="科技报告：阅读理解技术近况及未来展望 at 香港科技大学">科技报告：阅读理解技术近况及未来展望 at 香港科技大学</a>
+				  </li> -->
+				 <div class="post-preview">
+				    <a href="/2017/11/11/visiting-hkust/">
+				        <h2 class="post-title">
+                            科技报告：阅读理解技术近况及未来展望 at 香港科技大学
+				        </h2>
+				        
+				        <h3 class="post-subtitle">
+				            Technical Report: Recent Progress and Future Prospects on Reading Comprehension (at HKUST)
+				        </h3>
+				        
+				    </a>
+				    <!-- <p class="post-meta">2017-11-11</p> -->
+				</div>
+				<hr>
+				
+			</div>
+			
+			<div class="one-tag-list">
+			  	<span class="fa fa-tag listing-seperator" id="LREC2018">
+                    <span class="tag-text">LREC2018</span>
+                </span>
+				
+				  <!-- <li class="listing-item">
+				  <time datetime="2017-12-14">2017-12-14</time>
+				  <a href="/2017/12/14/resource-paper-accepted-by-lrec2018/" title="CMRC2017中文阅读理解评测数据集被LREC2018录用">CMRC2017中文阅读理解评测数据集被LREC2018录用</a>
+				  </li> -->
+				 <div class="post-preview">
+				    <a href="/2017/12/14/resource-paper-accepted-by-lrec2018/">
+				        <h2 class="post-title">
+                            CMRC2017中文阅读理解评测数据集被LREC2018录用
+				        </h2>
+				        
+				        <h3 class="post-subtitle">
+				            Chinese Machine Reading Comprehension Dataset is Accepted by LREC2018
+				        </h3>
+				        
+				    </a>
+				    <!-- <p class="post-meta">2017-12-14</p> -->
+				</div>
+				<hr>
+				
+			</div>
+			
+			<div class="one-tag-list">
+			  	<span class="fa fa-tag listing-seperator" id="认知智能">
+                    <span class="tag-text">认知智能</span>
+                </span>
+				
+				  <!-- <li class="listing-item">
+				  <time datetime="2017-12-21">2017-12-21</time>
+				  <a href="/2017/12/21/the-first-cognitive-intelligence-lab-established/" title="科大讯飞获批建设我国首个认知智能国家重点实验室！">科大讯飞获批建设我国首个认知智能国家重点实验室！</a>
+				  </li> -->
+				 <div class="post-preview">
+				    <a href="/2017/12/21/the-first-cognitive-intelligence-lab-established/">
+				        <h2 class="post-title">
+                            科大讯飞获批建设我国首个认知智能国家重点实验室！
+				        </h2>
+				        
+				        <h3 class="post-subtitle">
+				            
+				        </h3>
+				        
+				    </a>
+				    <!-- <p class="post-meta">2017-12-21</p> -->
+				</div>
+				<hr>
+				
+			</div>
+			
+			<div class="one-tag-list">
+			  	<span class="fa fa-tag listing-seperator" id="国家重点实验室">
+                    <span class="tag-text">国家重点实验室</span>
+                </span>
+				
+				  <!-- <li class="listing-item">
+				  <time datetime="2017-12-21">2017-12-21</time>
+				  <a href="/2017/12/21/the-first-cognitive-intelligence-lab-established/" title="科大讯飞获批建设我国首个认知智能国家重点实验室！">科大讯飞获批建设我国首个认知智能国家重点实验室！</a>
+				  </li> -->
+				 <div class="post-preview">
+				    <a href="/2017/12/21/the-first-cognitive-intelligence-lab-established/">
+				        <h2 class="post-title">
+                            科大讯飞获批建设我国首个认知智能国家重点实验室！
+				        </h2>
+				        
+				        <h3 class="post-subtitle">
+				            
+				        </h3>
+				        
+				    </a>
+				    <!-- <p class="post-meta">2017-12-21</p> -->
+				</div>
+				<hr>
+				
+			</div>
+			
+			<div class="one-tag-list">
+			  	<span class="fa fa-tag listing-seperator" id="阅读理解评测">
+                    <span class="tag-text">阅读理解评测</span>
+                </span>
+				
+				  <!-- <li class="listing-item">
+				  <time datetime="2018-04-18">2018-04-18</time>
+				  <a href="/2018/04/18/interview-on-rc-team/" title="一年四次夺冠，凭什么？">一年四次夺冠，凭什么？</a>
+				  </li> -->
+				 <div class="post-preview">
+				    <a href="/2018/04/18/interview-on-rc-team/">
+				        <h2 class="post-title">
+                            一年四次夺冠，凭什么？
+				        </h2>
+				        
+				        <h3 class="post-subtitle">
+				            
+				        </h3>
+				        
+				    </a>
+				    <!-- <p class="post-meta">2018-04-18</p> -->
+				</div>
+				<hr>
+				
+				  <!-- <li class="listing-item">
+				  <time datetime="2018-04-16">2018-04-16</time>
+				  <a href="/2018/04/16/participate-in-cmrc2018/" title="CMRC 2018 | 中文机器阅读理解评测报名">CMRC 2018 | 中文机器阅读理解评测报名</a>
+				  </li> -->
+				 <div class="post-preview">
+				    <a href="/2018/04/16/participate-in-cmrc2018/">
+				        <h2 class="post-title">
+                            CMRC 2018 | 中文机器阅读理解评测报名
+				        </h2>
+				        
+				        <h3 class="post-subtitle">
+				            
+				        </h3>
+				        
+				    </a>
+				    <!-- <p class="post-meta">2018-04-16</p> -->
+				</div>
+				<hr>
+				
+				  <!-- <li class="listing-item">
+				  <time datetime="2018-03-22">2018-03-22</time>
+				  <a href="/2018/03/22/semeval2018-top-system/" title="探秘SemEval 2018阅读理解评测HFL夺冠系统">探秘SemEval 2018阅读理解评测HFL夺冠系统</a>
+				  </li> -->
+				 <div class="post-preview">
+				    <a href="/2018/03/22/semeval2018-top-system/">
+				        <h2 class="post-title">
+                            探秘SemEval 2018阅读理解评测HFL夺冠系统
+				        </h2>
+				        
+				        <h3 class="post-subtitle">
+				            HFL-RC System at SemEval 2018 Task 11
+				        </h3>
+				        
+				    </a>
+				    <!-- <p class="post-meta">2018-03-22</p> -->
+				</div>
+				<hr>
+				
+				  <!-- <li class="listing-item">
+				  <time datetime="2018-02-10">2018-02-10</time>
+				  <a href="/2018/02/10/got-on-top-in-semeval2018-task11/" title="哈工大讯飞联合实验室摘取SemEval2018评测大赛桂冠">哈工大讯飞联合实验室摘取SemEval2018评测大赛桂冠</a>
+				  </li> -->
+				 <div class="post-preview">
+				    <a href="/2018/02/10/got-on-top-in-semeval2018-task11/">
+				        <h2 class="post-title">
+                            哈工大讯飞联合实验室摘取SemEval2018评测大赛桂冠
+				        </h2>
+				        
+				        <h3 class="post-subtitle">
+				            HFL-RC Got the First Place on SemEval 2018 Evaluation (Task 11)
+				        </h3>
+				        
+				    </a>
+				    <!-- <p class="post-meta">2018-02-10</p> -->
+				</div>
+				<hr>
+				
+				  <!-- <li class="listing-item">
+				  <time datetime="2018-01-25">2018-01-25</time>
+				  <a href="/2018/01/25/squad-new-sota/" title="科大讯飞机器阅读理解技术再次登顶SQuAD挑战赛">科大讯飞机器阅读理解技术再次登顶SQuAD挑战赛</a>
+				  </li> -->
+				 <div class="post-preview">
+				    <a href="/2018/01/25/squad-new-sota/">
+				        <h2 class="post-title">
+                            科大讯飞机器阅读理解技术再次登顶SQuAD挑战赛
+				        </h2>
+				        
+				        <h3 class="post-subtitle">
+				            iFLYTEK Got the First Place on SQuAD Evaluation
+				        </h3>
+				        
+				    </a>
+				    <!-- <p class="post-meta">2018-01-25</p> -->
+				</div>
+				<hr>
+				
+				  <!-- <li class="listing-item">
+				  <time datetime="2018-01-24">2018-01-24</time>
+				  <a href="/2018/01/24/squad-f1-exceed-89/" title="快讯：HFL-RC再次登顶斯坦福SQuAD">快讯：HFL-RC再次登顶斯坦福SQuAD</a>
+				  </li> -->
+				 <div class="post-preview">
+				    <a href="/2018/01/24/squad-f1-exceed-89/">
+				        <h2 class="post-title">
+                            快讯：HFL-RC再次登顶斯坦福SQuAD
+				        </h2>
+				        
+				        <h3 class="post-subtitle">
+				            News：HFL-RC Got First Place Again at SQuAD Evaluation
+				        </h3>
+				        
+				    </a>
+				    <!-- <p class="post-meta">2018-01-24</p> -->
+				</div>
+				<hr>
+				
+				  <!-- <li class="listing-item">
+				  <time datetime="2018-01-22">2018-01-22</time>
+				  <a href="/2018/01/22/cmrc2018-evaluation/" title="第二届“讯飞杯”中文机器阅读理解评测CMRC2018">第二届“讯飞杯”中文机器阅读理解评测CMRC2018</a>
+				  </li> -->
+				 <div class="post-preview">
+				    <a href="/2018/01/22/cmrc2018-evaluation/">
+				        <h2 class="post-title">
+                            第二届“讯飞杯”中文机器阅读理解评测CMRC2018
+				        </h2>
+				        
+				        <h3 class="post-subtitle">
+				            The Second Evaluation Workshop on Chinese Machine Reading Comprehension (CMRC2018)
+				        </h3>
+				        
+				    </a>
+				    <!-- <p class="post-meta">2018-01-22</p> -->
+				</div>
+				<hr>
+				
+			</div>
+			
+			<div class="one-tag-list">
+			  	<span class="fa fa-tag listing-seperator" id="CCL">
+                    <span class="tag-text">CCL</span>
+                </span>
+				
+				  <!-- <li class="listing-item">
+				  <time datetime="2018-01-22">2018-01-22</time>
+				  <a href="/2018/01/22/cmrc2018-evaluation/" title="第二届“讯飞杯”中文机器阅读理解评测CMRC2018">第二届“讯飞杯”中文机器阅读理解评测CMRC2018</a>
+				  </li> -->
+				 <div class="post-preview">
+				    <a href="/2018/01/22/cmrc2018-evaluation/">
+				        <h2 class="post-title">
+                            第二届“讯飞杯”中文机器阅读理解评测CMRC2018
+				        </h2>
+				        
+				        <h3 class="post-subtitle">
+				            The Second Evaluation Workshop on Chinese Machine Reading Comprehension (CMRC2018)
+				        </h3>
+				        
+				    </a>
+				    <!-- <p class="post-meta">2018-01-22</p> -->
+				</div>
+				<hr>
+				
+			</div>
+			
+			<div class="one-tag-list">
+			  	<span class="fa fa-tag listing-seperator" id="SemEval 2018">
+                    <span class="tag-text">SemEval 2018</span>
+                </span>
+				
+				  <!-- <li class="listing-item">
+				  <time datetime="2018-04-18">2018-04-18</time>
+				  <a href="/2018/04/18/interview-on-rc-team/" title="一年四次夺冠，凭什么？">一年四次夺冠，凭什么？</a>
+				  </li> -->
+				 <div class="post-preview">
+				    <a href="/2018/04/18/interview-on-rc-team/">
+				        <h2 class="post-title">
+                            一年四次夺冠，凭什么？
+				        </h2>
+				        
+				        <h3 class="post-subtitle">
+				            
+				        </h3>
+				        
+				    </a>
+				    <!-- <p class="post-meta">2018-04-18</p> -->
+				</div>
+				<hr>
+				
+				  <!-- <li class="listing-item">
+				  <time datetime="2018-03-22">2018-03-22</time>
+				  <a href="/2018/03/22/semeval2018-top-system/" title="探秘SemEval 2018阅读理解评测HFL夺冠系统">探秘SemEval 2018阅读理解评测HFL夺冠系统</a>
+				  </li> -->
+				 <div class="post-preview">
+				    <a href="/2018/03/22/semeval2018-top-system/">
+				        <h2 class="post-title">
+                            探秘SemEval 2018阅读理解评测HFL夺冠系统
+				        </h2>
+				        
+				        <h3 class="post-subtitle">
+				            HFL-RC System at SemEval 2018 Task 11
+				        </h3>
+				        
+				    </a>
+				    <!-- <p class="post-meta">2018-03-22</p> -->
+				</div>
+				<hr>
+				
+				  <!-- <li class="listing-item">
+				  <time datetime="2018-02-10">2018-02-10</time>
+				  <a href="/2018/02/10/got-on-top-in-semeval2018-task11/" title="哈工大讯飞联合实验室摘取SemEval2018评测大赛桂冠">哈工大讯飞联合实验室摘取SemEval2018评测大赛桂冠</a>
+				  </li> -->
+				 <div class="post-preview">
+				    <a href="/2018/02/10/got-on-top-in-semeval2018-task11/">
+				        <h2 class="post-title">
+                            哈工大讯飞联合实验室摘取SemEval2018评测大赛桂冠
+				        </h2>
+				        
+				        <h3 class="post-subtitle">
+				            HFL-RC Got the First Place on SemEval 2018 Evaluation (Task 11)
+				        </h3>
+				        
+				    </a>
+				    <!-- <p class="post-meta">2018-02-10</p> -->
+				</div>
+				<hr>
+				
+			</div>
+			
+			<div class="one-tag-list">
+			  	<span class="fa fa-tag listing-seperator" id="CMRC 2018">
+                    <span class="tag-text">CMRC 2018</span>
+                </span>
+				
+				  <!-- <li class="listing-item">
+				  <time datetime="2018-04-16">2018-04-16</time>
+				  <a href="/2018/04/16/participate-in-cmrc2018/" title="CMRC 2018 | 中文机器阅读理解评测报名">CMRC 2018 | 中文机器阅读理解评测报名</a>
+				  </li> -->
+				 <div class="post-preview">
+				    <a href="/2018/04/16/participate-in-cmrc2018/">
+				        <h2 class="post-title">
+                            CMRC 2018 | 中文机器阅读理解评测报名
+				        </h2>
+				        
+				        <h3 class="post-subtitle">
+				            
+				        </h3>
+				        
+				    </a>
+				    <!-- <p class="post-meta">2018-04-16</p> -->
+				</div>
+				<hr>
+				
+			</div>
+			
+			<div class="one-tag-list">
+			  	<span class="fa fa-tag listing-seperator" id="CCL 2018">
+                    <span class="tag-text">CCL 2018</span>
+                </span>
+				
+				  <!-- <li class="listing-item">
+				  <time datetime="2018-04-16">2018-04-16</time>
+				  <a href="/2018/04/16/participate-in-cmrc2018/" title="CMRC 2018 | 中文机器阅读理解评测报名">CMRC 2018 | 中文机器阅读理解评测报名</a>
+				  </li> -->
+				 <div class="post-preview">
+				    <a href="/2018/04/16/participate-in-cmrc2018/">
+				        <h2 class="post-title">
+                            CMRC 2018 | 中文机器阅读理解评测报名
+				        </h2>
+				        
+				        <h3 class="post-subtitle">
+				            
+				        </h3>
+				        
+				    </a>
+				    <!-- <p class="post-meta">2018-04-16</p> -->
+				</div>
+				<hr>
+				
+			</div>
+			
+
+		</div>
+	</div>
+</div>
+
+
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                    
+                    
+
+                    <!-- add Weibo, Zhihu by Hux, add target = "_blank" to <a> by Hux -->
+                    
+                    
+
+
+                    
+                    
+                    
+                </ul>
+                <p class="copyright text-muted">
+                    Copyright &copy; 阅读理解研究组 2018
+                    <br>
+                    Theme by <a href="http://huangxuan.me">Hux</a> |
+                    <iframe
+                        style="margin-left: 2px; margin-bottom:-5px;"
+                        frameborder="0" scrolling="0" width="100px" height="20px"
+                        src="https://ghbtns.com/github-btn.html?user=huxpro&repo=huxpro.github.io&type=star&count=true" >
+                    </iframe>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/js/jquery.min.js "></script>
+
+<!-- Bootstrap Core JavaScript -->
+<!-- Currently, only navbar scroll-down effect at desktop still depends on this -->
+<script src="/js/bootstrap.min.js "></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/hux-blog.min.js "></script>
+
+<!-- Service Worker -->
+
+<script src="/js/snackbar.js "></script>
+<script src="/js/sw-registration.js "></script>
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+<!--
+     Because of the native support for backtick-style fenced code blocks
+     right within the Markdown is landed in Github Pages,
+     From V1.6, There is no need for Highlight.js,
+     so Huxblog drops it officially.
+
+     - https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0
+     - https://help.github.com/articles/creating-and-highlighting-code-blocks/
+     - https://github.com/jneen/rouge/wiki/list-of-supported-languages-and-lexers
+-->
+<!--
+    <script>
+        async("http://cdn.bootcss.com/highlight.js/8.6/highlight.min.js", function(){
+            hljs.initHighlightingOnLoad();
+        })
+    </script>
+    <link href="http://cdn.bootcss.com/highlight.js/8.6/styles/github.min.css" rel="stylesheet">
+-->
+
+
+<!-- jquery.tagcloud.js -->
+<script>
+    // only load tagcloud.js in tag.html
+    if($('#tag_cloud').length !== 0){
+        async('/js/jquery.tagcloud.js',function(){
+            $.fn.tagcloud.defaults = {
+                //size: {start: 1, end: 1, unit: 'em'},
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+<!--fastClick.js -->
+<script>
+    async("//cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+<!-- Google Analytics -->
+
+<script>
+    // dynamic User by Hux
+    var _gaId = '';
+    var _gaDomain = '';
+
+    // Originial
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', _gaId, _gaDomain);
+    ga('send', 'pageview');
+</script>
+
+
+
+<!-- Baidu Tongji -->
+
+
+
+<!-- Side Catalog -->
+
+
+
+<!-- Multi-Lingual -->
+
+
+
+
+<!-- Image to hack wechat -->
+<img src="/img/icon_wechat.png" width="0" height="0" />
+<!-- Migrate from head to bottom, no longer block render and still work -->
+
+</body>
+
+</html>

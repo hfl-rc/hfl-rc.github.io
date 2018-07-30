@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="哈工大讯飞联合实验室(HFL)阅读理解研究组">
+    <meta name="keywords"  content="哈工大讯飞联合实验室, HFL, 阅读理解">
+    <meta name="theme-color" content="#000000">
+    
+    <title>RC Group | HFL</title>
+
+    <!-- Web App Manifest -->
+    <link rel="manifest" href="/pwa/manifest.json">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/img/favicon.ico">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="http://hfl-rc.com//page4/">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/hux-blog.min.css">
+
+    <!-- Pygments Github CSS -->
+    <link rel="stylesheet" href="/css/syntax.css">
+
+    <!-- Custom Fonts -->
+    <!-- <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+    <!-- Hux change font-awesome CDN to qiniu -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+    <!-- Hux Delete, sad but pending in China
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/
+    css'>
+    -->
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- ga & ba script hoook -->
+    <script></script>
+</head>
+
+
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="">
+
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">阅读理解研究组</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/about/">About Us</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/demo/">Demonstrations</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/publications/">Publications</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/resources/">Resources</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/tags/">Tags</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+<script>
+    // Drop Bootstarp low-performance Navbar
+    // Use customize navbar with high-quality material design animation
+    // in high-perf jank-free CSS3 implementation
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    var __HuxNav__ = {
+        close: function(){
+            $navbar.className = " ";
+            // wait until animation end.
+            setTimeout(function(){
+                // prevent frequently toggle
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        },
+        open: function(){
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+
+    // Bind Event
+    $toggle.addEventListener('click', function(e){
+        if ($navbar.className.indexOf('in') > 0) {
+            __HuxNav__.close()
+        }else{
+            __HuxNav__.open()
+        }
+    })
+
+    /**
+     * Since Fastclick is used to delegate 'touchstart' globally
+     * to hack 300ms delay in iOS by performing a fake 'click',
+     * Using 'e.stopPropagation' to stop 'touchstart' event from 
+     * $toggle/$collapse will break global delegation.
+     * 
+     * Instead, we use a 'e.target' filter to prevent handler
+     * added to document close HuxNav.  
+     *
+     * Also, we use 'click' instead of 'touchstart' as compromise
+     */
+    document.addEventListener('click', function(e){
+        if(e.target == $toggle) return;
+        if(e.target.className == 'icon-bar') return;
+        __HuxNav__.close();
+    })
+</script>
+
+
+    <!-- Page Header -->
+<header class="intro-header" style="background-image: url('/img/banner/rc.png')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
+                <div class="site-heading">
+                    <h1>阅读理解研究组</h1>
+                    <!--<hr class="small">-->
+                    <span class="subheading">Reading Comprehension Group, Joint Laboratory of HIT and iFLYTEK Research (HFL)</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Main Content -->
+<div class="container">
+	<div class="row">
+        
+
+<!-- USE SIDEBAR -->
+    <!-- PostList Container -->
+    		<div class="
+                col-lg-8 col-lg-offset-1
+                col-md-8 col-md-offset-1
+                col-sm-12
+                col-xs-12
+                postlist-container
+            ">
+    			
+<div class="post-preview">
+    <a href="/2017/10/18/cmrc2017-evaluation/">
+        <h2 class="post-title">
+            首届“讯飞杯”中文阅读理解评测圆满落幕
+        </h2>
+        
+        <h3 class="post-subtitle">
+            The 1st Evaluation Workshop on Chinese Machine Reading Comprehension (CCL-CMRC2017)
+        </h3>
+        
+        <div class="post-content-preview">
+            
+
+    
+    
+  2017年10月14日，由中国中文信息学会计算语言学专委会（CIPS-CL）主办，哈工大讯飞联合实验室（HFL）承办，科大讯飞冠名的第一届“讯飞杯”中文机器阅读理解评测大会（CCL-CMRC2017）在南京完美落下帷幕。
+
+
+本届评测大会与国内自然语言处理领域最具权威的全国计算语言学学术会议（CCL 2017）共同召开，也是CCL大会首次举办的评测活动。
+
+全国计...
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by HFL-RC on October 18, 2017
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="/2017/10/18/hfl-employment/">
+        <h2 class="post-title">
+            哈工大讯飞联合实验室招聘自然语言处理实习生
+        </h2>
+        
+        <h3 class="post-subtitle">
+            HFL is Recruiting Interns on Natural Language Processing
+        </h3>
+        
+        <div class="post-content-preview">
+            
+
+    
+    
+  转自PaperWeekly微信公众号
+
+
+哈工大讯飞联合实验室(HFL)
+
+哈工大讯飞联合实验室(HFL)由哈尔滨工业大学社会计算与信息检索研究中心(HIT-SCIR)刘挺教授团队与科大讯飞研究院(iFLYTEK Research)共同创办，致力于自然语言处理相关领域的研究及相关技术的应用落地。
+
+招聘岗位：自然语言处理实习生(北京)
+
+岗位职责：
+1. 前瞻研究...
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by HFL-RC on October 18, 2017
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="/2017/09/14/brilliant-achievements-in-squad/">
+        <h2 class="post-title">
+            斯坦福SQuAD挑战赛的中国亮丽榜单
+        </h2>
+        
+        <h3 class="post-subtitle">
+            The Brilliant Chinese Achievements in SQuAD Challenge
+        </h3>
+        
+        <div class="post-content-preview">
+            
+
+    
+    
+  转自CCCF
+作者：崔一鸣、刘挺、王士进、陈致鹏、马文涛、胡国平
+
+
+由斯坦福大学发起的大规模阅读理解挑战赛SQuAD[1](Stanford Question Answering Dataset) 正处于如火如荼的角逐阶段。SQuAD是目前竞争最为激烈且影响力最大的阅读理解任务，被誉为阅读理解领域的ImageNet。在挑战赛中，你会看到一份亮丽榜单。它来自中国—...
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by HFL-RC on September 14, 2017
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="/2017/08/01/attending-acl/">
+        <h2 class="post-title">
+            参加ACL-2017
+        </h2>
+        
+        <h3 class="post-subtitle">
+            Attending ACL 2017
+        </h3>
+        
+        <div class="post-content-preview">
+            
+
+    
+    
+  Under Construction
+
+
+
+
+
+
+    
+    
+  Under Construction
+
+
+
+
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by HFL-RC on August 1, 2017
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="/2017/07/31/squad-on-top/">
+        <h2 class="post-title">
+            科大讯飞认知智能持续突破，阅读理解SQuAD测试勇夺第一
+        </h2>
+        
+        <h3 class="post-subtitle">
+            iFLYTEK Get Continuous Progress on Cognitive Computing, Won First Place in SQuAD Task
+        </h3>
+        
+        <div class="post-content-preview">
+            
+
+    
+    
+  最近，一场机器阅读理解考试的最新成绩新鲜出炉——由斯坦福大学发起的SQuAD（Stanford Question Answering Dataset）挑战赛榜单更新成绩，科大讯飞与哈工大联合实验室(HFL)提交的系统模型夺得第一名，这也是中国本土研究机构首次取得该赛事的榜首。
+
+
+
+▲ 斯坦福SQuAD最新排名
+
+SQuAD挑战赛是行业内公认的机器阅读理解标准水平...
+        </div>
+    </a>
+    <p class="post-meta">
+        Posted by HFL-RC on July 31, 2017
+    </p>
+</div>
+<hr>
+
+
+<!-- Pager -->
+
+<ul class="pager">
+    
+    <li class="previous">
+        <a href="/page3">&larr; Newer Posts</a>
+    </li>
+    
+    
+    <li class="next">
+        <a href="/page5">Older Posts &rarr;</a>
+    </li>
+    
+</ul>
+
+
+    		</div>
+    <!-- Sidebar Container -->
+            <div class="
+                col-lg-3 col-lg-offset-0
+                col-md-3 col-md-offset-0
+                col-sm-12
+                col-xs-12
+                sidebar-container
+            ">
+                <!-- Featured Tags -->
+                
+                <section>
+                    <hr class="hidden-sm hidden-xs">
+                    <h5><a href="/tags/">FEATURED TAGS</a></h5>
+                    <div class="tags">
+                        
+                            
+                                <a href="/tags/#阅读理解" title="阅读理解" rel="11">
+                                    阅读理解
+                                </a>
+                            
+                        
+                            
+                                <a href="/tags/#Reading Comprehension" title="Reading Comprehension" rel="15">
+                                    Reading Comprehension
+                                </a>
+                            
+                        
+                            
+                                <a href="/tags/#CBT" title="CBT" rel="3">
+                                    CBT
+                                </a>
+                            
+                        
+                            
+                                <a href="/tags/#CNN" title="CNN" rel="3">
+                                    CNN
+                                </a>
+                            
+                        
+                            
+                                <a href="/tags/#AoA Reader" title="AoA Reader" rel="3">
+                                    AoA Reader
+                                </a>
+                            
+                        
+                            
+                                <a href="/tags/#SQuAD" title="SQuAD" rel="7">
+                                    SQuAD
+                                </a>
+                            
+                        
+                            
+                                <a href="/tags/#Interactive AoA Reader" title="Interactive AoA Reader" rel="3">
+                                    Interactive AoA Reader
+                                </a>
+                            
+                        
+                            
+                                <a href="/tags/#HFL" title="HFL" rel="4">
+                                    HFL
+                                </a>
+                            
+                        
+                            
+                                <a href="/tags/#哈工大讯飞联合实验室" title="哈工大讯飞联合实验室" rel="5">
+                                    哈工大讯飞联合实验室
+                                </a>
+                            
+                        
+                            
+                                <a href="/tags/#招聘" title="招聘" rel="2">
+                                    招聘
+                                </a>
+                            
+                        
+                            
+                        
+                            
+                                <a href="/tags/#CMRC" title="CMRC" rel="2">
+                                    CMRC
+                                </a>
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                                <a href="/tags/#阅读理解评测" title="阅读理解评测" rel="7">
+                                    阅读理解评测
+                                </a>
+                            
+                        
+                            
+                        
+                            
+                                <a href="/tags/#SemEval 2018" title="SemEval 2018" rel="3">
+                                    SemEval 2018
+                                </a>
+                            
+                        
+                            
+                        
+                            
+                        
+                    </div>
+                </section>
+                
+
+                <!-- Short About -->
+                <section class="visible-md visible-lg">
+                    <hr><h5><a href="/about/">ABOUT ME</a></h5>
+                    <div class="short-about">
+                        
+                        
+                            <p>哈工大讯飞联合实验室阅读理解组(HFL-RC)长期致力于机器阅读理解核心技术的研究，以及利用机器阅读理解技术解决真实场景下的问题，例如：智能车载系统、智能交互系统等。</p>
+                        
+                        <!-- SNS Link -->
+                        <ul class="list-inline">
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                        </ul>
+                    </div>
+                </section>
+                <!-- Friends Blog -->
+                
+                <hr>
+                <h5>FRIENDS</h5>
+                <ul class="list-inline">
+                    
+                        <li><a href="http://www.iflytek.com">科大讯飞</a></li>
+                    
+                        <li><a href="http://www.hfl-tek.com">哈工大讯飞联合实验室</a></li>
+                    
+                        <li><a href="http://ir.hit.edu.cn">社会计算与信息检索实验室</a></li>
+                    
+                </ul>
+                
+    		</div>
+        
+	</div>
+</div>
+
+
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                    
+                    
+
+                    <!-- add Weibo, Zhihu by Hux, add target = "_blank" to <a> by Hux -->
+                    
+                    
+
+
+                    
+                    
+                    
+                </ul>
+                <p class="copyright text-muted">
+                    Copyright &copy; 阅读理解研究组 2018
+                    <br>
+                    Theme by <a href="http://huangxuan.me">Hux</a> |
+                    <iframe
+                        style="margin-left: 2px; margin-bottom:-5px;"
+                        frameborder="0" scrolling="0" width="100px" height="20px"
+                        src="https://ghbtns.com/github-btn.html?user=huxpro&repo=huxpro.github.io&type=star&count=true" >
+                    </iframe>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/js/jquery.min.js "></script>
+
+<!-- Bootstrap Core JavaScript -->
+<!-- Currently, only navbar scroll-down effect at desktop still depends on this -->
+<script src="/js/bootstrap.min.js "></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/hux-blog.min.js "></script>
+
+<!-- Service Worker -->
+
+<script src="/js/snackbar.js "></script>
+<script src="/js/sw-registration.js "></script>
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+<!--
+     Because of the native support for backtick-style fenced code blocks
+     right within the Markdown is landed in Github Pages,
+     From V1.6, There is no need for Highlight.js,
+     so Huxblog drops it officially.
+
+     - https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0
+     - https://help.github.com/articles/creating-and-highlighting-code-blocks/
+     - https://github.com/jneen/rouge/wiki/list-of-supported-languages-and-lexers
+-->
+<!--
+    <script>
+        async("http://cdn.bootcss.com/highlight.js/8.6/highlight.min.js", function(){
+            hljs.initHighlightingOnLoad();
+        })
+    </script>
+    <link href="http://cdn.bootcss.com/highlight.js/8.6/styles/github.min.css" rel="stylesheet">
+-->
+
+
+<!-- jquery.tagcloud.js -->
+<script>
+    // only load tagcloud.js in tag.html
+    if($('#tag_cloud').length !== 0){
+        async('/js/jquery.tagcloud.js',function(){
+            $.fn.tagcloud.defaults = {
+                //size: {start: 1, end: 1, unit: 'em'},
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+<!--fastClick.js -->
+<script>
+    async("//cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+<!-- Google Analytics -->
+
+<script>
+    // dynamic User by Hux
+    var _gaId = '';
+    var _gaDomain = '';
+
+    // Originial
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', _gaId, _gaDomain);
+    ga('send', 'pageview');
+</script>
+
+
+
+<!-- Baidu Tongji -->
+
+
+
+<!-- Side Catalog -->
+
+
+
+<!-- Multi-Lingual -->
+
+
+
+
+<!-- Image to hack wechat -->
+<img src="/img/icon_wechat.png" width="0" height="0" />
+<!-- Migrate from head to bottom, no longer block render and still work -->
+
+</body>
+
+</html>

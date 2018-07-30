@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="哈工大讯飞联合实验室(HFL)阅读理解研究组">
+    <meta name="keywords"  content="哈工大讯飞联合实验室, HFL, 阅读理解">
+    <meta name="theme-color" content="#000000">
+    
+    <title>斯坦福SQuAD挑战赛的中国亮丽榜单 - RC Group | HFL</title>
+
+    <!-- Web App Manifest -->
+    <link rel="manifest" href="/pwa/manifest.json">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/img/favicon.ico">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="http://hfl-rc.com//2017/09/14/brilliant-achievements-in-squad/">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/hux-blog.min.css">
+
+    <!-- Pygments Github CSS -->
+    <link rel="stylesheet" href="/css/syntax.css">
+
+    <!-- Custom Fonts -->
+    <!-- <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+    <!-- Hux change font-awesome CDN to qiniu -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+    <!-- Hux Delete, sad but pending in China
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/
+    css'>
+    -->
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- ga & ba script hoook -->
+    <script></script>
+</head>
+
+
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="">
+
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">阅读理解研究组</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/about/">About Us</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/demo/">Demonstrations</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/publications/">Publications</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/resources/">Resources</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/tags/">Tags</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+<script>
+    // Drop Bootstarp low-performance Navbar
+    // Use customize navbar with high-quality material design animation
+    // in high-perf jank-free CSS3 implementation
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    var __HuxNav__ = {
+        close: function(){
+            $navbar.className = " ";
+            // wait until animation end.
+            setTimeout(function(){
+                // prevent frequently toggle
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        },
+        open: function(){
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+
+    // Bind Event
+    $toggle.addEventListener('click', function(e){
+        if ($navbar.className.indexOf('in') > 0) {
+            __HuxNav__.close()
+        }else{
+            __HuxNav__.open()
+        }
+    })
+
+    /**
+     * Since Fastclick is used to delegate 'touchstart' globally
+     * to hack 300ms delay in iOS by performing a fake 'click',
+     * Using 'e.stopPropagation' to stop 'touchstart' event from 
+     * $toggle/$collapse will break global delegation.
+     * 
+     * Instead, we use a 'e.target' filter to prevent handler
+     * added to document close HuxNav.  
+     *
+     * Also, we use 'click' instead of 'touchstart' as compromise
+     */
+    document.addEventListener('click', function(e){
+        if(e.target == $toggle) return;
+        if(e.target.className == 'icon-bar') return;
+        __HuxNav__.close();
+    })
+</script>
+
+
+    <!-- Image to hack wechat -->
+<!-- <img src="/img/icon_wechat.png" width="0" height="0"> -->
+<!-- <img src="/img/banner/squad-bg.png" width="0" height="0"> -->
+
+<!-- Post Header -->
+<style type="text/css">
+    header.intro-header{
+        position: relative;
+        background-image: url('/img/banner/squad-bg.png')
+    }
+
+    
+    header.intro-header .header-mask{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background: rgba(0,0,0, 0.3);
+    }
+    
+</style>
+<header class="intro-header" >
+    <div class="header-mask"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                        <a class="tag" href="/tags/#阅读理解" title="阅读理解">阅读理解</a>
+                        
+                        <a class="tag" href="/tags/#Reading Comprehension" title="Reading Comprehension">Reading Comprehension</a>
+                        
+                        <a class="tag" href="/tags/#SQuAD" title="SQuAD">SQuAD</a>
+                        
+                        <a class="tag" href="/tags/#Interactive AoA Reader" title="Interactive AoA Reader">Interactive AoA Reader</a>
+                        
+                    </div>
+                    <h1>斯坦福SQuAD挑战赛的中国亮丽榜单</h1>
+                    
+                    
+                    <h2 class="subheading">The Brilliant Chinese Achievements in SQuAD Challenge</h2>
+                    
+                    <span class="meta">Posted by HFL-RC on September 14, 2017</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+    <!-- Post Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                <!-- Multi-Lingual -->
+                
+                <!-- Language Selector -->
+                <select class="sel-lang" onchange= "onLanChange(this.options[this.options.selectedIndex].value)">
+                    <option value="0" selected> 中文 Chinese </option>
+                    <option value="1"> 英文 English </option>
+                </select>
+                
+
+				<!-- Chinese Version -->
+<div class="zh post-container">
+    
+    <blockquote>
+  <p>转自CCCF
+作者：崔一鸣、刘挺、王士进、陈致鹏、马文涛、胡国平</p>
+</blockquote>
+
+<p>由斯坦福大学发起的大规模阅读理解挑战赛SQuAD<sup>[1]</sup>(Stanford Question Answering Dataset) 正处于如火如荼的角逐阶段。SQuAD是目前竞争最为激烈且影响力最大的阅读理解任务，被誉为阅读理解领域的ImageNet。在挑战赛中，你会看到一份亮丽榜单。它来自中国——哈工大讯飞联合实验室(HFL)经过一段时间的摸索，改进了早期在填空型阅读理解问题上使用的基于层叠式注意力模型(Attention-over-Attention Reader) <sup>[2]</sup>，提出了基于交互式层叠注意力模型(Interactive Attention-over-Attention Reader)，在该任务上获得性能突破，两个评测指标(模糊准确率、精准匹配准确率) 均达到世界第一的水平。同时，该模型也是目前首个模糊准确率(F1-score)超过85%的系统。</p>
+
+<h2 id="section">阅读理解评测进展</h2>
+
+<p>让机器能听会说，能理解会思考是人工智能的终极目标。如何让机器能够阅读并且理解自然语言，也是认知智能领域研究的主要问题。近年来，在自然语言处理领域掀起了一股研究阅读理解的热潮，吸引了大量研究机构加入其中。</p>
+
+<p>谷歌 DeepMind的研究员赫尔曼(Hermann)等人在2015年发表文章，提出使用基于注意力的神经网络模型Attentive Reader<sup>[3]</sup>来解决阅读理解问题，同时发布了一个大规模的填空型阅读理解数据集CNN/Daily Mail<sup>1</sup>。Facebook的研究员希尔(Hill)等人也在同一年发表文章，提出利用记忆网络(Memory Network)<sup>2</sup>解决阅读理解问题，并同步公开了儿童读物填空型阅读理解数据集(Children’s Book Test) <sup>[4]</sup>。这两个数据集是在2016年阅读理解领域中使用最多的数据集。2016年7月，哈工大讯飞联合实验室发布中文阅读理解数据集PD&amp;CFT<sup>[5]</sup>，进一步推动了中文阅读理解的研究。</p>
+
+<p>在2016年自然语言处理实证方法会议(EMNLP 2016)上，斯坦福大学Rajpurkar等人发布了SQuAD<sup>[6]</sup>，使阅读理解研究上了一个新台阶。图1给出了SQuAD中的一个例子。</p>
+
+<p><img src="/img/news/20170914/1.png" alt="" />
+▲ <em>图1 SQuAD阅读理解数据集问题实例</em></p>
+
+<p>SQuAD有几个特点：
+1. 答案不再只是词级别，其粒度扩展到短语甚至是句子。
+2. 问题不再是由机器自动生成，而是采用人工标注，保证了问题的可用比例。
+3. 该数据集规模更大（10万个问题），可以更好地利用神经网络模型来解决阅读理解问题。</p>
+
+<p>与以往不同的是，斯坦福大学仅公开了训练集和开发集而保留了测试集，并提供一个开放平台供参赛者提交自己的算法，由SQuAD官方利用隐藏的测试集对参赛系统进行评测，将相关结果更新到SQuAD官网上。</p>
+
+<h2 id="squad">SQuAD结果及模型分析</h2>
+
+<p>SQuAD挑战赛是业内公认的机器阅读理解标准水平测试，也是该领域的顶级赛事。参赛者来自全球学术界和产业界的研究团队，包括微软亚洲研究院、艾伦研究院(AI2)、IBM、Salesforce、Facebook、谷歌等知名企业以及卡内基梅隆大学、斯坦福大学等高校。2017年8月初，SQuAD挑战赛榜单再次更新，将每个参赛队伍的最好成绩进行排名，结果如表1所示。</p>
+
+<p><img src="/img/news/20170914/2.png" alt="" />
+▲ <em>表1 斯坦福SQuAD榜单（截至2017年8月初）</em></p>
+
+<p>可以看出，中国本土机构在SQuAD任务中相当活跃，表明目前机器阅读理解研究在国内已成为热门的研究方向。榜单中的大多数模型公开了模型结构，我们根据已有的文献对这些系统进行了深入分析，得出了如下结论。</p>
+
+<h4 id="section-1">基于注意力机制</h4>
+<p>基于注意力机制(Attention-based)的神经网络方法<sup>[7]</sup>在自然语言处理领域获得了较大成功，从最初的神经网络机器翻译到目前的阅读理解系统，大多数采用了这种机制。应用注意力机制，主要是利用问题在篇章中寻找与问题最相关的部分，得到一个篇章级别的注意力分布，从而使机器能够更好地识别，从这种软机制上缩小解答的范围。目前基于注意力机制的方法是阅读理解任务上标配的结构之一。</p>
+
+<h4 id="section-2">基于字与词的词向量表示</h4>
+<p>人们在阅读文章时，如果篇章中存在大量的生词，就很难理解其表达的具体含义，机器也是如此。训练神经网络时，考虑到时间和空间复杂度，通常无法使用全词表，需要从整个词表中抽取出频次较高的N个词作为训练用的词表(shortlist)，这样难免会将一些低频词过滤掉，但这些信息有助于机器对篇章的深层次理解。在传统的基于词的向量表示基础上，引入基于字的向量表示有助于减少未登录词所带来的影响，对于一些词缀的学习也有一定帮助<sup>[8]</sup>。目前引入基于词和字的向量表示的系统均获得了一定的性能提升。</p>
+
+<h4 id="section-3">基于指针网络的答案预测</h4>
+<p>早在填空型阅读理解的研究中，IBM Watson研究员卡德莱克(Kadlec)等人就尝试使用改进的指针网络(Pointer Network)<sup>[9, 10]</sup>来直接从篇章中抽取出单个词的答案，这也成为了填空型阅读理解模型的标配。随后Shuohang Wang（王烁航，音译）等人提出了Match-LSTM模型，用于解答SQuAD中的任务<sup>[11]</sup>。由于SQuAD任务的答案是篇章中的连续片段，所以只须利用指针网络预测答案在篇章中的起始位置和结束位置即可。这种方法较答案生成模型有显著的性能优势，且与SQuAD任务更加契合。</p>
+
+<h2 id="section-4">阅读理解研究趋势及展望</h2>
+
+<p>SQuAD任务是一个长期的挑战赛，从去年在EMNLP 2016亮相至今一年的时间，排行榜不断被刷新，与之对应的深度学习模型层出不穷，极大地推动了机器阅读理解的研究进程。但机器阅读理解的发展绝不会止步于此，未来值得探索的方向有：</p>
+
+<h4 id="section-5">基于多文档的阅读理解</h4>
+<p>多文档阅读理解技术是原有技术在内容上的自然拓展。需要从大量的文档中挑选出与问题最相关的若干文档，缩小机器阅读的范围，再利用传统的基于单文档的阅读理解模型从候选篇章中抽取出精准的答案。</p>
+
+<h4 id="section-6">面向开放域的阅读理解</h4>
+<p>在回答开放域的问题时，需要从海量的篇章中抽取出与问题最相关的一些篇章，然后筛选出正确答案。斯坦福大学陈丹琪博士在ACL 2017上发表文章，提出了面向开放域的阅读理解技术方案（见图2），用来解答维基百科上相关的问题<sup>[12]</sup>。</p>
+
+<p><img src="/img/news/20170914/3.png" alt="" />
+▲ <em>图2 斯坦福大学提出的开放域阅读理解模型</em></p>
+
+<h4 id="section-7">更大规模及更高难度的阅读理解数据集</h4>
+<p>更大规模的数据集可以让我们挖掘到更多信息。在EMNLP 2017上发表的一篇论文，提供了一个新的阅读理解数据集RACE<sup>[13]</sup>（见图3）。该数据集包含了我国中考和高考中使用的英文阅读理解问题，其形式与早期的MCTest3数据集非常相似，但不论从难度上还是规模上，都比MCTest有了大幅度提高。</p>
+
+<p><img src="/img/news/20170914/4.png" alt="" />
+▲ <em>图3 RACE数据集中的问题实例</em></p>
+
+<h4 id="section-8">面向实用场景的阅读理解</h4>
+<p>在实际生活中，人们查阅资料时往往需要阅读长篇甚至大量的文档才能找到答案。阅读理解技术可以将人们从繁杂的阅读中解放出来。例如，人们想知道“汽车的天窗怎么打开”时，只需提出问题，机器就可以从长篇的资料中抽取出答案和相关图片并展示出来，方便人们的生活。</p>
+
+<p>随着机器阅读理解数据集的不断迭代更新，相关技术不断进步，有效地推动了机器阅读理解研究的发展。现阶段的机器阅读理解模型是否真正地“理解”了自然语言，仍是需要进一步深入研究的问题。相信总有一天，机器会像人类一样对语言进行归纳、总结、推理，进而真正地理解自然语言。</p>
+
+<hr />
+
+<h3 id="section-9">注释</h3>
+
+<p>1 由Hermann等人提出的阅读理解数据集。该数据集从美国有线电视新闻网(CNN)和《每日邮报》上摘取了大量语料，然后从每篇文章对应的摘要中去掉某个实体构成问题，要求机器能够根据文章的内容自动找到对应的实体。</p>
+
+<p>2 由Weston等人提出的一种机器学习的框架，包含输入特征映射、泛化层、输出特征层、反馈层。</p>
+
+<p>3 MCTest是Richardson等人提出的一个阅读理解数据集，其形式类似于英语考试中的阅读理解单项选择题。MCTest 严格限制了文档本身是儿童能够理解的故事内容，从而保证阅读理解的过程仅仅依赖于篇章的内容，而不需要过多的外部知识。</p>
+
+<hr />
+
+<h3 id="section-10">参考文献</h3>
+
+<p>[1] The Stanford Question Answering Dataset[OL]. http://stanford-qa.com</p>
+
+<p>[2] Cui Y, Chen Z, Wei S, et al. Attention-over-Attention Neural Networks for Reading Comprehension[C]//Proceedings of the 55th Annual Meeting of the Association for Computational Linguistics(ACL 2017, Volume 1: Long Papers).ACL, 2017: 593-602.</p>
+
+<p>[3] Hermann K M, Kocisky T, Grefenstette E, et al. Teaching Machines to Read and Comprehend[C]//Advances in Neural Information Processing Systems. MIT Press, 2015: 1693-1701.
+[4] Hill F, Bordes A, Chopra S, et al. The Goldilocks Principle: Reading Children’s Books with Explicit Memory Representations[OL]. (2015).arXiv preprint arXiv:1511.02301.</p>
+
+<p>[5] Cui Y, Chen Z, Wei S, et al. Consensus Attention-based Neural Networks for Chinese Reading Comprehension[C]//Proceedings of COLING 2016, the 26th International Conference on Computational Linguistics: Technical Papers. 2016: 1777-1786.</p>
+
+<p>[6] Rajpurkar P, Zhang J, Lopyrev K, et al. SQuAD: 100,000+ Questions for Machine Comprehension of Text[C]//Proceedings of the 2016 Conference on Empirical Methods in Natural Language Processing(EMNLP 2016), 2016: 2383-2392.</p>
+
+<p>[7] Bahdanau D, Cho K, Bengio Y. Neural Machine Translation by Jointly Learning to Align and Translate[OL]. (2014).arXiv preprint arXiv:1409.0473.</p>
+
+<p>[8] Seo M, Kembhavi A, Farhadi A, et al. Bidirectional Attention Flow for Machine Comprehension[OL]. (2016).arXiv preprint arXiv:1611.01603.</p>
+
+<p>[9] Kadlec R, Schmid M, Bajgar O, et al. Text Understanding with the Attention Sum Reader Network[C]//Proceedings of the 54th Annual Meeting of the Association for Computational Linguistics(ACL2016, Volume 1: Long Papers). ACL, 2016: 908-918.</p>
+
+<p>[10] Vinyals O, Fortunato M, Jaitly N. Pointer networks[C]//Advances in Neural Information Processing Systems.2015: 2692-2700.</p>
+
+<p>[11] Wang S, Jiang J. Machine Comprehension Using Match-LSTM and Answer Pointer[OL]. (2016).arXiv preprint arXiv:1608.07905.</p>
+
+<p>[12] Chen D, Fisch A, Weston J, et al. Reading Wikipedia to Answer Open-Domain Questions[C]//Proceedings of the 55th Annual Meeting of the Association for Computational Linguistics (ACL 2017, Volume 1: Long Papers), 2017: 1870-1879.</p>
+
+<p>[13] Lai G, Xie Q, Liu H, et al. RACE: Large-scale ReAding Comprehension Dataset from Examinations[OL]. arXiv preprint arXiv:1704.04683, 2017.</p>
+
+
+</div>
+
+<!-- English Version -->
+<div class="en post-container">
+    
+    <blockquote>
+
+</blockquote>
+
+</div>
+
+
+                <hr style="visibility: hidden;">
+
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/2017/08/01/attending-acl/" data-toggle="tooltip" data-placement="top" title="参加ACL-2017">
+                        Previous<br>
+                        <span>参加ACL-2017</span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="next">
+                        <a href="/2017/10/18/hfl-employment/" data-toggle="tooltip" data-placement="top" title="哈工大讯飞联合实验室招聘自然语言处理实习生">
+                        Next<br>
+                        <span>哈工大讯飞联合实验室招聘自然语言处理实习生</span>
+                        </a>
+                    </li>
+                    
+                </ul>
+
+
+                
+
+                
+            </div>  
+
+    <!-- Side Catalog Container -->
+        
+            <div class="
+                col-lg-2 col-lg-offset-0
+                visible-lg-block
+                sidebar-container
+                catalog-container">
+                <div class="side-catalog">
+                    <hr class="hidden-sm hidden-xs">
+                    <h5>
+                        <a class="catalog-toggle" href="#">CATALOG</a>
+                    </h5>
+                    <ul class="catalog-body"></ul>
+                </div>
+            </div>
+        
+
+    <!-- Sidebar Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                <!-- Featured Tags -->
+                
+                <section>
+                    <hr class="hidden-sm hidden-xs">
+                    <h5><a href="/tags/">FEATURED TAGS</a></h5>
+                    <div class="tags">
+        				
+                            
+                				<a href="/tags/#阅读理解" title="阅读理解" rel="11">
+                                    阅读理解
+                                </a>
+                            
+        				
+                            
+                				<a href="/tags/#Reading Comprehension" title="Reading Comprehension" rel="15">
+                                    Reading Comprehension
+                                </a>
+                            
+        				
+                            
+                				<a href="/tags/#CBT" title="CBT" rel="3">
+                                    CBT
+                                </a>
+                            
+        				
+                            
+                				<a href="/tags/#CNN" title="CNN" rel="3">
+                                    CNN
+                                </a>
+                            
+        				
+                            
+                				<a href="/tags/#AoA Reader" title="AoA Reader" rel="3">
+                                    AoA Reader
+                                </a>
+                            
+        				
+                            
+                				<a href="/tags/#SQuAD" title="SQuAD" rel="7">
+                                    SQuAD
+                                </a>
+                            
+        				
+                            
+                				<a href="/tags/#Interactive AoA Reader" title="Interactive AoA Reader" rel="3">
+                                    Interactive AoA Reader
+                                </a>
+                            
+        				
+                            
+                				<a href="/tags/#HFL" title="HFL" rel="4">
+                                    HFL
+                                </a>
+                            
+        				
+                            
+                				<a href="/tags/#哈工大讯飞联合实验室" title="哈工大讯飞联合实验室" rel="5">
+                                    哈工大讯飞联合实验室
+                                </a>
+                            
+        				
+                            
+                				<a href="/tags/#招聘" title="招聘" rel="2">
+                                    招聘
+                                </a>
+                            
+        				
+                            
+        				
+                            
+                				<a href="/tags/#CMRC" title="CMRC" rel="2">
+                                    CMRC
+                                </a>
+                            
+        				
+                            
+        				
+                            
+        				
+                            
+        				
+                            
+        				
+                            
+        				
+                            
+        				
+                            
+        				
+                            
+                				<a href="/tags/#阅读理解评测" title="阅读理解评测" rel="7">
+                                    阅读理解评测
+                                </a>
+                            
+        				
+                            
+        				
+                            
+                				<a href="/tags/#SemEval 2018" title="SemEval 2018" rel="3">
+                                    SemEval 2018
+                                </a>
+                            
+        				
+                            
+        				
+                            
+        				
+        			</div>
+                </section>
+                
+
+                <!-- Friends Blog -->
+                
+                <hr>
+                <h5>FRIENDS</h5>
+                <ul class="list-inline">
+                    
+                        <li><a href="http://www.iflytek.com">科大讯飞</a></li>
+                    
+                        <li><a href="http://www.hfl-tek.com">哈工大讯飞联合实验室</a></li>
+                    
+                        <li><a href="http://ir.hit.edu.cn">社会计算与信息检索实验室</a></li>
+                    
+                </ul>
+                
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
+
+
+
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+<!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
+<script>
+    async("//cdnjs.cloudflare.com/ajax/libs/anchor-js/1.1.1/anchor.min.js",function(){
+        anchors.options = {
+          visible: 'always',
+          placement: 'right',
+          icon: '#'
+        };
+        anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+    })
+</script>
+<style>
+    /* place left on bigger screen */
+    @media all and (min-width: 800px) {
+        .anchorjs-link{
+            position: absolute;
+            left: -0.75em;
+            font-size: 1.1em;
+            margin-top : -0.1em;
+        }
+    }
+</style>
+
+
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                    
+                    
+
+                    <!-- add Weibo, Zhihu by Hux, add target = "_blank" to <a> by Hux -->
+                    
+                    
+
+
+                    
+                    
+                    
+                </ul>
+                <p class="copyright text-muted">
+                    Copyright &copy; 阅读理解研究组 2018
+                    <br>
+                    Theme by <a href="http://huangxuan.me">Hux</a> |
+                    <iframe
+                        style="margin-left: 2px; margin-bottom:-5px;"
+                        frameborder="0" scrolling="0" width="100px" height="20px"
+                        src="https://ghbtns.com/github-btn.html?user=huxpro&repo=huxpro.github.io&type=star&count=true" >
+                    </iframe>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/js/jquery.min.js "></script>
+
+<!-- Bootstrap Core JavaScript -->
+<!-- Currently, only navbar scroll-down effect at desktop still depends on this -->
+<script src="/js/bootstrap.min.js "></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/hux-blog.min.js "></script>
+
+<!-- Service Worker -->
+
+<script src="/js/snackbar.js "></script>
+<script src="/js/sw-registration.js "></script>
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+<!--
+     Because of the native support for backtick-style fenced code blocks
+     right within the Markdown is landed in Github Pages,
+     From V1.6, There is no need for Highlight.js,
+     so Huxblog drops it officially.
+
+     - https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0
+     - https://help.github.com/articles/creating-and-highlighting-code-blocks/
+     - https://github.com/jneen/rouge/wiki/list-of-supported-languages-and-lexers
+-->
+<!--
+    <script>
+        async("http://cdn.bootcss.com/highlight.js/8.6/highlight.min.js", function(){
+            hljs.initHighlightingOnLoad();
+        })
+    </script>
+    <link href="http://cdn.bootcss.com/highlight.js/8.6/styles/github.min.css" rel="stylesheet">
+-->
+
+
+<!-- jquery.tagcloud.js -->
+<script>
+    // only load tagcloud.js in tag.html
+    if($('#tag_cloud').length !== 0){
+        async('/js/jquery.tagcloud.js',function(){
+            $.fn.tagcloud.defaults = {
+                //size: {start: 1, end: 1, unit: 'em'},
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+<!--fastClick.js -->
+<script>
+    async("//cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+<!-- Google Analytics -->
+
+<script>
+    // dynamic User by Hux
+    var _gaId = '';
+    var _gaDomain = '';
+
+    // Originial
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', _gaId, _gaDomain);
+    ga('send', 'pageview');
+</script>
+
+
+
+<!-- Baidu Tongji -->
+
+
+
+<!-- Side Catalog -->
+
+<script type="text/javascript">
+    function generateCatalog (selector) {
+
+        // interop with multilangual 
+        if (true) {
+            _containerSelector = 'div.post-container.active'
+        } else {
+            _containerSelector = 'div.post-container'
+        }
+
+        // init
+        var P = $(_containerSelector),a,n,t,l,i,c;
+        a = P.find('h1,h2,h3,h4,h5,h6');
+
+        // clean
+        $(selector).html('')
+
+        // appending
+        a.each(function () {
+            n = $(this).prop('tagName').toLowerCase();
+            i = "#"+$(this).prop('id');
+            t = $(this).text();
+            c = $('<a href="'+i+'" rel="nofollow">'+t+'</a>');
+            l = $('<li class="'+n+'_nav"></li>').append(c);
+            $(selector).append(l);
+        });
+        return true;
+    }
+
+    generateCatalog(".catalog-body");
+
+    // toggle side catalog
+    $(".catalog-toggle").click((function(e){
+        e.preventDefault();
+        $('.side-catalog').toggleClass("fold")
+    }))
+
+    /*
+     * Doc: https://github.com/davist11/jQuery-One-Page-Nav
+     * Fork by Hux to support padding
+     */
+    async("/js/jquery.nav.js", function () {
+        $('.catalog-body').onePageNav({
+            currentClass: "active",
+            changeHash: !1,
+            easing: "swing",
+            filter: "",
+            scrollSpeed: 700,
+            scrollOffset: 0,
+            scrollThreshold: .2,
+            begin: null,
+            end: null,
+            scrollChange: null,
+            padding: 80
+        });
+    });
+</script>
+
+
+
+<!-- Multi-Lingual -->
+
+<!-- Handle Language Change -->
+<script type="text/javascript">
+    // get nodes
+    var $zh = document.querySelector(".zh");
+    var $en = document.querySelector(".en");
+    var $select = document.querySelector("select");
+
+    // bind hashchange event
+    // Changes at v1.7.2: change the language flag from hash-basing to in-memory basing
+    // due to its confliction with catalog anchors.
+    // window.addEventListener('hashchange', _render);
+
+    // handle render
+    function _render(_hash){
+        var _hash = _hash || window.location.hash;
+        // en
+        if(_hash == "#en"){
+            $select.selectedIndex = 1;
+            $en.style.display = "block";
+            $en.classList.add("active");
+            $zh.style.display = "none";
+            $zh.classList.remove("active");
+        // zh by default
+        }else{
+            // not trigger onChange, otherwise cause a loop call.
+            $select.selectedIndex = 0;
+            $zh.style.display = "block";
+            $zh.classList.add("active");
+            $en.style.display = "none";
+            $en.classList.remove("active");
+        }
+        // interop with catalog 
+        if ("true") generateCatalog(".catalog-body");
+    }
+
+    // handle select change
+    function onLanChange(index){
+        if(index == 0){
+            _hash = "#zh"
+        }else{
+            _hash = "#en"
+        }
+        _render(_hash)
+    }
+
+    // init
+    _render();
+</script>
+
+
+
+
+<!-- Image to hack wechat -->
+<img src="/img/icon_wechat.png" width="0" height="0" />
+<!-- Migrate from head to bottom, no longer block render and still work -->
+
+</body>
+
+</html>

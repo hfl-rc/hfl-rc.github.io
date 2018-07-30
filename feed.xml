@@ -1,0 +1,1010 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>阅读理解研究组</title>
+    <description>哈工大讯飞联合实验室(HFL)阅读理解研究组</description>
+    <link>http://hfl-rc.com//</link>
+    <atom:link href="http://hfl-rc.com//feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Mon, 30 Jul 2018 12:46:35 +0800</pubDate>
+    <lastBuildDate>Mon, 30 Jul 2018 12:46:35 +0800</lastBuildDate>
+    <generator>Jekyll v3.1.6</generator>
+    
+      <item>
+        <title>一年四次夺冠，凭什么？</title>
+        <description>&lt;!-- Chinese Version --&gt;
+&lt;div class=&quot;zh post-container&quot;&gt;
+    
+    &lt;blockquote&gt;
+  &lt;p&gt;本文转自哈工大讯飞联合实验室微信公众号&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;在那些寒窗苦读的学生时代，在无数个奋笔疾书的考场上，你一定碰见过一种作业题型——“阅读理解”。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/news/20180418/640.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/news/20180418/640-1.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;它需要融会贯通进行主观陈述和作答，是难度系数比较高的题型之一。其实“阅读理解”并不是人类才有的“苦恼”，机器也同样需要过这一关。&lt;/p&gt;
+
+&lt;p&gt;就着阅读理解这事，科大讯飞AI研究院副院长王士进和研究主管崔一鸣今天将和大家聊聊背后的故事——他们的团队已连续在机器阅读理解的比赛上摘得全球桂冠。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/news/20180418/640-2.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/news/20180418/640.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;今年2月10日，科大讯飞又拿奖了。&lt;/p&gt;
+
+&lt;p&gt;在SemEval 2018国际语义测评大赛的机器阅读理解评测任务中，哈工大讯飞联合实验室(HFL)荣获桂冠。在此之前，从去年7月开始，实验室已在机器阅读理解领域权威评测大赛SQuAD连续3次刷新世界纪录。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/news/20180418/640-3.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;“给定一个日常生活场景的描述文本及相关问题，我们需要利用常识和知识让机器从候选答案中挑选出正确答案。”这其中利用了机器阅读理解的相关技术，“我们把从融合式层叠注意力系统分拆的技术，应用到其他自然语言处理任务中。”&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/news/20180418/640-4.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;阅读理解先审题后答题，这其中蕴含了一整套逻辑理解的关系，人处理起来都不太容易、机器如何拥有这项能力？“其实人和机器的解题过程有区别。”&lt;/p&gt;
+
+&lt;p&gt;崔一鸣介绍，人在审题和做题的时候通常要结合自身已掌握的常识和知识，并且综合全文的信息做进一步归纳、推理，这个过程相对较为多元化。&lt;/p&gt;
+
+&lt;p&gt;而对于目前的机器来说，首先需要“阅读”大量的篇章和问题，并且计算出篇章、问题之间语义级别的匹配程度，从而更好地抽取出与解题相关的内容。“所以对于机器来说，更能够答好之前见过的问题，而缺乏一些多元化、综合解题的能力。”&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/news/20180418/640-5.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;说得坦率些，虽然目前机器在某些阅读理解数据集上的水平超过了人类，但这并不能表明“机器打败了人类”。“现在的技术距离通用型人工智能其实还很远，机器还无法能够模拟很多人类的智能。”王士进解释，通用性不够强、需依赖大量有标注的数据，都是目前机器阅读理解的局限性。&lt;/p&gt;
+
+&lt;p&gt;让机器能理解会思考，让机器具备真正的推理能力，其实还有很长一段路要走。“理论框架上必须进行突破，而不是简单的升级。”王士进这样认为：首先机器要能从海量数据学会推理、掌握知识和常识，然后还需要机器从小样本数据上学会同样的事情。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/news/20180418/640-6.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;因为有这样的研究目标，拿奖对于科大讯飞AI研究院而言，似乎是水到渠成。“SemEval2018上夺冠从时间上是意料之外，但从技术角度来说也是情理之中。”&lt;/p&gt;
+
+&lt;p&gt;事实上，准备这项大赛，团队只用了1个半月左右。“因为当时在工程项目上需要进行技术攻关，偶然了解到今年这项比赛中有机器阅读理解的任务，便抽出部分时间来参与。模型设计花费了1-2周，后续还做了参数调整和效果优化。”崔一鸣坦言，对于新任务团队本也没有十足的夺冠把握，只是从技术积累看有希望。&lt;/p&gt;
+
+&lt;p&gt;“冠军不是目标，只是我们技术的试金石，体现的是核心技术的领先优势。”坐拥机器阅读理解领域的多项世界纪录和世界冠军，团队显得既霸气又谦虚。&lt;/p&gt;
+
+&lt;p&gt;而今，在被誉为“人工智能领域皇冠上的明珠”的机器阅读理解大赛中，除了几家常驻的研究机构之外，还有来越多的科技公司、甚至互联网公司、创业公司加入，“这样有助于促进该领域技术的进步。”&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/news/20180418/640-7.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;对于科大讯飞而言，如果参赛却没有拿到冠军，是不是意味着失败？“胜败乃兵家常事，技术的发展是螺旋式、曲折式的上升发展，讯飞有耐心去包容这样的‘失败’。”&lt;/p&gt;
+
+&lt;p&gt;也许正如那个道理：任何领域都没有常青树。技术上亦如此，为了获得持续发展的源动力，科大讯飞不仅自己拿冠军，还在帮助别人拿第一。&lt;/p&gt;
+
+&lt;p&gt;崔一鸣透露，2016年科大讯飞发布了首个中文填空型阅读理解数据集PD&amp;amp;CFT。2017年，科大讯飞携手中国中文信息学会计算语言学专委会（CIPS-CL）共同举办了首届“讯飞杯”中文机器阅读理解评测（CMRC 2017），并与全国计算语言学会议（CCL）共同召开，为相关学者提供了一个良好的沟通平台。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/news/20180418/640-8.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;今年，讯飞还会继续举办第二届“讯飞杯”中文机器阅读理解评测（CMRC 2018），和更多研究人员共同推动中文机器阅读理解的研究发展。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/news/20180418/640-9.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/news/20180418/640-1.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/news/20180418/640-10.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;从某种意义而言，让机器能“阅读理解”是人工智能向着高阶发展的尝试。机器能理解、会思考，就是我们常常所说的认知智能。它主要体现在人机交互和行业应用上，“认知智能的发展和逐步成熟，会使得人机交互逐渐便捷有效，会学习和固化行业专家和行业大数据的经验，对各个行业产生颠覆式的创新。”&lt;/p&gt;
+
+&lt;p&gt;相关的应用已经开始。王士进说，目前讯飞在多个应用领域使用自然语言处理等技术促进产品帮助人类。比如讯飞的“智医助理”在去年全球首次参加并通过国家执业医师资格考试笔试评测；比如通过人工智能的知识图谱和习得顺序分析可以精准分析每个孩子的学习情况，从而有针对性的布置个性化作业，大幅降低无效重复学习时间……&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/news/20180418/640-11.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/news/20180418/640.gif&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;对语言本身的处理和应用也有更广的尝试。“讯飞听见会议系统可实时将语音转写成文字，不仅有中文还有英语；讯飞翻译机也已具备了7种语言的互译功能，未来还将开发更多国家语言翻译功能，布局相关语种的语音识别技术、语音合成技术、机器翻译技术。”&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/news/20180418/640-12.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;有没有不太满意的地方呢？瑕疵肯定存在，王士进以智能阅卷技术的应用举例，坦言计算机评分也存在错误的情况，但这并不妨碍研发、应用的大势，“未来，随着人工智能技术的发展，机器可以自动学习教师的评卷方法，除了开放式作文，在其他科目、甚至政史地问答题等试题的批阅中，机器都可以自动阅卷。”如此将大大解放教师们时间和精力，“他们将投入到对教学方法、教学手段等创造性工作的研究中，相学生们也会因此获得更好、更全面的教育。”&lt;/p&gt;
+
+&lt;p&gt;所以，“阅读理解”只是开始，包括讯飞AI研究院在内，攻克它只是核心技术研究上的一点突破，更大的意义在于构建研究生态和让研究应用真正发挥价值。&lt;/p&gt;
+
+
+&lt;/div&gt;
+
+&lt;!-- English Version --&gt;
+&lt;div class=&quot;en post-container&quot;&gt;
+    
+    &lt;blockquote&gt;
+  &lt;p&gt;Nothing special&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;/div&gt;
+</description>
+        <pubDate>Wed, 18 Apr 2018 08:00:00 +0800</pubDate>
+        <link>http://hfl-rc.com//2018/04/18/interview-on-rc-team/</link>
+        <guid isPermaLink="true">http://hfl-rc.com//2018/04/18/interview-on-rc-team/</guid>
+        
+        <category>SQuAD</category>
+        
+        <category>SemEval 2018</category>
+        
+        <category>阅读理解评测</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>CMRC 2018 | 中文机器阅读理解评测报名</title>
+        <description>&lt;!-- Chinese Version --&gt;
+&lt;div class=&quot;zh post-container&quot;&gt;
+    
+    &lt;blockquote&gt;
+  &lt;p&gt;本文转自哈工大讯飞联合实验室微信公众号&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;评测报名截止时间：2018年4月22日23:59 (GMT+8)&lt;/p&gt;
+
+&lt;h3 id=&quot;section&quot;&gt;前言&lt;/h3&gt;
+
+&lt;p&gt;第二届“讯飞杯”中文机器阅读理解评测 (The Second Evaluation Workshop on Chinese Machine Reading Comprehension, CMRC 2018) 自发布以来受到高校、研究机构、企业等社会各界人士的广泛关注和积极参加。我们欢迎更多对中文机器阅读理解评测感兴趣的团队报名参加本次评测。请还未报名的参赛队伍请尽快通过文章末尾的报名方式进行报名，本次评测的报名截止时间为北京时间2018年4月22日23:59(GMT+8)。&lt;/p&gt;
+
+&lt;p&gt;CMRC 2018官方网站：&lt;a href=&quot;http://www.hfl-tek.com/cmrc2018/&quot;&gt;http://www.hfl-tek.com/cmrc2018/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/news/20180122/sponsor.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;http://www.hfl-tek.com/cmrc2017/index.html&quot;&gt;第一届“讯飞杯”中文机器阅读理解评测（The First Evaluation Workshop on Chinese Machine Reading Comprehension，CMRC2017）&lt;/a&gt;&lt;/strong&gt;在2017年10月与第十六届全国计算语言学学术会议（CCL2017）在南京圆满落幕，得到了相关同行的积极参与和大力支持。从2017年开始，全国计算语言学学术会议（CCL）计划举办评测活动。&lt;/p&gt;
+
+&lt;p&gt;作为CCL的系列评测，今年我们继续举办&lt;strong&gt;第二届“讯飞杯”中文机器阅读理解评测 (The Second Evaluation Workshop on Chinese Machine Reading Comprehension, CMRC2018)&lt;/strong&gt;，并将于2018年下半年与第十七届全国计算语言学学术会议（CCL2018，2018年10月19日~21日，湖南长沙）共同召开。本届中文机器阅读理解评测由&lt;strong&gt;&lt;a href=&quot;http://www.cips-cl.org&quot;&gt;中国中文信息学会计算语言学专业委员会（CIPS-CL）&lt;/a&gt;&lt;/strong&gt;主办，&lt;strong&gt;&lt;a href=&quot;http://rc.hfl-tek.com&quot;&gt;哈工大讯飞联合实验室（HFL）&lt;/a&gt;&lt;/strong&gt;承办，&lt;strong&gt;&lt;a href=&quot;http://www.iflytek.com&quot;&gt;科大讯飞股份有限公司&lt;/a&gt;&lt;/strong&gt;冠名赞助，旨在进一步促进中文机器阅读理解研究及发展并且为相关领域学者提供一个良好的沟通平台。在此，CMRC2018评测委员会诚邀各家单位参加本次评测活动！&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;http://rc.hfl-tek.com&quot;&gt;哈工大讯飞联合实验室（HFL）&lt;/a&gt;&lt;/strong&gt;长期致力于机器阅读理解的研究和发展。在中文阅读理解方面，哈工大讯飞联合实验室在2016年7月提出&lt;strong&gt;&lt;a href=&quot;https://github.com/ymcui/Chinese-RC-Dataset&quot;&gt;首个中文填空型阅读理解数据集PD&amp;amp;CFT&lt;/a&gt;&lt;/strong&gt;。在2017年承办了第一届“讯飞杯”中文机器阅读理解评测（CMRC2017）并且发布了相关&lt;strong&gt;&lt;a href=&quot;https://github.com/ymcui/cmrc2017&quot;&gt;中文阅读理解数据集&lt;/a&gt;&lt;/strong&gt;，进一步促进了中文机器阅读理解研究。我们希望通过每年的中文机器阅读理解评测，与相关领域学者共同推进中文机器阅读理解的技术水平。&lt;/p&gt;
+
+&lt;h2 id=&quot;section-1&quot;&gt;任务描述&lt;/h2&gt;
+&lt;p&gt;在去年的CMRC2017评测中，我们的任务焦点是&lt;strong&gt;填空型阅读理解任务(Cloze-style Machine Reading Comprehension)&lt;/strong&gt;，吸引了数十家单位报名参加，并且最终有十余家单位提交了系统结果。今年我们将聚焦&lt;strong&gt;基于篇章片段抽取的阅读理解(Span-Extraction Machine Reading Comprehension)&lt;/strong&gt;，作为填空型阅读理解任务的进一步延伸。虽然在英文阅读理解研究上有例如斯坦福SQuAD、NewsQA等篇章片段抽取型阅读理解数据集，但目前相关中文资源仍然处于空白状态。本届中文机器阅读理解评测将开放&lt;strong&gt;首个人工标注的中文篇章片段抽取型阅读理解数据集&lt;/strong&gt;，参赛选手需要对篇章、问题进行建模，并从篇章中抽取出连续片段作为答案。本次评测依然采取训练集、开发集公开，测试集隐藏的形式以保证评测的公平性。&lt;/p&gt;
+
+&lt;p&gt;更详细的评测任务描述及流程请密切关注本网站后续更新。&lt;/p&gt;
+
+&lt;h3 id=&quot;section-2&quot;&gt;奖项设置&lt;/h3&gt;
+&lt;p&gt;本届评测将评选出如下奖项，颁发奖金和荣誉证书。
+由&lt;strong&gt;中国中文信息学会计算语言学专委会（CIPS-CL）&lt;/strong&gt;为获奖队伍提供荣誉证书。&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;&lt;strong&gt;金奖&lt;/strong&gt;&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;&lt;strong&gt;￥20,000 + 荣誉证书&lt;/strong&gt;&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;银奖&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;￥10,000 + 荣誉证书&lt;/strong&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;铜奖&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;￥ 5,000 + 荣誉证书&lt;/strong&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;最佳单系统奖&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;￥10,000 + 荣誉证书&lt;/strong&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&quot;section-3&quot;&gt;重要时间点&lt;/h3&gt;
+&lt;p&gt;以下所有截止时间点为北京时间（GMT+8）23:59。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;以下时间节点仅供参考，请注册参加者密切关注本网站以及邮件通知。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;事件&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;状态&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;时间&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;预报名&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;»已开始«&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;即日起&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;正式报名确认&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;未开始&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;2018年4月23日 ~ 2018年4月27日&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;发布训练集和开发集&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;未开始&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;2018年5月7日&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;系统搭建及调整&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;未开始&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;2018年5月7日 ~ 2018年8月7日&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;提交系统验证开发集&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;未开始&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;2018年6月7日 ~ 2018年8月7日&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;提交系统验证测试集&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;未开始&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;2018年8月13日 ~ 2018年8月17日&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;撰写系统描述摘要&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;未开始&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;2018年9月中旬&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;召开CMRC2018大会&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;未开始&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;TBD, 与CCL2018同步召开（2018年10月20日或21日）&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&quot;section-4&quot;&gt;注册报名&lt;/h3&gt;
+&lt;p&gt;拟报名参加的单位，请参考如下链接： &lt;a href=&quot;https://wj.qq.com/s/1822356/e14c&quot;&gt;https://wj.qq.com/s/1822356/e14c&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;section-5&quot;&gt;评测组织&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;主办方&lt;/strong&gt;： &lt;a href=&quot;http://www.cips-cl.org&quot;&gt;中国中文信息学会计算语言学专业委员会&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;承办方&lt;/strong&gt;： &lt;a href=&quot;http://rc.hfl-tek.com&quot;&gt;哈工大讯飞联合实验室&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;冠名商&lt;/strong&gt;： &lt;a href=&quot;http://www.iflytek.com&quot;&gt;科大讯飞股份有限公司&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;评测主席&lt;/strong&gt;：&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;刘   挺 （哈尔滨工业大学） &lt;br /&gt;崔一鸣（科大讯飞股份有限公司）&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;section-6&quot;&gt;联系我们&lt;/h2&gt;
+&lt;p&gt;如果有任何与本次评测相关的问题，请随时联系会务组。
+评测会务组邮箱： &lt;strong&gt;&lt;a href=&quot;&amp;#109;&amp;#097;&amp;#105;&amp;#108;&amp;#116;&amp;#111;:&amp;#099;&amp;#109;&amp;#114;&amp;#099;&amp;#050;&amp;#048;&amp;#049;&amp;#056;&amp;#064;&amp;#049;&amp;#050;&amp;#054;&amp;#046;&amp;#099;&amp;#111;&amp;#109;&quot;&gt;&amp;#099;&amp;#109;&amp;#114;&amp;#099;&amp;#050;&amp;#048;&amp;#049;&amp;#056;&amp;#064;&amp;#049;&amp;#050;&amp;#054;&amp;#046;&amp;#099;&amp;#111;&amp;#109;&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+
+
+&lt;/div&gt;
+
+&lt;!-- English Version --&gt;
+&lt;div class=&quot;en post-container&quot;&gt;
+    
+    &lt;blockquote&gt;
+  &lt;p&gt;Nothing special&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;/div&gt;
+</description>
+        <pubDate>Mon, 16 Apr 2018 08:00:00 +0800</pubDate>
+        <link>http://hfl-rc.com//2018/04/16/participate-in-cmrc2018/</link>
+        <guid isPermaLink="true">http://hfl-rc.com//2018/04/16/participate-in-cmrc2018/</guid>
+        
+        <category>CMRC 2018</category>
+        
+        <category>CCL 2018</category>
+        
+        <category>阅读理解评测</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>探秘SemEval 2018阅读理解评测HFL夺冠系统</title>
+        <description>&lt;!-- Chinese Version --&gt;
+&lt;div class=&quot;zh post-container&quot;&gt;
+    
+    &lt;blockquote&gt;
+  &lt;p&gt;本文转自哈工大讯飞联合实验室微信公众号&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;据此前报道，哈工大讯飞联合实验室(HFL)在国际语义评测SemEval 2018机器阅读理解任务中夺冠。本期将详细介绍夺冠系统的具体技术细节。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/news/20180322/semeval2018.jpeg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;/img/news/20180322/task11.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;机器阅读理解(Machine Reading Comprehension, MRC)&lt;/strong&gt;是认知智能中的代表任务，受到了国内外研究机构的广泛关注。本届国际语义评测SemEval 2018中发布了“任务11: 基于常识的机器阅读理解”。我们接下来从&lt;strong&gt;任务介绍、评测系统、评测结果和未来展望&lt;/strong&gt;四个部分来详细介绍哈工大讯飞联合实验室的夺冠系统细节。&lt;/p&gt;
+
+&lt;h2 id=&quot;section&quot;&gt;任务介绍&lt;/h2&gt;
+&lt;p&gt;第十二届国际语义评测（International Workshop on Semantic Evaluation, SemEval 2018）中的任务11发布了&lt;strong&gt;基于常识的机器阅读理解（Task 11: Machine Comprehension using Commonsense Knowledge）&lt;/strong&gt;。组织者希望参赛选手能够让计算机通过引入背景知识，然后建立相关模型来完成对文本和问题的阅读，并且从两个候选答案中选出一个作为正确答案。机器需要综合考虑文本、问题以及选项之间的关系才能将正确的选项选出来。下图是本次评测数据中的一个样例。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/news/20180322/example.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;hybrid-multi-aspects-model&quot;&gt;Hybrid Multi-Aspects Model&lt;/h2&gt;
+&lt;p&gt;针对这类选择型的阅读理解题目，我们一般的做法是先阅读文本、问题和选项，然后带着问题阅读文本，找到文本中与问题相关的片段，然后找到更加匹配的选项作为正确答案。
+根据上述思想，我们提出了&lt;strong&gt;Hybrid Multi-Aspects Model&lt;/strong&gt;，该模型首先学习文本、问题以及选项的深层次的语义信息，充分挖掘文本、问题及选项之间的内部关联关系，通过语义级别的匹配来计算各个选项成为答案的概率，最终综合考虑各个因素，从而给出更加精准的答案。&lt;/p&gt;
+
+&lt;p&gt;模型的主要计算流程如下：
+1. 首先通过使用预训练的词向量，以及双向循环神经网络LSTM对文本、问题以及选项进行建模，得到它们的分布式表示。
+2. 通过注意力机制，计算文本与选项，问题与选项的匹配程度得到被选项过滤的文本表示HCT（Choice-aware Text Representation）以及问题表示HCQ（Choice-aware Question Representation）。这一步骤主要利用选项信息去过滤文本和问题，从而将解题无关的部分筛选掉，降低答案搜索的难度。
+3. 同时，我们利用self-attention机制进一步抽取出问题中的关键部分，得到过滤后的问题表示HQT。
+4. 下一步，我们对（HCT，HQT）以及（HCQ，HQT）计算Attention结果，并且对二维Attention结果进行加权求和得到该选项的综合得分，从文本和问题的角度分别考虑该选项成为答案的概率。
+5. 综上，我们可以对两个选项分别进行上述的计算。
+6. 最后我们对两个方面得到的结果进行相加，得到最终的概率分布，从而推断两个选项中哪一个是正确答案。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/news/20180322/model.jpeg&quot; alt=&quot;&quot; /&gt;
+▲ &lt;em&gt;HFL提出的Hybrid Multi-Aspects Model&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;section-1&quot;&gt;评测结果&lt;/h2&gt;
+&lt;p&gt;最终经过官方的评测与校验，&lt;strong&gt;哈工大讯飞联合实验室提交的系统在24个参评队伍中脱颖而出，获得了该评测的冠军，进一步体现出哈工大讯飞联合实验室的机器阅读理解技术走在世界最前沿&lt;/strong&gt;。此前，我们曾报道过哈工大讯飞联合实验室&lt;strong&gt;三次登顶机器阅读理解世界权威评测——斯坦福SQuAD&lt;/strong&gt;，将相关技术指标提升到了新的台阶，其中EM指标（精准准确率）超过人类平均水平，F1指标（模糊准确率）首次超过89%的门槛。
+本次SemEval 2018评测夺冠，正是将斯坦福SQuAD评测中的若干技术进行融会贯通的结果。同时，相关技术也在其他的机器阅读理解数据集以及自然语言处理任务中得到显著性能提升，并且应用到相关的工程项目中。通过不断挑战和钻研各种各样的阅读理解任务，哈工大讯飞联合实验室积累了大量阅读理解核心技术，为后续的基础研究以及产品转化打下坚实的基础。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/news/20180322/result.jpeg&quot; alt=&quot;&quot; /&gt;
+▲ &lt;em&gt;SemEval 2018 Task 11的最终排名（前10名）&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;section-2&quot;&gt;未来展望&lt;/h2&gt;
+&lt;p&gt;虽然我们在本次评测中拿到了冠军，但针对该任务的模型仍然存在很多可优化提升的地方。其中比较重要的一点是，尽管我们进行了大量实验尝试将外部常识和知识融合到我们的评测模型中，但均未能获得显著的性能提升。这个现象说明，&lt;strong&gt;如何能够有效的融合外部知识，从而提升机器阅读理解的水平是未来研究中不可缺少并且值得深入研究的一个方面&lt;/strong&gt;。机器阅读理解的研究还存在着诸多挑战，但我们相信在不远的将来通过各界的努力，机器阅读理解技术一定能够迈上一个新的台阶，同时发挥更大的应用价值。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;报告下载：&lt;a href=&quot;https://arxiv.org/abs/1803.05655&quot;&gt;链接&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/news/20180322/qrcode.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+
+&lt;/div&gt;
+
+&lt;!-- English Version --&gt;
+&lt;div class=&quot;en post-container&quot;&gt;
+    
+    &lt;blockquote&gt;
+  &lt;p&gt;Nothing special&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;/div&gt;
+</description>
+        <pubDate>Thu, 22 Mar 2018 08:00:00 +0800</pubDate>
+        <link>http://hfl-rc.com//2018/03/22/semeval2018-top-system/</link>
+        <guid isPermaLink="true">http://hfl-rc.com//2018/03/22/semeval2018-top-system/</guid>
+        
+        <category>哈工大讯飞联合实验室</category>
+        
+        <category>SemEval 2018</category>
+        
+        <category>阅读理解评测</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>2018年春季HFL实习生招聘</title>
+        <description>&lt;!-- Chinese Version --&gt;
+&lt;div class=&quot;zh post-container&quot;&gt;
+    
+    &lt;blockquote&gt;
+  &lt;p&gt;招聘有效期至2018年6月30日&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;hfl&quot;&gt;哈工大讯飞联合实验室 (HFL)&lt;/h3&gt;
+&lt;p&gt;哈工大讯飞联合实验室(HFL)由哈尔滨工业大学社会计算与信息检索研究中心(HIT-SCIR)刘挺教授团队与科大讯飞研究院(iFLYTEK Research)共同创办，致力于自然语言处理相关领域的研究及相关技术的应用落地。2017至2018年，HFL在业内公认的机器阅读理解顶级赛事斯坦福SQuAD挑战赛中先后夺得三次冠军。2018年2月获得国际语义评测SemEval-2018阅读理解任务的第一名。HFL核心技术不断取得突破，相关成果发表于自然语言处理顶级及重要会议ACL、COLING、NAACL等，并且应用在司法、教育、金融等领域，全面实现“A.I. + 行业”的产学研布局。&lt;/p&gt;
+
+&lt;h3 id=&quot;section&quot;&gt;岗位：自然语言处理实习生（工程）&lt;/h3&gt;
+&lt;p&gt;岗位职责：利用自然语言处理以及机器学习、深度学习等方法，解决实际的工程问题。其中主要面向的行业有：金融、司法、教育等。&lt;/p&gt;
+
+&lt;p&gt;岗位要求：&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;研究背景要求：自然语言处理、机器学习、深度学习或相关领域&lt;/li&gt;
+  &lt;li&gt;编程语言要求：熟悉Python/C++/Java任意一种，并且熟练掌握Linux下的编程开发环境&lt;/li&gt;
+  &lt;li&gt;科学工具要求：熟练使用机器学习或深度学习等工具解决工程问题&lt;/li&gt;
+  &lt;li&gt;有过实际项目开发经验或相关实习经验者优先考虑&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;必须保证6个月以上的实习期，每周至少4个工作日在班&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/news/20180312/line.gif&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;section-1&quot;&gt;岗位：自然语言处理实习生（研究）&lt;/h3&gt;
+&lt;p&gt;岗位职责：深入自然语言处理相关的核心技术研究，其中包括但不限于：短文本/篇章分析，阅读理解，问答系统等。熟练应用机器学习、深度学习等技术解决自然语言处理的相关问题。&lt;/p&gt;
+
+&lt;p&gt;岗位要求：&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;研究背景要求：自然语言处理、机器学习、深度学习或相关领域&lt;/li&gt;
+  &lt;li&gt;编程语言要求：熟悉Python，并且熟练掌握Linux下的编程开发环境&lt;/li&gt;
+  &lt;li&gt;科学工具要求：熟悉Tensorflow/PyTorch/Theano等深度学习框架，并具备一定的调参能力&lt;/li&gt;
+  &lt;li&gt;在自然语言处理顶会或重要会议（ACL，EMNLP，NAACL，COLING）、机器学习/深度学习顶会或重要会议（NIPS，ICML，IJCAI，AAAI，ICLR）上发表学术文章者优先考虑&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;必须保证6个月以上的实习期，每周至少4个工作日在班，同时欢迎你来这边做毕业设计&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;section-2&quot;&gt;所有岗位福利&lt;/h3&gt;
+
+&lt;p&gt;与优秀的人一起工作，导师辅导制，全方面提升个人综合素质
+（除实习工资外）公司提供住宿(对外地实习生)，用餐补助，加班餐补等
+浓厚的学术氛围，定期邀请业界知名学者做报告
+法定节日福利、午间水果、咖啡等等&lt;/p&gt;
+
+&lt;h3 id=&quot;section-3&quot;&gt;申请方式&lt;/h3&gt;
+
+&lt;p&gt;欢迎请将你的简历发送到： join_HFL [at] iflytek [dot] com&lt;/p&gt;
+
+&lt;p&gt;邮件里请注明你的应聘的职位和兴趣方向。&lt;/p&gt;
+
+&lt;p&gt;文章原址：&lt;a href=&quot;https://mp.weixin.qq.com/s/g92uDR4RVuTSTFBqImeuNg&quot;&gt;link&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;扫描下方二维码关注哈工大讯飞联合实验室。
+&lt;img src=&quot;/img/news/20180226/hfl_qr.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+
+&lt;/div&gt;
+
+&lt;!-- English Version --&gt;
+&lt;div class=&quot;en post-container&quot;&gt;
+    
+    &lt;blockquote&gt;
+  &lt;p&gt;Nothing special&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;/div&gt;
+</description>
+        <pubDate>Tue, 13 Mar 2018 08:00:00 +0800</pubDate>
+        <link>http://hfl-rc.com//2018/03/13/hfl-2018-intern/</link>
+        <guid isPermaLink="true">http://hfl-rc.com//2018/03/13/hfl-2018-intern/</guid>
+        
+        <category>哈工大讯飞联合实验室</category>
+        
+        <category>招聘</category>
+        
+        <category>HFL</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>科大讯飞董事长两会发言，HFL四项关键技术备受瞩目</title>
+        <description>&lt;!-- Chinese Version --&gt;
+&lt;div class=&quot;zh post-container&quot;&gt;
+    
+    &lt;blockquote&gt;
+  &lt;p&gt;第十三届全国人大一次会议第三场“代表通道”于3月11日下午举行，全国人大代表、科大讯飞董事长刘庆峰接受了记者采访。在刘庆峰代表的发言中，提及了哈工大讯飞联合实验室（HFL）参与的自然语言理解领域中四项关键技术进展，包括阅读理解、语文作文评阅、智能司法和机器翻译。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;刘庆峰代表指出，&lt;strong&gt;中国在人工智能的源头创新上，很多方面已经跟全世界并跑，甚至是部分领域领跑&lt;/strong&gt;。在语音识别技术方面，科大讯飞已使人工智能超越了人类最好的速记员水平，而在代表人工智能未来的自然语言理解技术方面，科大讯飞也实现了多项重大突破。在阅读理解方面，2018年1月22日科大讯飞在全球顶尖的阅读理解大赛SQuAD中刷新了全球记录，并且围绕该技术实现了自动评阅高考语文作文以及四六级英语作文；在司法领域，利用人工智能技术进行刑事案件辅助审判，贯穿公检法证据后可自动分析有无证据缺失和自相矛盾，自动地进行立案追诉和辅助判断；在翻译方面，科大讯飞翻译机现在已支持将近30个语种，并且在英汉翻译方面首次让智能翻译达到大学英语六级口语水平。&lt;/p&gt;
+
+&lt;h3 id=&quot;section&quot;&gt;机器阅读理解&lt;/h3&gt;
+&lt;p&gt;哈工大讯飞联合实验室是国内最早启动机器阅读理解的团队之一。2017年7月，科大讯飞凭借交互式层叠注意力模型（Interactive AoA Reader）获得&lt;strong&gt;业界权威的斯坦福SQuAD评测的榜首&lt;/strong&gt;，并在同年10月进一步优化该模型后&lt;strong&gt;刷新纪录&lt;/strong&gt;。2018年1月，哈工大讯飞联合实验室提交的融合式层叠注意力系统（Hybrid AoA Reader）&lt;strong&gt;再度登顶斯坦福SQuAD&lt;/strong&gt;。2018年2月，首次参加国际语义评测（International Workshop on Semantic Evaluation, &lt;strong&gt;SemEval 2018&lt;/strong&gt;）即获得了机器阅读理解任务的第一名。同时，哈工大讯飞联合实验室连续&lt;strong&gt;承办两届中文机器阅读理解评测（CMRC）&lt;/strong&gt;，进一步促进了中文机器阅读理解的研究。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/news/20180312/squad.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;section-1&quot;&gt;语文作文评阅&lt;/h3&gt;
+&lt;p&gt;作文自动评阅技术通过自动学习人类专家的评分标准，对纸笔考试作文从字迹工整度、词汇丰富性、句子通顺度、文采、篇章结构、立意等多个维度综合评价。该技术已在多地中考、学考、高考等大规模考试评分中通过了验证，评分效果达到人工评分水平，同时还具备相似文本检测功能，因此可用于辅助人工评分，提高评分准确性、公平性和效率。此外，针对日常教学，该作文评阅系统还能对于作文进行点评、划出优美表达、分析篇章结构、识别表达方式等，可辅助教师对于学生作文进行详细评阅和统计分析，达到为教学减负增效的目的。目前，作文自动评阅技术已在全国多地的中考、学考、高考以及民族汉考等大规模考试中应用，包括评分质检或替代人工一评等应用方式，覆盖考生达900万人。&lt;/p&gt;
+
+&lt;h3 id=&quot;section-2&quot;&gt;智能司法&lt;/h3&gt;
+&lt;p&gt;在智能司法方面，HFL专注于司法领域的认知智能研究。针对电子卷宗等司法数据，构建司法领域知识库，开展文本分类、信息提取、文本生成等研究，结合统计模型和专家知识，搭建辅助办案平台，实现证据内容校验、证据链分析、案情摘要、自动量刑、法条匹配、类案推送、电子卷宗自动编目、查证事项抽取等，并在用户数据的积累和学习迭代过程中不断提升司法认知智能技术效果。目前，智能司法相关的研究成果已成功应用于最高人民法院、最高人民检察院、及全国多个省市法院和检察院中，为推动国家的法制化建设持续发力。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/news/20180312/line.gif&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;刘庆峰代表表示：&lt;strong&gt;“下一步关键是，如何强调应用是硬道理，在应用驱动中数据不断迭代进化。中美可以说很多领域已经同步进入无人区。”&lt;/strong&gt;，哈工大讯飞联合实验室也将继续发挥在自然语言理解领域的技术领先优势，在各个应用领域攻克技术难关，让机器能理解会思考，让人工智能落地于人民生活中的方方面面，惠及普世民生。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/news/20180312/liu.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;文章原址：&lt;a href=&quot;https://mp.weixin.qq.com/s/BdBf76BnolyQY05xa2OWCw&quot;&gt;link&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;扫描下方二维码关注哈工大讯飞联合实验室。
+&lt;img src=&quot;/img/news/20180226/hfl_qr.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+
+&lt;/div&gt;
+
+&lt;!-- English Version --&gt;
+&lt;div class=&quot;en post-container&quot;&gt;
+    
+    &lt;blockquote&gt;
+  &lt;p&gt;Nothing special&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;/div&gt;
+</description>
+        <pubDate>Mon, 12 Mar 2018 08:00:00 +0800</pubDate>
+        <link>http://hfl-rc.com//2018/03/12/hfl-at-NPC-CPPCC/</link>
+        <guid isPermaLink="true">http://hfl-rc.com//2018/03/12/hfl-at-NPC-CPPCC/</guid>
+        
+        <category>哈工大讯飞联合实验室</category>
+        
+        <category>HFL</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>哈工大讯飞联合实验室开通微信公众号</title>
+        <description>&lt;!-- Chinese Version --&gt;
+&lt;div class=&quot;zh post-container&quot;&gt;
+    
+    &lt;blockquote&gt;
+  &lt;p&gt;哈工大讯飞联合实验室(HFL) 开通微信公众号&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;微信公众号：hit_iflytek&lt;/p&gt;
+
+&lt;p&gt;或扫描下方二维码进行关注。
+&lt;img src=&quot;/img/news/20180226/hfl_qr.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+
+&lt;/div&gt;
+
+&lt;!-- English Version --&gt;
+&lt;div class=&quot;en post-container&quot;&gt;
+    
+    &lt;blockquote&gt;
+  &lt;p&gt;Nothing special&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;/div&gt;
+</description>
+        <pubDate>Mon, 26 Feb 2018 08:00:00 +0800</pubDate>
+        <link>http://hfl-rc.com//2018/02/26/hfl-wechat-account/</link>
+        <guid isPermaLink="true">http://hfl-rc.com//2018/02/26/hfl-wechat-account/</guid>
+        
+        <category>哈工大讯飞联合实验室</category>
+        
+        <category>HFL</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>哈工大讯飞联合实验室摘取SemEval2018评测大赛桂冠</title>
+        <description>&lt;!-- Chinese Version --&gt;
+&lt;div class=&quot;zh post-container&quot;&gt;
+    
+    &lt;blockquote&gt;
+  &lt;p&gt;哈工大讯飞联合实验室阅读理解研究组(HFL-RC)在国际语义评测阅读理解任务中获得第一名！&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;第十二届国际语义评测比赛（International Workshop on Semantic Evaluation, SemEval 2018） 刚刚落下帷幕，在机器阅读理解评测任务（Task 11: Machine Reading Comprehension using Commonsense Knowledge）中，哈工大讯飞联合实验室（HFL）从参赛的24个队伍中脱颖而出，获得&lt;strong&gt;第一名&lt;/strong&gt;，再一次凸显科大讯飞在机器阅读理解领域的世界领先地位。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/news/20180206/semeval2018.png&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;/img/news/20180206/task11.png&quot; alt=&quot;&quot; /&gt;
+▲ &lt;em&gt;SemEval-2018 Task 11&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;SemEval 2018评测由国际计算语言学协会（Association for Computational Linguistics, ACL）下属的SIGLEX主办，ACL作为世界上影响力最大、最具活力的国际学术组织，其举办的计算语言学年会（Annual Meeting of the Association for Computational Linguistics）是国际自然语言处理的顶级会议。本次评测聚焦的任务是基于常识的机器阅读理解。任务给定一个日常生活场景的描述文本及相关问题，参赛队伍需要利用常识和知识让机器从候选答案中挑选出正确答案。相比SQuAD评测，SemEval 2018 评测中更深入挖掘文本信息及其背景知识，进一步考察了机器的阅读理解能力。继SQuAD评测多次夺冠后此次科大讯飞在基于常识的阅读理解评测SemEval2018中再获第一，进一步证明了科大讯飞在机器阅读理解核心技术的世界领先地位，也是在实现机器“能理解会思考”道路上不断拓新的最好体现。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/news/20180206/leaderboard.png&quot; alt=&quot;&quot; /&gt;
+▲ &lt;em&gt;SemEval-2018 Task 11 最终排名&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;除了本次SemEval2018评测夺冠之外，科大讯飞在业界权威的斯坦福SQuAD评测中屡获佳绩。2018年1月，科大讯飞提交的融合式层叠注意力系统（Hybrid Attention-over-Attention Reader）在SQuAD评测中第三次获得世界第一，也是首个F1（模糊准确率）超过89%的系统。这个系统中的一些分拆技术应用到了其他的自然语言处理任务，并且获得了显著的性能提升；本次在SemEval2018评测夺冠即是应用成果之一。未来，科大讯飞将利用机器阅读理解技术展示更多可能。&lt;/p&gt;
+
+&lt;h2 id=&quot;cmrc-2018&quot;&gt;中文机器阅读理解评测(CMRC 2018)&lt;/h2&gt;
+
+&lt;p&gt;科大讯飞不仅在核心技术上持续领跑，同时也积极关注和推动中文信息处理的研究发展。去年科大讯飞承办了首届“讯飞杯”中文机器阅读理解评测（CMRC 2017）受到了广泛关注和各界研究人员的积极参加。今年将继续携手中国中文信息学会计算语言学专业委员会（CIPS-CL）共同举办第二届“讯飞杯”中文机器阅读理解评测（CMRC 2018），进一步促进中文机器阅读理解研究与发展。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;2018年度国际语义评测(SemEval 2018)&lt;/strong&gt;刚刚给出了最终排名结果。哈工大讯飞联合实验室阅读理解研究组(HFL-RC)参加了&lt;strong&gt;任务11：基于常识的阅读理解(Task 11: Machine Comprehension using Commonsense Knowledge)&lt;/strong&gt;，在最终的24个队伍中脱颖而出，以&lt;strong&gt;84.13%&lt;/strong&gt;的准确率获得评测的&lt;strong&gt;第一名&lt;/strong&gt;，充分展示了HFL-RC的核心技术继续保持世界领先地位。在本次评测任务中，参赛选手需要根据给定的篇章和问题从两个候选答案中挑选出正确答案，在此过程中可能涉及到常识推理等技术。&lt;/p&gt;
+
+&lt;h2 id=&quot;hfl&quot;&gt;哈工大讯飞联合实验室(HFL)&lt;/h2&gt;
+
+&lt;p&gt;哈工大讯飞联合实验室（HFL）是科大讯飞针对“讯飞超脑”项目计划，重点引进和布局的核心研发团队之一，由科大讯飞AI研究院与哈尔滨工业大学社会计算与信息检索研究中心（HIT-SCIR）共同创办。根据联合实验室建设规划，双方将在语言认知计算领域进行长期、深入合作，具体开展阅读理解、自动阅卷、类人答题、人机对话、语音识别后处理、社会舆情计算等前瞻课题的研究。重点突破深层语义理解、逻辑推理决策、自主学习进化等认知智能关键技术，支撑科大讯飞实现从“能听会说”到“能理解会思考”的技术跨越，并围绕教育、司法、金融、人机交互等领域实现科研成果的规模化应用。哈工大讯飞联合实验室阅读理解研究组（HFL-RC）是国内最早一批启动机器阅读理解研究的团队。2017年7月、10月以及2018年1月，在业内公认的机器阅读理解顶级赛事斯坦福SQuAD挑战赛中先后夺得三次第一名。2018年2月获得国际语义评测阅读理解任务的第一名。&lt;/p&gt;
+
+
+&lt;/div&gt;
+
+&lt;!-- English Version --&gt;
+&lt;div class=&quot;en post-container&quot;&gt;
+    
+    &lt;blockquote&gt;
+  &lt;p&gt;Nothing special&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;/div&gt;
+</description>
+        <pubDate>Sat, 10 Feb 2018 08:00:00 +0800</pubDate>
+        <link>http://hfl-rc.com//2018/02/10/got-on-top-in-semeval2018-task11/</link>
+        <guid isPermaLink="true">http://hfl-rc.com//2018/02/10/got-on-top-in-semeval2018-task11/</guid>
+        
+        <category>阅读理解评测</category>
+        
+        <category>Reading Comprehension</category>
+        
+        <category>SemEval 2018</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>科大讯飞机器阅读理解技术再次登顶SQuAD挑战赛</title>
+        <description>&lt;!-- Chinese Version --&gt;
+&lt;div class=&quot;zh post-container&quot;&gt;
+    
+    &lt;blockquote&gt;
+  &lt;p&gt;本文转自“科大讯飞”微信公众号&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;section&quot;&gt;快讯&lt;/h2&gt;
+&lt;p&gt;继2017年7月刷新世界纪录后，近日，科大讯飞与哈工大联合实验室（HFL）再次在由斯坦福大学发起的机器阅读理解领域权威评测SQuAD（Stanford Question Answering Dataset）中登顶。此次，讯飞与哈工大联合实验室提交的系统不仅在EM指标（精准匹配率）超过人类平均水平，并成为首个F1指标（模糊匹配率）上超过89%的系统。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/news/20180125/leaderboard.jpeg&quot; alt=&quot;&quot; /&gt;
+▲ &lt;em&gt;斯坦福SQuAD挑战赛最新成绩榜单&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;section-1&quot;&gt;机器阅读理解技术再获突破&lt;/h2&gt;
+&lt;p&gt;2017年7月，科大讯飞凭借&lt;strong&gt;交互式层叠注意力模型（Interactive AoA Reader）&lt;/strong&gt;获得该赛事的榜首，并在同年10月进一步优化该模型后再次刷新纪录。此次讯飞与哈工大联合实验室提交的&lt;strong&gt;融合式层叠注意力系统（Hybrid Attention-over-Attention Reader）&lt;/strong&gt;融合了近期学术界提出的诸多前沿技术，如基于上下文的文本表示、自适应转随机梯度下降的优化方法等，同时又研发出一些全新技术，&lt;strong&gt;不仅在SQuAD挑战赛中取得亮眼成绩，在其他自然语言处理任务上也获得了显著性能提升。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/news/20180125/aoa.jpeg&quot; alt=&quot;&quot; /&gt;
+▲ &lt;em&gt;科大讯飞与哈工大联合实验室参赛提交系统一览&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;section-2&quot;&gt;积极探索产业应用&lt;/h2&gt;
+&lt;p&gt;机器阅读理解技术目前已经成为多家知名企业、高校等研究机构关注的对象，技术上的突破将带来自然语言理解的长足进步。在与其他研究机构和高校一同探索技术发展的同时，&lt;strong&gt;科大讯飞也在积极推动该项技术在对话、问答系统中的落地应用，其中一个重要场景就是与智能车载系统的对话交互的结合，逐步实现汽车领域的精准问答&lt;/strong&gt;。通过让机器阅读汽车说明书及相关的介绍材料，使机器深度理解并掌握对该车型的相关知识；在用户提出相关问题时，不仅能够快速反馈给用户相关章节，并且还能够利用阅读理解技术进一步挖掘并反馈更精准的答案，从而减少用户的阅读量，提高信息获取的速度。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/news/20180125/car.jpeg&quot; alt=&quot;&quot; /&gt;
+▲ &lt;em&gt;科大讯飞执行总裁胡郁在2017年讯飞发布会上介绍智能车载系统中阅读技术的应用&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;section-3&quot;&gt;第二届“讯飞杯”中文机器阅读理解评测&lt;/h2&gt;
+&lt;p&gt;科大讯飞不仅在SQuAD挑战赛持续发力，也关注并积极推动中文信息处理的研究发展。2017年，科大讯飞携手中国中文信息学会计算语言学专业委员会（CIPS-CL）承办了第一届“讯飞杯”中文机器阅读理解评测（CMRC2017），发布了相关中文阅读理解数据集。今年，科大讯飞将继续与中国中文信息学会计算语言学专委会共同举办&lt;strong&gt;第二届“讯飞杯”中文机器阅读理解评测 (CMRC 2018)&lt;/strong&gt;，进一步促进中文机器阅读理解研究。&lt;/p&gt;
+
+&lt;h2 id=&quot;section-4&quot;&gt;未来展望&lt;/h2&gt;
+&lt;p&gt;拥有广阔应用场景的机器阅读理解技术领域，未来将有怎样的发展？&lt;/p&gt;
+
+&lt;p&gt;科大讯飞高级副总裁、AI研究院院长、认知智能国家重点实验室主任胡国平表示，科大讯飞非常高兴看到更多研究人员加入到机器阅读理解技术的研究中来。前不久微软亚洲研究院、阿里巴巴分别在EM指标上超过人类平均水平，并且有许多中国团队在榜单中名列前茅，我们对中国研究机构在这个领域所取得的好成绩表示祝贺。但同时，我们必须清楚地认识到，虽然目前的系统在SQuAD挑战赛中超过了人类平均水平，但这&lt;strong&gt;并不能代表机器在机器阅读理解任务上“完全”打败了人类&lt;/strong&gt;。&lt;/p&gt;
+
+&lt;p&gt;他表示，真正的阅读理解过程远比我们想象的要复杂，以目前的技术水平还很难做到深层的推理和归纳。鉴于此，&lt;strong&gt;目前科大讯飞还在积极探索其他类型的阅读理解，例如基于知识、常识的阅读理解以及基于综合线索的阅读理解&lt;/strong&gt;，并取得了一定的成绩。相信在不久的将来，科大讯飞将在机器阅读领域为大家展示更多的可能。&lt;/p&gt;
+
+
+&lt;/div&gt;
+
+&lt;!-- English Version --&gt;
+&lt;div class=&quot;en post-container&quot;&gt;
+    
+    &lt;blockquote&gt;
+  &lt;p&gt;Nothing special&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;/div&gt;
+</description>
+        <pubDate>Thu, 25 Jan 2018 08:00:00 +0800</pubDate>
+        <link>http://hfl-rc.com//2018/01/25/squad-new-sota/</link>
+        <guid isPermaLink="true">http://hfl-rc.com//2018/01/25/squad-new-sota/</guid>
+        
+        <category>阅读理解评测</category>
+        
+        <category>Reading Comprehension</category>
+        
+        <category>SQuAD</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>快讯：HFL-RC再次登顶斯坦福SQuAD</title>
+        <description>&lt;!-- Chinese Version --&gt;
+&lt;div class=&quot;zh post-container&quot;&gt;
+    
+    &lt;blockquote&gt;
+  &lt;p&gt;2018年1月22日，由哈工大讯飞联合实验室(HFL)阅读理解组研发的融合式层叠注意力模型(Hybrid AoA Reader)在最具权威的斯坦福SQuAD挑战赛中再次获得全球第一！&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;section&quot;&gt;快报&lt;/h2&gt;
+&lt;p&gt;继2017年7月、2017年10月后，在2018年1月22日，哈工大讯飞联合实验室(HFL)阅读理解研究组研发的融合式层叠注意力模型(Hybrid AoA Reader)在机器阅读理解领域(Machine Reading Comprehension, MRC)最具权威的斯坦福SQuAD挑战赛中再次获得全球第一，这也是首个F1-score指标超过89%的系统，再次刷新该榜单的最好成绩，同时该系统在Exact Match指标超过官方统计的人类平均指标(82.304)！&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/news/20180124/squad.jpeg&quot; alt=&quot;&quot; /&gt;
+▲ &lt;em&gt;斯坦福SQuAD最新排名&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;section-1&quot;&gt;登顶记录&lt;/h2&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;时间&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;系统&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;EM&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;F1&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;2018/01/22&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Hybrid AoA Reader&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;82.482&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;89.281&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;2018/10/17&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Interactive AoA Reader&lt;sup&gt;+&lt;/sup&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;79.083&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;86.450&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;2017/07/25&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Interactive AoA Reader&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;77.845&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;85.297&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+
+&lt;/div&gt;
+
+&lt;!-- English Version --&gt;
+&lt;div class=&quot;en post-container&quot;&gt;
+    
+    &lt;blockquote&gt;
+  &lt;p&gt;Nothing special&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;/div&gt;
+</description>
+        <pubDate>Wed, 24 Jan 2018 08:00:00 +0800</pubDate>
+        <link>http://hfl-rc.com//2018/01/24/squad-f1-exceed-89/</link>
+        <guid isPermaLink="true">http://hfl-rc.com//2018/01/24/squad-f1-exceed-89/</guid>
+        
+        <category>阅读理解评测</category>
+        
+        <category>Reading Comprehension</category>
+        
+        <category>SQuAD</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>第二届“讯飞杯”中文机器阅读理解评测CMRC2018</title>
+        <description>&lt;!-- Chinese Version --&gt;
+&lt;div class=&quot;zh post-container&quot;&gt;
+    
+    &lt;blockquote&gt;
+  &lt;p&gt;哈工大讯飞联合实验室继续承办第二届“讯飞杯”中文机器阅读理解评测&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;CMRC 2018官方网站：&lt;a href=&quot;http://www.hfl-tek.com/cmrc2018/&quot;&gt;http://www.hfl-tek.com/cmrc2018/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/news/20180122/sponsor.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;section&quot;&gt;前言&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;http://www.hfl-tek.com/cmrc2017/index.html&quot;&gt;第一届“讯飞杯”中文机器阅读理解评测（The First Evaluation Workshop on Chinese Machine Reading Comprehension，CMRC2017）&lt;/a&gt;&lt;/strong&gt;在2017年10月与第十六届全国计算语言学学术会议（CCL2017）在南京圆满落幕，得到了相关同行的积极参与和大力支持。从2017年开始，全国计算语言学学术会议（CCL）计划举办评测活动。&lt;/p&gt;
+
+&lt;p&gt;作为CCL的系列评测，今年我们继续举办&lt;strong&gt;第二届“讯飞杯”中文机器阅读理解评测 (The Second Evaluation Workshop on Chinese Machine Reading Comprehension, CMRC2018)&lt;/strong&gt;，并将于2018年下半年与第十七届全国计算语言学学术会议（CCL2018，2018年10月19日~21日，湖南长沙）共同召开。本届中文机器阅读理解评测由&lt;strong&gt;&lt;a href=&quot;http://www.cips-cl.org&quot;&gt;中国中文信息学会计算语言学专业委员会（CIPS-CL）&lt;/a&gt;&lt;/strong&gt;主办，&lt;strong&gt;&lt;a href=&quot;http://rc.hfl-tek.com&quot;&gt;哈工大讯飞联合实验室（HFL）&lt;/a&gt;&lt;/strong&gt;承办，&lt;strong&gt;&lt;a href=&quot;http://www.iflytek.com&quot;&gt;科大讯飞股份有限公司&lt;/a&gt;&lt;/strong&gt;冠名赞助，旨在进一步促进中文机器阅读理解研究及发展并且为相关领域学者提供一个良好的沟通平台。在此，CMRC2018评测委员会诚邀各家单位参加本次评测活动！&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;http://rc.hfl-tek.com&quot;&gt;哈工大讯飞联合实验室（HFL）&lt;/a&gt;&lt;/strong&gt;长期致力于机器阅读理解的研究和发展。在中文阅读理解方面，哈工大讯飞联合实验室在2016年7月提出&lt;strong&gt;&lt;a href=&quot;https://github.com/ymcui/Chinese-RC-Dataset&quot;&gt;首个中文填空型阅读理解数据集PD&amp;amp;CFT&lt;/a&gt;&lt;/strong&gt;。在2017年承办了第一届“讯飞杯”中文机器阅读理解评测（CMRC2017）并且发布了相关&lt;strong&gt;&lt;a href=&quot;https://github.com/ymcui/cmrc2017&quot;&gt;中文阅读理解数据集&lt;/a&gt;&lt;/strong&gt;，进一步促进了中文机器阅读理解研究。我们希望通过每年的中文机器阅读理解评测，与相关领域学者共同推进中文机器阅读理解的技术水平。&lt;/p&gt;
+
+&lt;h2 id=&quot;section-1&quot;&gt;任务描述&lt;/h2&gt;
+&lt;p&gt;在去年的CMRC2017评测中，我们的任务焦点是&lt;strong&gt;填空型阅读理解任务(Cloze-style Machine Reading Comprehension)&lt;/strong&gt;，吸引了数十家单位报名参加，并且最终有十余家单位提交了系统结果。今年我们将聚焦&lt;strong&gt;基于篇章片段抽取的阅读理解(Span-Extraction Machine Reading Comprehension)&lt;/strong&gt;，作为填空型阅读理解任务的进一步延伸。虽然在英文阅读理解研究上有例如斯坦福SQuAD、NewsQA等篇章片段抽取型阅读理解数据集，但目前相关中文资源仍然处于空白状态。本届中文机器阅读理解评测将开放&lt;strong&gt;首个人工标注的中文篇章片段抽取型阅读理解数据集&lt;/strong&gt;，参赛选手需要对篇章、问题进行建模，并从篇章中抽取出连续片段作为答案。本次评测依然采取训练集、开发集公开，测试集隐藏的形式以保证评测的公平性。&lt;/p&gt;
+
+&lt;p&gt;更详细的评测任务描述及流程请密切关注本网站后续更新。&lt;/p&gt;
+
+&lt;h3 id=&quot;section-2&quot;&gt;奖项设置&lt;/h3&gt;
+&lt;p&gt;本届评测将评选出如下奖项，颁发奖金和荣誉证书。
+由&lt;strong&gt;中国中文信息学会计算语言学专委会（CIPS-CL）&lt;/strong&gt;为获奖队伍提供荣誉证书。&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;&lt;strong&gt;金奖&lt;/strong&gt;&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;&lt;strong&gt;￥20,000 + 荣誉证书&lt;/strong&gt;&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;银奖&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;￥10,000 + 荣誉证书&lt;/strong&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;铜奖&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;￥ 5,000 + 荣誉证书&lt;/strong&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;最佳单系统奖&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;￥10,000 + 荣誉证书&lt;/strong&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&quot;section-3&quot;&gt;重要时间点&lt;/h3&gt;
+&lt;p&gt;以下所有截止时间点为北京时间（GMT+8）23:59。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;以下时间节点仅供参考，请注册参加者密切关注本网站以及邮件通知。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;事件&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;状态&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;时间&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;预报名&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;»已开始«&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;即日起&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;正式报名确认&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;未开始&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;2018年4月23日 ~ 2018年4月27日&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;发布训练集和开发集&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;未开始&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;2018年5月7日&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;系统搭建及调整&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;未开始&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;2018年5月7日 ~ 2018年8月7日&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;提交系统验证开发集&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;未开始&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;2018年6月7日 ~ 2018年8月7日&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;提交系统验证测试集&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;未开始&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;2018年8月13日 ~ 2018年8月17日&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;撰写系统描述摘要&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;未开始&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;2018年9月中旬&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;召开CMRC2018大会&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;未开始&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;TBD, 与CCL2018同步召开（2018年10月20日或21日）&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&quot;section-4&quot;&gt;注册报名&lt;/h3&gt;
+&lt;p&gt;拟报名参加的单位，请参考如下链接： &lt;a href=&quot;https://wj.qq.com/s/1822356/e14c&quot;&gt;https://wj.qq.com/s/1822356/e14c&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;section-5&quot;&gt;评测组织&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;主办方&lt;/strong&gt;： &lt;a href=&quot;http://www.cips-cl.org&quot;&gt;中国中文信息学会计算语言学专业委员会&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;承办方&lt;/strong&gt;： &lt;a href=&quot;http://rc.hfl-tek.com&quot;&gt;哈工大讯飞联合实验室&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;冠名商&lt;/strong&gt;： &lt;a href=&quot;http://www.iflytek.com&quot;&gt;科大讯飞股份有限公司&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;评测主席&lt;/strong&gt;：&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;刘   挺 （哈尔滨工业大学） &lt;br /&gt;崔一鸣（科大讯飞股份有限公司）&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;section-6&quot;&gt;联系我们&lt;/h2&gt;
+&lt;p&gt;如果有任何与本次评测相关的问题，请随时联系会务组。
+评测会务组邮箱： &lt;strong&gt;&lt;a href=&quot;&amp;#109;&amp;#097;&amp;#105;&amp;#108;&amp;#116;&amp;#111;:&amp;#099;&amp;#109;&amp;#114;&amp;#099;&amp;#050;&amp;#048;&amp;#049;&amp;#056;&amp;#064;&amp;#049;&amp;#050;&amp;#054;&amp;#046;&amp;#099;&amp;#111;&amp;#109;&quot;&gt;&amp;#099;&amp;#109;&amp;#114;&amp;#099;&amp;#050;&amp;#048;&amp;#049;&amp;#056;&amp;#064;&amp;#049;&amp;#050;&amp;#054;&amp;#046;&amp;#099;&amp;#111;&amp;#109;&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+
+
+&lt;/div&gt;
+
+&lt;!-- English Version --&gt;
+&lt;div class=&quot;en post-container&quot;&gt;
+    
+    &lt;blockquote&gt;
+  &lt;p&gt;HFL-RC will organize ‘The Second Evaluation Workshop on Chinese Machine Reading Comprehension (CMRC2018)’&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;CMRC 2018 Official Website (Chinese only)：&lt;a href=&quot;http://www.hfl-tek.com/cmrc2018/&quot;&gt;http://www.hfl-tek.com/cmrc2018/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/news/20180122/sponsor.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;introduction&quot;&gt;Introduction&lt;/h3&gt;
+&lt;p&gt;The First Evaluation Workshop on Chinese Machine Reading Comprehension (CMRC2017) was a great success co-located with the CCL2017 at Nanjing on October, 2017. The CMRC2017 has attracted lots of attention from the Chinese NLP community. We would like to express our sincere thanks to all the participants and the support from the community.&lt;/p&gt;
+
+&lt;p&gt;To further accelerate the progress of Chinese Machine Reading Comprehension field, we are going to organize &lt;strong&gt;The Second Evaluation Workshop on Chinese Machine Reading Comprehension (CMRC2018)&lt;/strong&gt; this year, and will be co-located with the CCL2018 at Changsha on October 19 ~ 21.&lt;/p&gt;
+
+&lt;p&gt;CMRC2018 is hosted by the &lt;strong&gt;&lt;a href=&quot;http://www.cips-cl.org&quot;&gt;Technical Committee on Computational Linguistics, Chinese Information Processing Society of China (CIPS-CL)&lt;/a&gt;&lt;/strong&gt;, organized by &lt;strong&gt;&lt;a href=&quot;http://rc.hfl-tek.com&quot;&gt;Joint Laboratory of HIT and iFLYTEK Research&lt;/a&gt;&lt;/strong&gt;, sponsored by &lt;strong&gt;&lt;a href=&quot;http://www.iflytek.com&quot;&gt;iFLYTEK Co., Ltd.&lt;/a&gt;&lt;/strong&gt;. We aim to provide a platform for the related researchers and a forum for communications on the related research. Welcome to join us!&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;http://rc.hfl-tek.com&quot;&gt;Joint Laboratory of HIT and iFLYTEK Research（HFL）&lt;/a&gt;&lt;/strong&gt; is devoting for the development and research on the machine reading comprehension. On Chinese reading comprehension, HFL has released &lt;a href=&quot;https://github.com/ymcui/Chinese-RC-Dataset&quot;&gt;the first Chinese cloze-style reading comprehension dataset: PD&amp;amp;CFT&lt;/a&gt;. In 2017, HFL has organized &lt;a href=&quot;https://github.com/ymcui/cmrc2017&quot;&gt;the first evaluation workshop on Chinese machine reading comprehension&lt;/a&gt;, which accelerated the research on Chinese reading comprehension. Through annual Chinese Machine Reading Comprehension workshop, we hope the researchers on related field could jointly promote the technical level of Chinese machine reading comprehension.&lt;/p&gt;
+
+&lt;h3 id=&quot;task-description&quot;&gt;Task Description&lt;/h3&gt;
+&lt;p&gt;In the last year, we focus on the &lt;strong&gt;Cloze-style reading comprehension task&lt;/strong&gt;, and attracted many participants on evaluation. This year, we will focus on the &lt;strong&gt;Span-Extraction Machine Reading Comprehension&lt;/strong&gt;, which is a extension of cloze-style reading comprehension. We have seen many dataset on this kind of reading comprehension, such as SQuAD, NewsQA. However, we did not see there is a Chinese corpus for this purpose. To add diversity in Chinese dataset, we will release the first Chinese Span-Extraction dataset. The participants will analyze the context and query and extract the correct span in the context for answer output.&lt;/p&gt;
+
+&lt;p&gt;Following the rule in previous evaluation, we will release training and validation set at first and keep the test set hidden for fairness of the evaluation process.&lt;/p&gt;
+
+&lt;h3 id=&quot;prizes&quot;&gt;Prizes&lt;/h3&gt;
+&lt;p&gt;We will award the top-3 systems as well as the best single model system on our evaluation. The details can be illustrated as follows.&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;&lt;strong&gt;Gold Prize&lt;/strong&gt;&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;&lt;strong&gt;￥20,000 + Certificate&lt;sup&gt;*&lt;/sup&gt;&lt;/strong&gt;&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;Silver Prize&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;￥10,000 + Certificate&lt;/strong&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;Bronze Prize&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;￥5,000 + Certificate&lt;/strong&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;Best Single System Prize&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;￥10,000 + Certificate&lt;/strong&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;*The certificate is provided by &lt;strong&gt;CIPS-CL&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;important-dates&quot;&gt;Important Dates&lt;/h3&gt;
+&lt;p&gt;All the deadlines are Beijing Time (GMT+8) 23:59.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;PLEASE PAY CLOSE ATTENTION TO THE WEBSITES, IN CASE THERE WILL BE CHANGE IN DEADLINE&lt;/strong&gt;&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;Process&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;State&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Time&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Pre-registration&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;&lt;strong&gt;»Begin«&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;From now on&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Confirmation for registration&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;N/A&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;April 23, 2018 ~ April 27, 2018&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Release of Training and development set&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;N/A&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;May 7, 2018&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Tuning System&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;N/A&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;May 7, 2018 ~ August 7, 2018&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Validation for development set&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;N/A&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;June 7, 2018 ~ August 7, 2018&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Submission for final system&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;N/A&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;August 13, 2018 ~ August 17, 2018&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;System Description&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;N/A&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Mid-September, 2018&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;CMRC2018 workshop&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;N/A&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;TBD, co-locate with CCL2018（October 20 or 21, 2018）&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&quot;registration-for-participation&quot;&gt;Registration for Participation&lt;/h2&gt;
+&lt;p&gt;Please fill the following form for participation: &lt;a href=&quot;https://wj.qq.com/s/1822356/e14c&quot;&gt;https://wj.qq.com/s/1822356/e14c&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;organization&quot;&gt;Organization&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Host&lt;/strong&gt;： &lt;a href=&quot;http://www.cips-cl.org&quot;&gt;Technical Committee on Computational Linguistics, Chinese Information Processing Society of China (CIPS-CL)&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Organizer&lt;/strong&gt;： &lt;a href=&quot;http://rc.hfl-tek.com&quot;&gt;Joint Laboratory of HIT and iFLYTEK Research&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Sponsor&lt;/strong&gt;： &lt;a href=&quot;http://www.iflytek.com&quot;&gt;iFLYTEK Co., Ltd.&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Evaluation Committee&lt;/strong&gt;：
+&amp;gt; &lt;strong&gt;Ting Liu, Harbin Institute of Technology
+&lt;br /&gt;Yiming Cui, iFLYTEK Research&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;contact-us&quot;&gt;Contact us&lt;/h2&gt;
+&lt;p&gt;Any problems? Feel free to concat us.
+E-MAIL： &lt;strong&gt;&lt;a href=&quot;&amp;#109;&amp;#097;&amp;#105;&amp;#108;&amp;#116;&amp;#111;:&amp;#099;&amp;#109;&amp;#114;&amp;#099;&amp;#050;&amp;#048;&amp;#049;&amp;#056;&amp;#064;&amp;#049;&amp;#050;&amp;#054;&amp;#046;&amp;#099;&amp;#111;&amp;#109;&quot;&gt;&amp;#099;&amp;#109;&amp;#114;&amp;#099;&amp;#050;&amp;#048;&amp;#049;&amp;#056;&amp;#064;&amp;#049;&amp;#050;&amp;#054;&amp;#046;&amp;#099;&amp;#111;&amp;#109;&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;/div&gt;
+</description>
+        <pubDate>Mon, 22 Jan 2018 08:00:00 +0800</pubDate>
+        <link>http://hfl-rc.com//2018/01/22/cmrc2018-evaluation/</link>
+        <guid isPermaLink="true">http://hfl-rc.com//2018/01/22/cmrc2018-evaluation/</guid>
+        
+        <category>阅读理解评测</category>
+        
+        <category>Reading Comprehension</category>
+        
+        <category>CMRC</category>
+        
+        <category>CCL</category>
+        
+        
+      </item>
+    
+  </channel>
+</rss>
